@@ -221,7 +221,7 @@
                       <td data-label="Apellido">Gomez</td>
                       <td data-label="Área">Legal</td>
                       <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick">JPerez</td>
+                      <td data-label="Nick" class="name-edit">JPerez</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -250,7 +250,7 @@
                       <td data-label="Apellido">Pérez Dias</td>
                       <td data-label="Área">Legal</td>
                       <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick">JPerez</td>
+                      <td data-label="Nick" class="name-edit">JPerez</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -279,7 +279,7 @@
                       <td data-label="Apellido">Pérez Dias</td>
                       <td data-label="Área">Legal</td>
                       <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick">JPerez</td>
+                      <td data-label="Nick" class="name-edit">JPerez</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -308,7 +308,7 @@
                       <td data-label="Apellido">Pérez Dias</td>
                       <td data-label="Área">Legal</td>
                       <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick">JPerez</td>
+                      <td data-label="Nick" class="name-edit">JPerez</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -337,7 +337,7 @@
                       <td data-label="Apellido">Pérez Dias</td>
                       <td data-label="Área">Legal</td>
                       <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick">JPerez</td>
+                      <td data-label="Nick" class="name-edit">JPerez</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -366,7 +366,7 @@
                       <td data-label="Apellido">Pérez Dias</td>
                       <td data-label="Área">Legal</td>
                       <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick">JPerez</td>
+                      <td data-label="Nick" class="name-edit">JPerez</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -679,40 +679,46 @@
     </section>
   </main>
 
-  <script>
-    // Lógica para mostrar/ocultar contraseña
-    document.querySelectorAll('.toggle-password').forEach(button => {
-      button.addEventListener('click', () => {
-        const targetId = button.getAttribute('data-target');
-        const input = document.getElementById(targetId);
-        const icon = button.querySelector('i');
-
-        if (input.type === 'password') {
-          input.type = 'text';
-          icon.classList.remove('bi-eye');
-          icon.classList.add('bi-eye-slash');
-        } else {
-          input.type = 'password';
-          icon.classList.remove('bi-eye-slash');
-          icon.classList.add('bi-eye');
-        }
-      });
-    });
-  </script>
-  <script>
-
-    const hamburger = document.getElementById('hamburger');
-    const body = document.querySelector('body'); 
-    const menu = document.querySelector('.menu');
-
-    hamburger.addEventListener('click', function () {
-      menu.classList.toggle('active');
-      body.classList.toggle('menu-open');
-      hamburger.classList.toggle('active'); 
-    });
+   <!-- Modal de confirmación tabla -->
+<div class="modal fade" id="confirmDeleteTableModal" tabindex="-1" aria-labelledby="confirmDeleteTableLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="confirmDeleteTableLabel">Confirmar eliminación de elemento</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>¿Estás seguro de que deseas eliminar <u id="deleteItemDescripcion"></u>?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="add-btn" id="confirmDeleteTableButton">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  </script>
+<!-- Modal de editar -->
+<div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content input-template">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editItemModalLabel">Editar Elemento</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Campos dinámicos -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-gray" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="add-btn" id="saveEditButton">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/password.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/crud.js"></script>
   <script src="js/search.js"></script>

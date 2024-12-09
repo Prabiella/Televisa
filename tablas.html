@@ -195,7 +195,7 @@
             <div class="container my-5">              
                 <!-- Filtros -->
                 <div class="col-12 col-lg-9 filters table-content d-flex flex-column gap-2 p-4 mb-4">
-                  <div class="row g-3 align-items-center justify-content-center">
+                  <div class="filter-content row g-3 align-items-center justify-content-center">
                     <div class="col-md-2">
                         <h6 class="m-0 text-center">Dónde</h6>
                       </div>
@@ -223,7 +223,7 @@
                       </button>
                     </div>
                   </div>
-                  <div class="row g-3 align-items-center justify-content-center">
+                  <div class="filter-content row g-3 align-items-center justify-content-center">
                     <div class="col-md-2">
                         <select class="form-select">
                             <option selected>AND</option>
@@ -254,7 +254,7 @@
                       </button>
                     </div>
                   </div>
-                  <div class="row g-3 align-items-center justify-content-center">
+                  <div class="filter-content row g-3 align-items-center justify-content-center">
                     <div class="col-md-2">
                         <select class="form-select">
                             <option selected>OR</option>
@@ -287,7 +287,7 @@
                   </div>
                   <hr>                    
                     <div class="d-flex justify-content-between">
-                        <span class="fw-bolder">+ Agregar filtro</span>
+                        <button class="add-filter">+ Agregar filtro</button>
                         <button class="add-btn">Buscar</button>
                       </div>
                 </div>
@@ -309,13 +309,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr data-id="1">
                         <td data-label="Estatus">3.0</td>
                         <td data-label="No. Artículos">0001212212</td>
-                        <td data-label="Descripción">Como dice el dicho cap 154-2022</td>
+                        <td data-label="Descripción" class="name-edit">Como dice el dicho cap 154-2022</td>
                         <td data-label="Centro de costos">012222</td>
                         <td data-label="Tipo">Capítulo</td>
-                        <td data-label="Tipo">Programa</td>
+                        <td data-label="Tipo-2">Programa</td>
                         <td data-label="Fecha">1900/01/01</td>
                         <td data-label="Update">0001212212</td>
                         <td>
@@ -341,13 +341,13 @@
                               </div>
                         </td>
                       </tr>
-                      <tr>
+                      <tr data-id="2">
                         <td data-label="Estatus">3.0</td>
                         <td data-label="No. Artículos">0001212212</td>
-                        <td data-label="Descripción">Como dice el dicho cap 154-2022</td>
+                        <td data-label="Descripción" class="name-edit">Como dice el dicho cap 155-2022</td>
                         <td data-label="Centro de costos">012222</td>
                         <td data-label="Tipo">Capítulo</td>
-                        <td data-label="Tipo">Programa</td>
+                        <td data-label="Tipo-2">Programa</td>
                         <td data-label="Fecha">1900/01/01</td>
                         <td data-label="Update">0001212212</td>
                         <td>
@@ -409,20 +409,66 @@
     </section>
   </main>
 
-  <script>
+  <!-- Modal de confirmación filtros -->
+  <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmDeleteLabel">Confirmar eliminación</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          ¿Estás seguro de que deseas eliminar este filtro?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="add-btn" id="confirmDeleteButton">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    const hamburger = document.getElementById('hamburger');
-    const body = document.querySelector('body'); 
-    const menu = document.querySelector('.menu');
+ <!-- Modal de confirmación tabla -->
+<div class="modal fade" id="confirmDeleteTableModal" tabindex="-1" aria-labelledby="confirmDeleteTableLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmDeleteTableLabel">Confirmar eliminación de elemento</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>¿Estás seguro de que deseas eliminar <u id="deleteItemDescripcion"></u>?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="add-btn" id="confirmDeleteTableButton">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+<!-- Modal de editar -->
+<div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content input-template">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editItemModalLabel">Editar Elemento</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Campos dinámicos -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-gray" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="add-btn" id="saveEditButton">Guardar Cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    hamburger.addEventListener('click', function () {
-      menu.classList.toggle('active');
-      body.classList.toggle('menu-open');
-      hamburger.classList.toggle('active'); 
-    });
 
-
-  </script>
+  <script src="js/add-filter.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/crud.js"></script>
   <script src="js/search.js"></script>

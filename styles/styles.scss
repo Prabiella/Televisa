@@ -38,6 +38,7 @@ body {
     color: $text-gray;
   }
   .trash {
+    padding: 0;
     border: 0;
     background: none;
   }
@@ -311,7 +312,7 @@ body.menu-open .content {
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 3px 17px 54px #695f9721;
     border-radius: 24px;
-    padding: 0.5em 1em;
+    padding: 1em;
 
     .search {
       max-width: 300px;
@@ -594,6 +595,11 @@ body.menu-open .content {
     color: #7a86a1 !important;
     tex-align: center !important;
   }
+}
+
+.add-filter {
+  border: none;
+  background: none;
 }
 
 .btn-gray {
