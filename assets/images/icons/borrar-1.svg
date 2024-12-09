@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="43.816" viewBox="0 0 38 43.816">
+  <g id="borrar" transform="translate(6611 717.816)">
+    <g id="trash-can" transform="translate(-6601 -717.816)">
+      <g id="Grupo_40175" data-name="Grupo 40175" transform="translate(0)">
+        <g id="Grupo_40174" data-name="Grupo 40174" transform="translate(0)">
+          <path id="Trazado_94751" data-name="Trazado 94751" d="M47.87,2.5H44.155l-.406-1.218A1.872,1.872,0,0,0,41.971,0h-3.2a1.873,1.873,0,0,0-1.779,1.281L36.589,2.5H32.874A1.876,1.876,0,0,0,31,4.374v1.25c0,.7.627.625,1.3.625h16.82a.624.624,0,0,0,.625-.625V4.374A1.876,1.876,0,0,0,47.87,2.5Zm-9.963,0,.274-.822a.625.625,0,0,1,.593-.427h3.2a.623.623,0,0,1,.592.427l.274.822Z" transform="translate(-31)" fill="#25385a"/>
+        </g>
+      </g>
+      <g id="Grupo_40177" data-name="Grupo 40177" transform="translate(1.402 7.581)">
+        <g id="Grupo_40176" data-name="Grupo 40176" transform="translate(0)">
+          <path id="Trazado_94752" data-name="Trazado 94752" d="M64.666,182l1,12.041a1.865,1.865,0,0,0,1.866,1.7H77.743a1.867,1.867,0,0,0,1.867-1.71l1-12.035Zm4.846,10.622a.625.625,0,0,1-1.25,0v-8.747a.625.625,0,0,1,1.25,0Zm3.749,0a.625.625,0,0,1-1.25,0v-8.747a.625.625,0,0,1,1.25,0Zm3.749,0a.625.625,0,0,1-1.25,0v-8.747a.625.625,0,0,1,1.25,0Z" transform="translate(-64.666 -182)" fill="#25385a"/>
+        </g>
+      </g>
+    </g>
+    <text id="Borrar-2" data-name="Borrar" transform="translate(-6611 -677)" fill="#25385a" font-size="12" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Borrar</tspan></text>
+  </g>
+</svg>

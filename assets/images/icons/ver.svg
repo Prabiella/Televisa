@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.252" height="38.66" viewBox="0 0 20.252 38.66">
+  <g id="ver" transform="translate(6485.126 715.926)">
+    <g id="Group" transform="translate(-6485.126 -715.926)">
+      <path id="Vector" d="M6.329,3.164A3.164,3.164,0,1,1,5.4.927a3.164,3.164,0,0,1,.927,2.237Z" transform="translate(6.961 3.797)" fill="#25385a"/>
+      <path id="Vector-2" data-name="Vector" d="M0,6.961S3.8,0,10.126,0,20.252,6.961,20.252,6.961s-3.8,6.961-10.126,6.961S0,6.961,0,6.961Zm10.126,4.43a4.43,4.43,0,1,0-3.132-1.3,4.43,4.43,0,0,0,3.132,1.3Z" transform="translate(0 0)" fill="#25385a"/>
+    </g>
+    <text id="Ver-2" data-name="Ver" transform="translate(-6484.875 -680.266)" fill="#25385a" font-size="12" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Ver</tspan></text>
+  </g>
+</svg>

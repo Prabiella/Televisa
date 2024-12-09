@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="44.808" viewBox="0 0 37 44.808">
+  <g id="editar" transform="translate(6671 718.808)">
+    <path id="edit-text" d="M15.809,3.43l.97-.97a3.1,3.1,0,0,1,4.287,0l.783.783a3.007,3.007,0,0,1,0,4.276l-.97.97-5.07-5.07ZM14.641,4.6,4.6,14.638a1.876,1.876,0,0,0-.551,1.19l-.3,3.229a1.416,1.416,0,0,0,.4,1.1,1.36,1.36,0,0,0,.97.408H5.24l3.229-.3a1.947,1.947,0,0,0,1.19-.562L19.7,9.668,14.63,4.6Zm10.3,19.486a.833.833,0,0,0-.827-.827H2.077a.827.827,0,0,0,0,1.653H24.119A.833.833,0,0,0,24.946,24.083Z" transform="translate(-6666.25 -720.408)" fill="#25385a"/>
+    <text id="Editar-2" data-name="Editar" transform="translate(-6671 -677)" fill="#25385a" font-size="12" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Editar</tspan></text>
+  </g>
+</svg>

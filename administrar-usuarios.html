@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Televisa Univisión</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <main>
+    <section class="menu-container">
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="menu" id="menu">
+        <img class="logo" src="assets/images/logos/televisa-univision-color.svg" alt="">
+
+        <div class="accordion my-5" id="accordionExample">
+          <div class="accordion-item acc-1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#coll-adminuser-1" aria-expanded="false" aria-controls="coll-adminuser-1">
+              <img id="icon-user" src="assets/images/icons/user.svg" alt="usuario"> Iniciar sesión
+            </button>
+            <div id="coll-adminuser-1" class="accordion-collapse collapse" data-bs-parent="#admin-user-1">
+              <div class="accordion-body py-0">
+                <ul>
+                  <li>
+                    <a href="administrar-usuarios.html">Administrar usuarios</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item acc-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#coll-adminuser-2" aria-expanded="false" aria-controls="coll-adminuser-2">
+                <img src="assets/images/icons/vistas.svg" alt="vistas"> Vistas
+              </button>
+            </h2>
+            <div id="coll-adminuser-2" class="accordion-collapse collapse" data-bs-parent="#admin-user-2">
+              <div class="accordion-body py-0">
+                <ul>
+                  <li>
+                    <a href="">Productos Unitarios SIHO</a>
+                  </li>
+                  <li>
+                    <a href="">Productos Libretos Unitarios</a>
+                  </li>
+                  <li>
+                    <a href="Righ-holders.html">Righ Holders</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item acc-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#coll-adminuser-3" aria-expanded="false" aria-controls="coll-adminuser-3">
+                <img src="assets/images/icons/contratos.svg" alt="contratos"> Contratos
+              </button>
+            </h2>
+            <div id="coll-adminuser-3" class="accordion-collapse collapse" data-bs-parent="#admin-user-3">
+              <div class="accordion-body py-0">
+                <ul>
+                  <li><a href=""> Libretos Telenovelas</a></li>
+                  <li><a href=""> Libretos Unitarios</a></li>
+                  <li><a href=""> Contratos Adquisiciones</a></li>
+                  <li><a href=""> SHIO</a></li>
+                  <li><a href=""> Deportes y Noticieros</a></li>
+                  <li><a href=""> Carta Vestuario</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item acc-4">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#coll-adminuser-4" aria-expanded="false" aria-controls="coll-adminuser-4">
+                <img src="assets/images/icons/Mantenimiento.svg" alt="mantenimiento"> Mantenimiento
+              </button>
+            </h2>
+            <div id="coll-adminuser-4" class="accordion-collapse collapse" data-bs-parent="#admin-user-4">
+              <div class="accordion-body py-0">
+                <ul>
+                  <li><a href="tablas.html">Tablas</a></li>
+                  <li><a href="">Catálogos</a>
+                    <ul>
+                      <li>ACQ_catForemats</li>
+                      <li>ACQ_catMedios</li>
+                      <li>ACQ_catLanguajes</li>
+                      <li>catORG_ID</li>
+                      <li>CAT_TIPO_PROGRAMA</li>
+                      <li>catCalendarioPagoSiho</li>
+                      <li>catContSecurity</li>
+                      <li>catCurrency</li>
+                      <li>catDaletTituloMusicalSoc..</li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item acc-5">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#coll-adminuser-5" aria-expanded="false" aria-controls="coll-adminuser-5">
+                <img src="assets/images/icons/reportes.svg" alt="mantenimiento"> Reportes
+              </button>
+            </h2>
+            <div id="coll-adminuser-5" class="accordion-collapse collapse" data-bs-parent="#admin-user-5">
+              <div class="accordion-body py-0">
+                <ul>
+                  <li><a href="">Histórico de cambios</a></li>
+                  <li><a href="">Bitácora Productos</a></li>
+                  <li><a href="">Bitácora RightHolders</a></li>
+                  <li><a href="">Bitácora Contratos</a></li>
+                  <li><a href="">Bitácora Pagos</a></li>
+                  <li><a href="">Bitácora Request de pagos</a></li>
+                  <li><a href="">Bitácora Errores</a></li>
+                  <li><a href="">Reporte Estadístico</a></li>
+                  <li><a href="">Reporte Inserciones</a></li>
+                  <li><a href="">Bitácora DALET</a>
+                    <ul>
+                      <li><a href="">Productos</a></li>
+                      <li><a href="">Contratos</a></li>
+                      <li><a href="">Títulos musicales</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item acc-6">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#coll-adminuser-6" aria-expanded="false" aria-controls="coll-adminuser-6">
+                <img src="assets/images/icons/configurar.svg" alt="configurar"> Configurar
+              </button>
+            </h2>
+            <div id="coll-adminuser-6" class="accordion-collapse collapse" data-bs-parent="#admin-user-6">
+              <div class="accordion-body py-0">
+                <ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item acc-7">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#coll-adminuser-7" aria-expanded="false" aria-controls="coll-adminuser-7">
+                <img src="assets/images/icons/horas.svg" alt="mantenimiento"> Horas
+              </button>
+            </h2>
+            <div id="coll-adminuser-7" class="accordion-collapse collapse" data-bs-parent="#admin-user-7">
+              <div class="accordion-body py-0">
+                <ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="log-out-btn">
+            Cerrar sesión
+            <img src="assets/images/icons/logout.svg" alt="cerrar sesión">
+          </button>
+        </div>
+      </nav>
+    </section>
+    <section class="content content-header admin-user-content col-12">
+      <div class="d-flex flex-column flex-md-row">
+        <div class="col-md-7 col-lg-8 col-xxl-9 py-4 px-3">
+          <header>
+            <div class="title-content d-flex align-items-center gap-3">
+              <span>|</span>
+              <h1>Administrar usuarios</h1>
+            </div>
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 py-2">
+              <p class="px-4 m-0">Hola <span>Juan Perez</span>, bienvenido de nuevo</p>
+              <button class="add-btn"><span>+</span> Nuevo usuario</button>
+            </div>
+          </header>
+          <div>
+
+            <div class="table-content p-4">
+              <div class="header-table-content d-flex flex-wrap gap-3 align-items-center justify-content-between">
+                <form class="search d-flex input-group" role="search">
+                  <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                </form>
+                <button class="btn-filter px-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Filtros
+                  <img src="assets/images/icons/filtros.svg" alt="Filtros">
+                </button>
+              </div>
+              <div>
+                <table class="table my-3">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Apellido</th>
+                      <th>Área</th>
+                      <th>Tipo</th>
+                      <th>Nick</th>
+                      <th> </th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-body">
+                    <tr>
+                      <td data-label="Nombre">Luis</td>
+                      <td data-label="Apellido">Gomez</td>
+                      <td data-label="Área">Legal</td>
+                      <td data-label="Tipo">Auxiliar</td>
+                      <td data-label="Nick">JPerez</td>
+                      <td>
+                        <div class="custom-dropdown">
+                          <button class="custom-dropdown-toggle">
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                          </button>
+                          <div class="custom-dropdown-menu">
+                            <div class="d-flex gap-3">
+                              <button class="custom-menu-item edit-btn">
+                                <img src="assets/images/icons/editar-1.svg" alt="editar">
+                              </button>
+                              <button class="custom-menu-item delete-btn">
+                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                              </button>
+                              <button class="custom-menu-item see-btn">
+                                <img src="assets/images/icons/ver.svg" alt="ver">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Nombre">Juan Luis</td>
+                      <td data-label="Apellido">Pérez Dias</td>
+                      <td data-label="Área">Legal</td>
+                      <td data-label="Tipo">Auxiliar</td>
+                      <td data-label="Nick">JPerez</td>
+                      <td>
+                        <div class="custom-dropdown">
+                          <button class="custom-dropdown-toggle">
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                          </button>
+                          <div class="custom-dropdown-menu">
+                            <div class="d-flex gap-3">
+                              <button class="custom-menu-item edit-btn">
+                                <img src="assets/images/icons/editar-1.svg" alt="editar">
+                              </button>
+                              <button class="custom-menu-item delete-btn">
+                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                              </button>
+                              <button class="custom-menu-item see-btn">
+                                <img src="assets/images/icons/ver.svg" alt="ver">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Nombre">Juan Luis</td>
+                      <td data-label="Apellido">Pérez Dias</td>
+                      <td data-label="Área">Legal</td>
+                      <td data-label="Tipo">Auxiliar</td>
+                      <td data-label="Nick">JPerez</td>
+                      <td>
+                        <div class="custom-dropdown">
+                          <button class="custom-dropdown-toggle">
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                          </button>
+                          <div class="custom-dropdown-menu">
+                            <div class="d-flex gap-3">
+                              <button class="custom-menu-item edit-btn">
+                                <img src="assets/images/icons/editar-1.svg" alt="editar">
+                              </button>
+                              <button class="custom-menu-item delete-btn">
+                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                              </button>
+                              <button class="custom-menu-item see-btn">
+                                <img src="assets/images/icons/ver.svg" alt="ver">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Nombre">Juan Luis</td>
+                      <td data-label="Apellido">Pérez Dias</td>
+                      <td data-label="Área">Legal</td>
+                      <td data-label="Tipo">Auxiliar</td>
+                      <td data-label="Nick">JPerez</td>
+                      <td>
+                        <div class="custom-dropdown">
+                          <button class="custom-dropdown-toggle">
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                          </button>
+                          <div class="custom-dropdown-menu">
+                            <div class="d-flex gap-3">
+                              <button class="custom-menu-item edit-btn">
+                                <img src="assets/images/icons/editar-1.svg" alt="editar">
+                              </button>
+                              <button class="custom-menu-item delete-btn">
+                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                              </button>
+                              <button class="custom-menu-item see-btn">
+                                <img src="assets/images/icons/ver.svg" alt="ver">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Nombre">Juan Luis</td>
+                      <td data-label="Apellido">Pérez Dias</td>
+                      <td data-label="Área">Legal</td>
+                      <td data-label="Tipo">Auxiliar</td>
+                      <td data-label="Nick">JPerez</td>
+                      <td>
+                        <div class="custom-dropdown">
+                          <button class="custom-dropdown-toggle">
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                          </button>
+                          <div class="custom-dropdown-menu">
+                            <div class="d-flex gap-3">
+                              <button class="custom-menu-item edit-btn">
+                                <img src="assets/images/icons/editar-1.svg" alt="editar">
+                              </button>
+                              <button class="custom-menu-item delete-btn">
+                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                              </button>
+                              <button class="custom-menu-item see-btn">
+                                <img src="assets/images/icons/ver.svg" alt="ver">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Nombre">Juan Luis</td>
+                      <td data-label="Apellido">Pérez Dias</td>
+                      <td data-label="Área">Legal</td>
+                      <td data-label="Tipo">Auxiliar</td>
+                      <td data-label="Nick">JPerez</td>
+                      <td>
+                        <div class="custom-dropdown">
+                          <button class="custom-dropdown-toggle">
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                          </button>
+                          <div class="custom-dropdown-menu">
+                            <div class="d-flex gap-3">
+                              <button class="custom-menu-item edit-btn">
+                                <img src="assets/images/icons/editar-1.svg" alt="editar">
+                              </button>
+                              <button class="custom-menu-item delete-btn">
+                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                              </button>
+                              <button class="custom-menu-item see-btn">
+                                <img src="assets/images/icons/ver.svg" alt="ver">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+                <div class="d-flex flex-column align-items-end">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4 col-xxl-3">
+          <div class="data-user-content">
+            <div class="text-end p-3">
+              <small>Administrador de vistas - <span class="text-pink">Template 2.0</span></small>
+            </div>
+          </div>
+          <div class="data-user-content">
+            <!-- Tab navigation -->
+            <ul class="nav nav-tabs nav-adminuser py-3" id="userTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="user-data-tab" data-bs-toggle="tab" data-bs-target="#user-data"
+                  type="button" role="tab" aria-controls="user-data" aria-selected="true">
+                  Datos del usuario
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="user-permissions-tab" data-bs-toggle="tab"
+                  data-bs-target="#user-permissions" type="button" role="tab" aria-controls="user-permissions"
+                  aria-selected="false">
+                  Permisos de usuario
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab content -->
+            <div class="tab-content input-template mt-3" id="userTabsContent">
+              <!-- Datos del usuario -->
+              <div class="tab-pane fade show active" id="user-data" role="tabpanel" aria-labelledby="user-data-tab">
+                <div class="accordion" id="user-data-accordion">
+                  <!-- Sección Datos del usuario -->
+                  <div class="accordion-item m-0">
+                    <h2 class="accordion-header" id="user-data-heading">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#user-data-collapse" aria-expanded="true" aria-controls="user-data-collapse">
+                        <img src="assets/images/icons/user-orange.svg" alt="usuario"> Datos del usuario
+                      </button>
+                    </h2>
+                    <div id="user-data-collapse" class="accordion-collapse collapse show"
+                      aria-labelledby="user-data-heading" data-bs-parent="#user-data-accordion">
+                      <div class="accordion-body p-0">
+                        <form id="user-data-form">
+                          <!-- Nombre -->
+                          <div class="px-4 mb-3">
+                            <label for="user-name" class="form-label">Nombre(s)</label>
+                            <input type="text" class="form-control" id="user-name" placeholder="Juan Pérez">
+                          </div>
+                          <!-- Apellido -->
+                          <div class="px-4 mb-3">
+                            <label for="user-lastname" class="form-label">Apellido(s)</label>
+                            <input type="text" class="form-control" id="user-lastname" placeholder="Pérez Dias">
+                          </div>
+                          <!-- Nick -->
+                          <div class="px-4 mb-3">
+                            <label for="user-nick" class="form-label">Nick</label>
+                            <input type="text" class="form-control" id="user-nick" placeholder="Pérez Dias">
+                          </div>
+                          <!-- Área -->
+                          <div class="px-4 mb-3">
+                            <label for="user-role" class="form-label">Área</label>
+                            <select class="form-select" id="user-role">
+                              <option value="admin">Legal</option>
+                              <option value="editor">option</option>
+                              <option value="viewer">option</option>
+                            </select>
+                          </div>
+                          <!-- Tipo -->
+                          <div class="px-4 mb-3">
+                            <label for="user-role" class="form-label">Tipo</label>
+                            <select class="form-select" id="user-role">
+                              <option value="admin">Auxiliar</option>
+                              <option value="editor">option</option>
+                              <option value="viewer">option</option>
+                            </select>
+                          </div>
+                          <div class="pass-content text-white py-2 px-4">
+                            <!-- Campo Contraseña -->
+                            <div class="mb-3">
+                              <label for="password" class="form-label">Contraseña</label>
+                              <div class="input-group">
+                                <input type="password" class="form-control" id="password" value="QWERTY123"/>
+                                <button class="btn btn-eye toggle-password" type="button" data-target="password">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <!-- Campo Confirmar Contraseña -->
+                            <div class="mb-3">
+                              <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+                              <div class="input-group">
+                                <input type="password" class="form-control" id="password" value="QWERTY123"/>
+                                <button class="btn btn-eye toggle-password" type="button" data-target="password">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="py-4 course d-flex justify-content-center" style="position: relative;">
+                      <img src="assets/images/back/back-banner.png" alt="">
+                      <div class="course-text" style="position: absolute;">
+                        <p>Curso de Capacitación en <br> Derechos de Autor y Regalías</p>
+                        <button class="add-btn">Conoce más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Permisos de usuario -->
+              <div class="tab-pane fade" id="user-permissions" role="tabpanel" aria-labelledby="user-permissions-tab">
+                <div class="accordion" id="user-permissions-accordion">
+                  <div class="accordion-item m-0">
+                    <h2 class="accordion-header" id="user-permissions-heading">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#user-permissions-collapse" aria-expanded="true"
+                        aria-controls="user-permissions-collapse">
+                        <img src="assets/images/icons/user-orange.svg" alt="usuario"> Permisos de usuario
+                      </button>
+                    </h2>
+
+                    <div id="user-permissions-collapse" class="accordion-collapse collapse show"
+                      aria-labelledby="user-permissions-heading" data-bs-parent="#user-permissions-accordion">
+                      <div class="accordion-body p-0">
+                        <!-- Lista de permisos -->
+                        <ul class="switch-list">
+                          <!-- Permiso 1 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso1" checked/>
+                              <label class="form-check-label" for="permiso1"></label>
+                            </div>
+                            Administrador de usuarios
+                          </li>
+                          <!-- Permiso 2 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso2" checked/>
+                              <label class="form-check-label" for="permiso2"></label>
+                            </div>
+                            Campos custom IPLS
+                          </li>
+                          <!-- Permiso 3 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso3"/>
+                              <label class="form-check-label" for="permiso3"></label>
+                            </div>
+                            Catálogo títulos musicales
+                          </li>
+                          <!-- Permiso 4 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso4" checked/>
+                              <label class="form-check-label" for="permiso4"></label>
+                            </div>
+                            Configurador
+                          </li>
+                          <!-- Permiso 5 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso5" checked/>
+                              <label class="form-check-label" for="permiso5"></label>
+                            </div>
+                            C. Adquisicionnes
+                          </li>
+                          <!-- Permiso 6 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso6"/>
+                              <label class="form-check-label" for="permiso6"></label>
+                            </div>
+                            C. Carta vestuario
+                          </li>
+                          <!-- Permiso 7 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso7"/>
+                              <label class="form-check-label" for="permiso7"></label>
+                            </div>
+                            C. Deportes noticieros
+                          </li>
+                          <!-- Permiso 8 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso8"/>
+                              <label class="form-check-label" for="permiso8"></label>
+                            </div>
+                            C. Libretos
+                          </li>
+                          <!-- Permiso 9 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso9"checked />
+                              <label class="form-check-label" for="permiso9"></label>
+                            </div>
+                            C. Libretos unitarios
+                          </li>
+                          <!-- Permiso 10 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso10" checked/>
+                              <label class="form-check-label" for="permiso10"></label>
+                            </div>
+                            C. Siho
+                          </li>
+                          <!-- Permiso 11 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso11"/>
+                              <label class="form-check-label" for="permiso11"></label>
+                            </div>
+                            Inserciones títulos musicales
+                          </li>
+                          <!-- Permiso 12 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso12"/>
+                              <label class="form-check-label" for="permiso12"></label>
+                            </div>
+                            Mantenimiento catálogos
+                          </li>
+                          <!-- Permiso 13 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso13" checked/>
+                              <label class="form-check-label" for="permiso13"></label>
+                            </div>
+                            Mantenimiento Purge
+                          </li>
+                          <!-- Permiso 14 -->
+                          <li class="list-group-item">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="permiso14"/>
+                              <label class="form-check-label" for="permiso14"></label>
+                            </div>
+                            Pagos libretos Telenovelas
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="py-4 course d-flex justify-content-center" style="position: relative;">
+                      <img src="assets/images/back/back-banner.png" alt="banner">
+                      <div class="course-text" style="position: absolute;">
+                        <p>Curso de Capacitación en <br> Derechos de Autor y Regalías</p>
+                        <button class="add-btn">Conoce más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Lógica para mostrar/ocultar contraseña
+    document.querySelectorAll('.toggle-password').forEach(button => {
+      button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        const input = document.getElementById(targetId);
+        const icon = button.querySelector('i');
+
+        if (input.type === 'password') {
+          input.type = 'text';
+          icon.classList.remove('bi-eye');
+          icon.classList.add('bi-eye-slash');
+        } else {
+          input.type = 'password';
+          icon.classList.remove('bi-eye-slash');
+          icon.classList.add('bi-eye');
+        }
+      });
+    });
+  </script>
+  <script>
+
+    const hamburger = document.getElementById('hamburger');
+    const body = document.querySelector('body'); 
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', function () {
+      menu.classList.toggle('active');
+      body.classList.toggle('menu-open');
+      hamburger.classList.toggle('active'); 
+    });
+
+
+  </script>
+  <script src="js/menu.js"></script>
+  <script src="js/crud.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/accordion-icon.js"></script>
+  <script src="js/url.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
