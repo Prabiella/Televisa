@@ -171,7 +171,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-center">
-          <button class="log-out-btn">
+          <button class="log-out-btn mb-5">
             Cerrar sesión
             <img src="assets/images/icons/logout.svg" alt="cerrar sesión">
           </button>
@@ -192,7 +192,7 @@
           </header>
           <div>
 
-            <div class="container my-5">              
+            <div class="d-flex flex-column align-items-start m-md-5">              
                 <!-- Filtros -->
                 <div class="col-12 col-lg-9 filters table-content d-flex flex-column gap-2 p-4 mb-4">
                   <div class="filter-content row g-3 align-items-center justify-content-center">
@@ -293,10 +293,18 @@
                 </div>
               
                 <!-- Tabla -->
-                <div class="table-trans">
+                <div class="table-trans table-responsive col-12 col-lg-11">
                   <table class="table table-striped table-bordered">
                     <thead>
                       <tr>
+                        <th>Estatus</th>
+                        <th>No. Artículos</th>
+                        <th>Descripción</th>
+                        <th>Centro de costos</th>
+                        <th>Tipo</th>
+                        <th>Tipo</th>
+                        <th>Fecha</th>
+                        <th>Update</th>
                         <th>Estatus</th>
                         <th>No. Artículos</th>
                         <th>Descripción</th>
@@ -310,6 +318,14 @@
                     </thead>
                     <tbody>
                       <tr data-id="1">
+                        <td data-label="Estatus">3.0</td>
+                        <td data-label="No. Artículos">0001212212</td>
+                        <td data-label="Descripción" class="name-edit">Como dice el dicho cap 154-2022</td>
+                        <td data-label="Centro de costos">012222</td>
+                        <td data-label="Tipo">Capítulo</td>
+                        <td data-label="Tipo-2">Programa</td>
+                        <td data-label="Fecha">1900/01/01</td>
+                        <td data-label="Update">0001212212</td>
                         <td data-label="Estatus">3.0</td>
                         <td data-label="No. Artículos">0001212212</td>
                         <td data-label="Descripción" class="name-edit">Como dice el dicho cap 154-2022</td>
@@ -350,6 +366,14 @@
                         <td data-label="Tipo-2">Programa</td>
                         <td data-label="Fecha">1900/01/01</td>
                         <td data-label="Update">0001212212</td>
+                        <td data-label="Estatus">3.0</td>
+                        <td data-label="No. Artículos">0001212212</td>
+                        <td data-label="Descripción" class="name-edit">Como dice el dicho cap 155-2022</td>
+                        <td data-label="Centro de costos">012222</td>
+                        <td data-label="Tipo">Capítulo</td>
+                        <td data-label="Tipo-2">Programa</td>
+                        <td data-label="Fecha">1900/01/01</td>
+                        <td data-label="Update">0001212212</td>
                         <td>
                             <div class="custom-dropdown">
                                 <button class="custom-dropdown-toggle">
@@ -376,9 +400,11 @@
                     </tbody>
                   </table>
                 </div>
+            
+              </div>
               
                 <!-- Actualización de Campos -->
-                <div class="update-fields p-y4">
+                <div class="px-sm-3 px-md-5 mb-5 update-fields">
                   <h5 class="mb-3 text-danger">Actualización de campos</h5>
                   <div class="col-12 d-flex justify-content-between align-items-end flex-wrap gap-3 gap-lg-0">
                     <div class="col-12 col-lg-8 d-flex align-items-center flex-wrap gap-3">
@@ -400,8 +426,6 @@
                       </div>
                   </div>
                 </div>
-              </div>
-              
 
           </div>
         </div>
