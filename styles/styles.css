@@ -179,6 +179,7 @@ body {
 
 .menu-container.active .hamburger {
   left: 260px;
+  z-index: 1000;
 }
 
 .content {
@@ -561,6 +562,9 @@ body {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  /*   body.menu-open .content {
+      transform: translateX($menu-width);
+    } */
   /* Administrar Usuarios */
   /* Table responsive */
   /* Estilo botón crud */
@@ -733,10 +737,12 @@ body {
 .login-container .content {
   transition: transform 0.3s ease;
 }
-.login-container body.menu-open .content {
-  transform: translateX(300px);
-}
 @media (max-width: 768px) {
+  .login-container {
+    /*   body.menu-open .content {
+        transform: translateX($menu-width);
+      } */
+  }
   .login-container .menu {
     width: 100%;
     left: -100%;
@@ -761,9 +767,6 @@ body {
   }
   .login-container .content {
     transition: transform 0.3s;
-  }
-  .login-container body.menu-open .content {
-    transform: translateX(300px);
   }
 }
 .login-container .content-header header {
@@ -1357,16 +1360,16 @@ input#password {
 
 .menu-container.active .hamburger {
   left: 260px;
+  z-index: 10000;
 }
 
 .content {
   transition: transform 0.3s ease;
 }
 
-body.menu-open .content {
-  transform: translateX(300px);
-}
-
+/* body.menu-open .content {
+  transform: translateX($menu-width);
+} */
 @media (max-width: 768px) {
   .menu {
     width: 100%;
@@ -1377,6 +1380,9 @@ body.menu-open .content {
     transform: translateX(0);
     left: 0;
   }
+  /*   body.menu-open .content {
+      transform: translateX($menu-width);
+    } */
 }
 @media (max-width: 768px) and (max-width: 375px) {
   .menu.active {
@@ -1392,9 +1398,6 @@ body.menu-open .content {
   }
   .content {
     transition: transform 0.3s;
-  }
-  body.menu-open .content {
-    transform: translateX(300px);
   }
 }
 /* Administrar Usuarios */

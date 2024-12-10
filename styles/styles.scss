@@ -214,6 +214,7 @@ body {
 
 .menu-container.active .hamburger {
   left: $menu-width - 40px;
+  z-index:1000;
 }
 
 .content {
@@ -808,15 +809,16 @@ body {
   
   .menu-container.active .hamburger {
     left: $menu-width - 40px;
+
   }
   
   .content {
     transition: transform $transition-speed ease;
   }
   
-  body.menu-open .content {
+/*   body.menu-open .content {
     transform: translateX($menu-width);
-  }
+  } */
   
   @media (max-width: 768px) {
     .menu {
@@ -845,9 +847,9 @@ body {
       transition: transform $transition-speed;
     }
   
-    body.menu-open .content {
+  /*   body.menu-open .content {
       transform: translateX($menu-width);
-    }
+    } */
   }
   
   /* Administrar Usuarios */
@@ -1537,15 +1539,16 @@ input#password {
 
 .menu-container.active .hamburger {
   left: $menu-width - 40px;
+  z-index: 10000;
 }
 
 .content {
   transition: transform $transition-speed ease;
 }
 
-body.menu-open .content {
+/* body.menu-open .content {
   transform: translateX($menu-width);
-}
+} */
 
 @media (max-width: 768px) {
   .menu {
@@ -1574,9 +1577,9 @@ body.menu-open .content {
     transition: transform $transition-speed;
   }
 
-  body.menu-open .content {
+/*   body.menu-open .content {
     transform: translateX($menu-width);
-  }
+  } */
 }
 
 /* Administrar Usuarios */
