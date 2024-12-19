@@ -179,49 +179,68 @@
       </nav>
     </section>
     <section class="content content-header admin-user-content col-12">
-      <div class="d-flex flex-column flex-md-row">
-        <div class="col-md-7 col-lg-8 col-xxl-9 py-4 px-3">
+      <div class="d-flex flex-column">
+        <div class="col-12 py-4 px-3">
           <header>
             <div class="title-content d-flex align-items-center gap-3">
               <span>|</span>
-              <h1>Administrar usuarios</h1>
+              <h1>Contratos Libretos Unitarios</h1>
             </div>
             <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 py-2">
               <p class="px-4 m-0">Hola <span>Juan Perez</span>, bienvenido de nuevo</p>
-              <button class="add-btn"><span>+</span> Nuevo usuario</button>
+              <div class="d-flex align-items-center flex-wrap justify-content-center gap-2 pb-3">
+                <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="add-btn" id="saveEditButton">Guardar</button>
+              </div>
             </div>
           </header>
           <div>
 
             <div class="table-content p-4">
-              <div class="header-table-content d-flex flex-wrap gap-3 align-items-center justify-content-between">
-                <form class="search d-flex input-group" role="search">
-                  <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-                </form>
-                <button class="btn-filter px-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  Filtros
-                  <img src="assets/images/icons/filtros.svg" alt="Filtros">
-                </button>
+              <div class="d-flex align-items-center flex-wrap">
+                <div
+                  class="col-12 col-xxl-6 header-table-content d-flex gap-3 align-items-center justify-content-between flex-wrap">
+                  <form class="search d-flex input-group" role="search">
+                    <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                  </form>
+                  <button class="btn-filter px-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Filtros
+                    <img src="assets/images/icons/filtros.svg" alt="Filtros">
+                  </button>
+                </div>
+                <div
+                  class="col-12 col-lg-6 d-flex justify-content-center justify-content-md-between flex-wrap gap-3 py-4 py-xxl-0">
+                  <div class="d-flex flex-wrap gap-3 px-3">
+                    <img src="assets/images/icons/cargar.svg" alt="cargar" style="width: 40px;">
+                    <img src="assets/images/icons/exportar.svg" alt="exportar" style="width: 53px;">
+                  </div>
+                </div>
               </div>
-              <div>
-                <table class="table my-3">
+              <div class="table-trans table-responsive">
+                <table class="table table-striped my-3">
                   <thead>
                     <tr>
-                      <th>Nombre</th>
-                      <th>Apellido</th>
-                      <th>Área</th>
+                      <th>MENSAJE ACK</th>
+                      <th>No. Articulo</th>
+                      <th>Descripción</th>
+                      <th>Centro de titulo-español</th>
+                      <th>Fecha de Adquisición</th>
                       <th>Tipo</th>
-                      <th>Nick</th>
+                      <th>Tipo Género</th>
+                      <th>Fecha Inicio</th>
                       <th> </th>
                     </tr>
                   </thead>
                   <tbody id="table-body">
                     <tr>
-                      <td data-label="Nombre">Luis</td>
-                      <td data-label="Apellido">Gomez</td>
-                      <td data-label="Área">Legal</td>
-                      <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick" class="name-edit">JPerez</td>
+                      <td data-label="Nombre">T. Exitosa</td>
+                      <td data-label="No. Articulo">0001212212</td>
+                      <td data-label="Descripción">Vecinos (5a. Temporada) Cap.13- Castro Garcia…</td>
+                      <td data-label="Centro de titulo-español">012222</td>
+                      <td data-label="Fecha de Adquisición">1900/01/01</td>
+                      <td data-label="Tipo">Capítulo</td>
+                      <td data-label="Tipo Género">Programa</td>
+                      <td data-label="Fecha Inicio">2022/11/17</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -246,11 +265,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td data-label="Nombre">Juan Luis</td>
-                      <td data-label="Apellido">Pérez Dias</td>
-                      <td data-label="Área">Legal</td>
-                      <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick" class="name-edit">JPerez</td>
+                      <td data-label="Nombre">T. Exitosa</td>
+                      <td data-label="No. Articulo">0001212212</td>
+                      <td data-label="Descripción">Vecinos (5a. Temporada) Cap.13- Castro Garcia…</td>
+                      <td data-label="Centro de titulo-español">012222</td>
+                      <td data-label="Fecha de Adquisición">1900/01/01</td>
+                      <td data-label="Tipo">Capítulo</td>
+                      <td data-label="Tipo Género">Programa</td>
+                      <td data-label="Fecha Inicio">2022/11/17</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -275,11 +297,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td data-label="Nombre">Juan Luis</td>
-                      <td data-label="Apellido">Pérez Dias</td>
-                      <td data-label="Área">Legal</td>
-                      <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick" class="name-edit">JPerez</td>
+                      <td data-label="Nombre">T. Exitosa</td>
+                      <td data-label="No. Articulo">0001212212</td>
+                      <td data-label="Descripción">Vecinos (5a. Temporada) Cap.13- Castro Garcia…</td>
+                      <td data-label="Centro de titulo-español">012222</td>
+                      <td data-label="Fecha de Adquisición">1900/01/01</td>
+                      <td data-label="Tipo">Capítulo</td>
+                      <td data-label="Tipo Género">Programa</td>
+                      <td data-label="Fecha Inicio">2022/11/17</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -304,11 +329,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td data-label="Nombre">Juan Luis</td>
-                      <td data-label="Apellido">Pérez Dias</td>
-                      <td data-label="Área">Legal</td>
-                      <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick" class="name-edit">JPerez</td>
+                      <td data-label="Nombre">T. Exitosa</td>
+                      <td data-label="No. Articulo">0001212212</td>
+                      <td data-label="Descripción">Vecinos (5a. Temporada) Cap.13- Castro Garcia…</td>
+                      <td data-label="Centro de titulo-español">013333</td>
+                      <td data-label="Fecha de Adquisición">1900/01/01</td>
+                      <td data-label="Tipo">Capítulo</td>
+                      <td data-label="Tipo Género">Programa</td>
+                      <td data-label="Fecha Inicio">2022/11/17</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -333,40 +361,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td data-label="Nombre">Juan Luis</td>
-                      <td data-label="Apellido">Pérez Dias</td>
-                      <td data-label="Área">Legal</td>
-                      <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick" class="name-edit">JPerez</td>
-                      <td>
-                        <div class="custom-dropdown">
-                          <button class="custom-dropdown-toggle">
-                            <span class="custom-dot"></span>
-                            <span class="custom-dot"></span>
-                            <span class="custom-dot"></span>
-                          </button>
-                          <div class="custom-dropdown-menu">
-                            <div class="d-flex gap-3">
-                              <button class="custom-menu-item edit-btn">
-                                <img src="assets/images/icons/editar-1.svg" alt="editar">
-                              </button>
-                              <button class="custom-menu-item delete-btn">
-                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
-                              </button>
-                              <button class="custom-menu-item see-btn">
-                                <img src="assets/images/icons/ver.svg" alt="ver">
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-label="Nombre">Juan Luis</td>
-                      <td data-label="Apellido">Pérez Dias</td>
-                      <td data-label="Área">Legal</td>
-                      <td data-label="Tipo">Auxiliar</td>
-                      <td data-label="Nick" class="name-edit">JPerez</td>
+                      <td data-label="Nombre">T. Exitosa</td>
+                      <td data-label="No. Articulo">0001212212</td>
+                      <td data-label="Descripción">Vecinos (5a. Temporada) Cap.13- Castro Garcia…</td>
+                      <td data-label="Centro de titulo-español">012222</td>
+                      <td data-label="Fecha de Adquisición">1900/01/01</td>
+                      <td data-label="Tipo">Capítulo</td>
+                      <td data-label="Tipo Género">Programa</td>
+                      <td data-label="Fecha Inicio">2022/11/17</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -416,30 +418,24 @@
               </div>
             </div>
 
+            <div class="d-flex align-items-end flex-wrap gap-2 p-4">
+              <div class="d-flex flex-column">
+                <small class="val-status">Valores de status</small>
+                <span class="badge badge-yellow"><b>0.0 |</b> Por revisar</span>
+              </div>
+              <span class="badge badge-purple"><b> 1.0 |</b> Revisado</span>
+              <span class="badge badge-green"><b> 2.0 |</b> Autorizado</span>
+              <span class="badge badge-royal-blue"><b> 3.0 |</b> Enviado</span>
+              <span class="badge badge-gray"><b> -1.0 |</b> Inhabilitado</span>
+            </div>
+
           </div>
         </div>
-        <div class="col-md-5 col-lg-4 col-xxl-3">
+        <div class="col-12">
           <div class="data-user-content">
             <div class="text-end p-3">
               <small>Administrador de vistas - <span class="text-pink">Template 2.0</span></small>
             </div>
-            <!-- Tab navigation -->
-            <ul class="nav nav-tabs nav-adminuser py-3" id="userTabs" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="user-data-tab" data-bs-toggle="tab" data-bs-target="#user-data"
-                  type="button" role="tab" aria-controls="user-data" aria-selected="true">
-                  Datos del usuario
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="user-permissions-tab" data-bs-toggle="tab"
-                  data-bs-target="#user-permissions" type="button" role="tab" aria-controls="user-permissions"
-                  aria-selected="false">
-                  Permisos de usuario
-                </button>
-              </li>
-            </ul>
-
             <!-- Tab content -->
             <div class="tab-content input-template mt-3" id="userTabsContent">
               <!-- Datos del usuario -->
@@ -450,225 +446,67 @@
                     <h2 class="accordion-header" id="user-data-heading">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#user-data-collapse" aria-expanded="true" aria-controls="user-data-collapse">
-                        <img src="assets/images/icons/user-orange.svg" alt="usuario"> Datos del usuario
+                        Datos del contrato seleccionado
                       </button>
                     </h2>
                     <div id="user-data-collapse" class="accordion-collapse collapse show"
                       aria-labelledby="user-data-heading" data-bs-parent="#user-data-accordion">
-                      <div class="accordion-body p-0">
-                        <form id="user-data-form">
-                          <!-- Nombre -->
-                          <div class="px-4 mb-3">
-                            <label for="user-name" class="form-label">Nombre(s)</label>
-                            <input type="text" class="form-control" id="user-name" placeholder="Juan Pérez">
+                      <div class="accordion-body p-0 pb-5">
+                        <form id="user-data-form" class="d-flex align-items-end flex-wrap">
+                          <!-- Orden -->
+                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                            <label for="orden" class="form-label">Orden</label>
+                            <input type="text" class="form-control" id="orden" placeholder="01291281270012">
                           </div>
-                          <!-- Apellido -->
-                          <div class="px-4 mb-3">
-                            <label for="user-lastname" class="form-label">Apellido(s)</label>
-                            <input type="text" class="form-control" id="user-lastname" placeholder="Pérez Dias">
+                          <!-- Título en español -->
+                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                            <label for="titulo-español" class="form-label">Título en español</label>
+                            <input type="text" class="form-control" id="titulo-español" placeholder="Como dice el dicho">
                           </div>
-                          <!-- Nick -->
-                          <div class="px-4 mb-3">
-                            <label for="user-nick" class="form-label">Nick</label>
-                            <input type="text" class="form-control" id="user-nick" placeholder="Pérez Dias">
-                          </div>
-                          <!-- Área -->
-                          <div class="px-4 mb-3">
-                            <label for="user-role" class="form-label">Área</label>
+                          <!-- Tipo de género -->
+                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                            <label for="user-role" class="form-label">Tipo de género</label>
                             <select class="form-select" id="user-role">
-                              <option value="admin">Legal</option>
+                              <option value="admin">PROGRAMA</option>
                               <option value="editor">option</option>
                               <option value="viewer">option</option>
                             </select>
                           </div>
-                          <!-- Tipo -->
-                          <div class="px-4 mb-3">
-                            <label for="user-role" class="form-label">Tipo</label>
-                            <select class="form-select" id="user-role">
-                              <option value="admin">Auxiliar</option>
-                              <option value="editor">option</option>
-                              <option value="viewer">option</option>
-                            </select>
-                          </div>
-                          <div class="pass-content text-white py-2 px-4">
-                            <!-- Campo Contraseña -->
-                            <div class="mb-3">
-                              <label for="password" class="form-label">Contraseña</label>
-                              <div class="input-group">
-                                <input type="password" class="form-control" id="password" value="QWERTY123"/>
-                                <button class="btn btn-eye toggle-password" type="button" data-target="password">
-                                  <i class="bi bi-eye"></i>
-                                </button>
-                              </div>
+
+                          <div class="col-12 d-flex flex-column flex-md-row flex-wrap gap-3 px-4 py-3">
+                            <div>
+                              <label for="inicio" class="form-label">Inicio fecha al aire</label>
+                              <input type="date" class="form-control date-input" id="inicio">
                             </div>
-                            <!-- Campo Confirmar Contraseña -->
-                            <div class="mb-3">
-                              <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
-                              <div class="input-group">
-                                <input type="password" class="form-control" id="password" value="QWERTY123"/>
-                                <button class="btn btn-eye toggle-password" type="button" data-target="password">
-                                  <i class="bi bi-eye"></i>
-                                </button>
-                              </div>
+                            <div>
+                              <label for="fin" class="form-label">Fecha fin al aire</label>
+                              <input type="date" class="form-control date-input" id="fin">
                             </div>
                           </div>
+
+                          <!-- Centro de costos -->
+                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                            <label for="centro-costos" class="form-label">Centro de costos</label>
+                            <input type="text" class="form-control" id="centro-costos" placeholder="1201281281212">
+                          </div>
+
+                          <div class="col-12 px-4 mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label px-3">Descripción</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                              placeholder="Como dice el dicho, programa……"></textarea>
+                            <div class="d-flex justify-content-end p-4">
+                              <button class="add-btn mb-5">Agregar</button>
+                            </div>
+                          </div>
+
                         </form>
+
                       </div>
                     </div>
-                    <div class="py-4 course d-flex justify-content-center" style="position: relative;">
-                      <img src="assets/images/back/back-banner.png" alt="">
-                      <div class="course-text" style="position: absolute;">
-                        <p>Curso de Capacitación en <br> Derechos de Autor y Regalías</p>
-                        <button class="add-btn">Conoce más</button>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>
-
-              <!-- Permisos de usuario -->
-              <div class="tab-pane fade" id="user-permissions" role="tabpanel" aria-labelledby="user-permissions-tab">
-                <div class="accordion" id="user-permissions-accordion">
-                  <div class="accordion-item m-0">
-                    <h2 class="accordion-header" id="user-permissions-heading">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#user-permissions-collapse" aria-expanded="true"
-                        aria-controls="user-permissions-collapse">
-                        <img src="assets/images/icons/user-orange.svg" alt="usuario"> Permisos de usuario
-                      </button>
-                    </h2>
-
-                    <div id="user-permissions-collapse" class="accordion-collapse collapse show"
-                      aria-labelledby="user-permissions-heading" data-bs-parent="#user-permissions-accordion">
-                      <div class="accordion-body p-0">
-                        <!-- Lista de permisos -->
-                        <ul class="switch-list">
-                          <!-- Permiso 1 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso1" checked/>
-                              <label class="form-check-label" for="permiso1"></label>
-                            </div>
-                            Administrador de usuarios
-                          </li>
-                          <!-- Permiso 2 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso2" checked/>
-                              <label class="form-check-label" for="permiso2"></label>
-                            </div>
-                            Campos custom IPLS
-                          </li>
-                          <!-- Permiso 3 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso3"/>
-                              <label class="form-check-label" for="permiso3"></label>
-                            </div>
-                            Catálogo títulos musicales
-                          </li>
-                          <!-- Permiso 4 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso4" checked/>
-                              <label class="form-check-label" for="permiso4"></label>
-                            </div>
-                            Configurador
-                          </li>
-                          <!-- Permiso 5 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso5" checked/>
-                              <label class="form-check-label" for="permiso5"></label>
-                            </div>
-                            C. Adquisicionnes
-                          </li>
-                          <!-- Permiso 6 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso6"/>
-                              <label class="form-check-label" for="permiso6"></label>
-                            </div>
-                            C. Carta vestuario
-                          </li>
-                          <!-- Permiso 7 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso7"/>
-                              <label class="form-check-label" for="permiso7"></label>
-                            </div>
-                            C. Deportes noticieros
-                          </li>
-                          <!-- Permiso 8 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso8"/>
-                              <label class="form-check-label" for="permiso8"></label>
-                            </div>
-                            C. Libretos
-                          </li>
-                          <!-- Permiso 9 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso9"checked />
-                              <label class="form-check-label" for="permiso9"></label>
-                            </div>
-                            C. Libretos unitarios
-                          </li>
-                          <!-- Permiso 10 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso10" checked/>
-                              <label class="form-check-label" for="permiso10"></label>
-                            </div>
-                            C. Siho
-                          </li>
-                          <!-- Permiso 11 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso11"/>
-                              <label class="form-check-label" for="permiso11"></label>
-                            </div>
-                            Inserciones títulos musicales
-                          </li>
-                          <!-- Permiso 12 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso12"/>
-                              <label class="form-check-label" for="permiso12"></label>
-                            </div>
-                            Mantenimiento catálogos
-                          </li>
-                          <!-- Permiso 13 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso13" checked/>
-                              <label class="form-check-label" for="permiso13"></label>
-                            </div>
-                            Mantenimiento Purge
-                          </li>
-                          <!-- Permiso 14 -->
-                          <li class="list-group-item">
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" id="permiso14"/>
-                              <label class="form-check-label" for="permiso14"></label>
-                            </div>
-                            Pagos libretos Telenovelas
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="py-4 course d-flex justify-content-center" style="position: relative;">
-                      <img src="assets/images/back/back-banner.png" alt="banner">
-                      <div class="course-text" style="position: absolute;">
-                        <p>Curso de Capacitación en <br> Derechos de Autor y Regalías</p>
-                        <button class="add-btn">Conoce más</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
 
@@ -677,44 +515,45 @@
     </section>
   </main>
 
-   <!-- Modal de confirmación tabla -->
-<div class="modal fade" id="confirmDeleteTableModal" tabindex="-1" aria-labelledby="confirmDeleteTableLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="confirmDeleteTableLabel">Confirmar eliminación de elemento</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        <p>¿Estás seguro de que deseas eliminar <u id="deleteItemDescripcion"></u>?</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="add-btn" id="confirmDeleteTableButton">Eliminar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal de editar -->
-<div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content input-template">
-      <div class="modal-header">
-        <h5 class="modal-title" id="editItemModalLabel">Editar Elemento</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Campos dinámicos -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-gray" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="add-btn" id="saveEditButton">Guardar Cambios</button>
+  <!-- Modal de confirmación tabla -->
+  <div class="modal fade" id="confirmDeleteTableModal" tabindex="-1" aria-labelledby="confirmDeleteTableLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmDeleteTableLabel">Confirmar eliminación de elemento</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>¿Estás seguro de que deseas eliminar <u id="deleteItemDescripcion"></u>?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="add-btn" id="confirmDeleteTableButton">Eliminar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+
+  <!-- Modal de editar -->
+  <div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content input-template">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editItemModalLabel">Editar Elemento</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Campos dinámicos -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-gray" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="add-btn" id="saveEditButton">Guardar Cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/password.js"></script>
   <script src="js/menu.js"></script>

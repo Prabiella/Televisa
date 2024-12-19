@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisa Univisión</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <section class="menu-container">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="menu" id="menu">
+                <img class="logo" src="assets/images/logos/televisa-univision-color.svg" alt="">
+
+                <div class="accordion my-5" id="accordionExample">
+                    <div class="accordion-item acc-1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#coll-adminuser-1" aria-expanded="false" aria-controls="coll-adminuser-1">
+                            <img id="icon-user" src="assets/images/icons/user.svg" alt="usuario"> Iniciar sesión
+                        </button>
+                        <div id="coll-adminuser-1" class="accordion-collapse collapse" data-bs-parent="#admin-user-1">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                    <li>
+                                        <a href="administrar-usuarios.html">Administrar usuarios</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-2">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#coll-adminuser-2" aria-expanded="false"
+                                aria-controls="coll-adminuser-2">
+                                <img src="assets/images/icons/vistas.svg" alt="vistas"> Vistas
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-2" class="accordion-collapse collapse" data-bs-parent="#admin-user-2">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                    <li>
+                                        <a href="">Productos Unitarios SIHO</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Productos Libretos Unitarios</a>
+                                    </li>
+                                    <li>
+                                        <a href="Righ-holders.html">Righ Holders</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#coll-adminuser-3" aria-expanded="false"
+                                aria-controls="coll-adminuser-3">
+                                <img src="assets/images/icons/contratos.svg" alt="contratos"> Contratos
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-3" class="accordion-collapse collapse" data-bs-parent="#admin-user-3">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                    <li><a href=""> Libretos Telenovelas</a></li>
+                                    <li><a href=""> Libretos Unitarios</a></li>
+                                    <li><a href=""> Contratos Adquisiciones</a></li>
+                                    <li><a href=""> SHIO</a></li>
+                                    <li><a href=""> Deportes y Noticieros</a></li>
+                                    <li><a href=""> Carta Vestuario</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#coll-adminuser-4" aria-expanded="false"
+                                aria-controls="coll-adminuser-4">
+                                <img src="assets/images/icons/Mantenimiento.svg" alt="mantenimiento"> Mantenimiento
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-4" class="accordion-collapse collapse" data-bs-parent="#admin-user-4">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                    <li><a href="tablas.html">Tablas</a></li>
+                                    <li><a href="">Catálogos</a>
+                                        <ul>
+                                            <li>ACQ_catForemats</li>
+                                            <li>ACQ_catMedios</li>
+                                            <li>ACQ_catLanguajes</li>
+                                            <li>catORG_ID</li>
+                                            <li>CAT_TIPO_PROGRAMA</li>
+                                            <li>catCalendarioPagoSiho</li>
+                                            <li>catContSecurity</li>
+                                            <li>catCurrency</li>
+                                            <li>catDaletTituloMusicalSoc..</li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-5">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#coll-adminuser-5" aria-expanded="false"
+                                aria-controls="coll-adminuser-5">
+                                <img src="assets/images/icons/reportes.svg" alt="mantenimiento"> Reportes
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-5" class="accordion-collapse collapse" data-bs-parent="#admin-user-5">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                    <li><a href="">Histórico de cambios</a></li>
+                                    <li><a href="">Bitácora Productos</a></li>
+                                    <li><a href="">Bitácora RightHolders</a></li>
+                                    <li><a href="">Bitácora Contratos</a></li>
+                                    <li><a href="">Bitácora Pagos</a></li>
+                                    <li><a href="">Bitácora Request de pagos</a></li>
+                                    <li><a href="">Bitácora Errores</a></li>
+                                    <li><a href="reporte-estadistico.html">Reporte Estadístico</a></li>
+                                    <li><a href="">Reporte Inserciones</a></li>
+                                    <li><a href="">Bitácora DALET</a>
+                                        <ul>
+                                            <li><a href="">Productos</a></li>
+                                            <li><a href="">Contratos</a></li>
+                                            <li><a href="">Títulos musicales</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-6">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#coll-adminuser-6" aria-expanded="false"
+                                aria-controls="coll-adminuser-6">
+                                <img src="assets/images/icons/configurar.svg" alt="configurar"> Configurar
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-6" class="accordion-collapse collapse" data-bs-parent="#admin-user-6">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-7">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#coll-adminuser-7" aria-expanded="false"
+                                aria-controls="coll-adminuser-7">
+                                <img src="assets/images/icons/horas.svg" alt="mantenimiento"> Horas
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-7" class="accordion-collapse collapse" data-bs-parent="#admin-user-7">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="log-out-btn mb-5">
+                        Cerrar sesión
+                        <img src="assets/images/icons/logout.svg" alt="cerrar sesión">
+                    </button>
+                </div>
+            </nav>
+        </section>
+        <section class="content content-header input-template maintenance col-12">
+            <div class="d-flex flex-column ">
+                <div class="col-lg-11 py-4 px-3">
+                    <header>
+                        <div class="title-content d-flex align-items-center gap-3">
+                            <span>|</span>
+                            <h1>Reporte Estadístico</h1>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 py-2">
+                            <p class="px-4 m-0">Hola <span>Juan Perez</span>, bienvenido de nuevo</p>
+                        </div>
+                    </header>
+                    <div>
+
+                        <div class="d-flex flex-column align-items-start m-md-5">
+                            <!-- Filtros -->
+                            <div class="col-12 col-lg-11 filters table-content d-flex flex-column gap-2 p-4 mb-4">
+                                <div>
+                                    <div class="d-flex flex-wrap gap-3">
+
+
+                                        <!-- Select Productos -->
+                                        <div>
+                                            <div class="custom-multi-select" id="multiSelect1">
+                                                <div class="dropdown">
+                                                    <button
+                                                        class="drop-input form-select d-flex align-items-center justify-content-start"
+                                                        id="multiSelectDropdown1" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <div class="selected-options d-flex flex-wrap gap-1"></div>
+                                                        <span class="place">Seleccionar Productos</span>
+                                                    </button>
+                                                    <ul class="dropdown-menu w-100 dropdown-options"
+                                                        aria-labelledby="multiSelectDropdown1"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Select Estatus -->
+                                        <div>
+                                            <div class="custom-multi-select" id="multiSelect2">
+                                                <div class="dropdown">
+                                                    <button
+                                                        class="drop-input form-select d-flex align-items-center justify-content-start"
+                                                        id="multiSelectDropdown2" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <div class="selected-options d-flex flex-wrap gap-1"></div>
+                                                        <span class="place">Estatus</span>
+                                                    </button>
+                                                    <ul class="dropdown-menu w-100 dropdown-options"
+                                                        aria-labelledby="multiSelectDropdown2"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Select Origen -->
+                                        <div>
+                                            <select class="form-select">
+                                                <option selected disabled>Origen</option>
+                                                <option value="1">Opción 1</option>
+                                                <option value="2">Opción 2</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Select Gráfica -->
+                                        <div>
+                                            <select class="form-select">
+                                                <option selected disabled>Gráfica</option>
+                                                <option value="1">Gráfico 1</option>
+                                                <option value="2">Gráfico 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column flex-md-row flex-wrap gap-3 py-3">
+                                    <div>
+                                        <label for="inicio" class="form-label">Fecha inicio</label>
+                                        <input type="date" class="form-control date-input" id="inicio">
+                                    </div>
+                                    <div>
+                                        <label for="fin" class="form-label">Fecha fin</label>
+                                        <input type="date" class="form-control date-input" id="fin">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div
+                                class="d-flex justify-content-md-between align-items-center flex-column flex-md-row flex-wrap col-12 col-lg-11">
+                                <ul class="nav nav-pills nav-adminuser mb-3 px-md-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link nav-gray active" id="pills-resumen-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-resumen" type="button"
+                                            role="tab" aria-controls="pills-resumen"
+                                            aria-selected="true">Resumen</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link nav-gray" id="pills-subreporte-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-subreporte" type="button"
+                                            role="tab" aria-controls="pills-subreporte"
+                                            aria-selected="false">Subreporte</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link nav-gray" id="pills-consulta-vista-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-consulta-vista" type="button"
+                                            role="tab" aria-controls="pills-consulta-vista"
+                                            aria-selected="false">Consulta Vista</button>
+                                    </li>
+                                </ul>
+                                <div class="d-flex gap-3 p-3 p-md-0">
+                                    <img src="assets/images/icons/cargar.svg" alt="cargar">
+                                    <img src="assets/images/icons/exportar.svg" alt="exportar">
+                                </div>
+                            </div>
+                            <div class="tab-content col-12 col-lg-11" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-resumen" role="tabpanel"
+                                    aria-labelledby="pills-resumen-tab" tabindex="0">
+                                    <!-- Tabla -->
+                                    <div class="table-trans table-responsive py-md-5">
+                                        <table class="table table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Nombre</th>
+                                                    <th>Est. 0.0</th>
+                                                    <th>Est. 1.0</th>
+                                                    <th>Est. -1.0</th>
+                                                    <th>Est. -1.5</th>
+                                                    <th>Est. 2.0</th>
+                                                    <th>Est. 3.0</th>
+                                                    <th>Total de registros</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr data-id="1" class="m-0">
+                                                    <td data-label="FOLIO_CONTRATO">27</td>
+                                                    <td data-label="RFC">Total de registros</td>
+                                                    <td data-label="NOMB">6,667</td>
+                                                    <td data-label="DESCRIB">16,667</td>
+                                                    <td data-label="CVE_P">9,667</td>
+                                                    <td data-label="PROG">0</td>
+                                                    <td data-label="TIPO">0</td>
+                                                    <td data-label="TIPO">19,667</td>
+                                                    <td data-label="DESC_">59,667</td>
+                                                </tr>
+                                                <tr data-id="2" class="m-0">
+                                                    <td data-label="FOLIO_CONTRATO">27</td>
+                                                    <td data-label="RFC">Total de registros</td>
+                                                    <td data-label="NOMB">6,667</td>
+                                                    <td data-label="DESCRIB">16,667</td>
+                                                    <td data-label="CVE_P">9,667</td>
+                                                    <td data-label="PROG">0</td>
+                                                    <td data-label="TIPO">0</td>
+                                                    <td data-label="TIPO">19,667</td>
+                                                    <td data-label="DESC_">59,667</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                    <section class="content-chart pb-5">
+                                        <h3 class="text-center" style="color: #7A86A1;">Productos Unitarios
+                                            SIHO/Libretos Unitarios</h3>
+                                        <canvas id="myChart" width="400" height="200"></canvas>
+                                    </section>
+                                </div>
+                                <div class="tab-pane fade" id="pills-subreporte" role="tabpanel"
+                                    aria-labelledby="pills-subreporte-tab" tabindex="0">...2
+                                </div>
+                                <div class="tab-pane fade" id="pills-consulta-vista" role="tabpanel"
+                                    aria-labelledby="pills-consulta-vista-tab" tabindex="0">
+
+                                    <!-- Filtros -->
+                                    <div class="col-12 filters table-content d-flex flex-column gap-2 p-4 mb-4 mt-5">
+                                        <div class="d-flex flex-column flex-md-row align-items-center flex-wrap gap-4 py-3">
+                                            <div>
+                                                <label for="inicio" class="form-label">Fecha inicio</label>
+                                                <input type="date" class="form-control date-input" id="inicio">
+                                            </div>
+                                            <div>
+                                                <label for="fin" class="form-label">Fecha fin</label>
+                                                <input type="date" class="form-control date-input" id="fin">
+                                            </div>
+                                            <div>
+                                                <label class="p-1" for="valor">Centro de costos</label>
+                                                <input id="valor" type="text" class="form-control"
+                                                    placeholder="1201281281212">
+                                            </div>
+                                            <div>
+                                                <span style="background: #F9C232;padding: 0.7em 2em;border-radius: 20px;font-size: 20px;">Total | <b>663</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Tabla -->
+                                    <div class="table-trans table-responsive py-md-5">
+                                        <table class="table table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>FOLIO_CONTRATO</th>
+                                                    <th>RFC</th>
+                                                    <th>NOMB</th>
+                                                    <th>DESCRIB</th>
+                                                    <th>CVE_P</th>
+                                                    <th>PROG</th>
+                                                    <th>TIPO</th>
+                                                    <th>TIPO</th>
+                                                    <th>DESC_</th>
+                                                    <th>TOTAL</th>
+                                                    <th>PROV</th>
+                                                    <th>FECHA</th>
+                                                    <th>FECHA</th>
+                                                    <th>SOUR</th>
+                                                    <th>STATUS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr data-id="1">
+                                                    <td data-label="FOLIO_CONTRATO">40000233444040400</td>
+                                                    <td data-label="RFC">RATF77876576</td>
+                                                    <td data-label="NOMB">MORA HERNA..</td>
+                                                    <td data-label="DESCRIB">PROGR..</td>
+                                                    <td data-label="CVE_P">01233..</td>
+                                                    <td data-label="PROG">HOY IV..</td>
+                                                    <td data-label="TIPO">103</td>
+                                                    <td data-label="TIPO">400</td>
+                                                    <td data-label="DESC_">Director…</td>
+                                                    <td data-label="TOTAL">1</td>
+                                                    <td data-label="PROV">Músicos</td>
+                                                    <td data-label="FECHA">17/06/24</td>
+                                                    <td data-label="FECHA">17/09/24</td>
+                                                    <td data-label="SOUR">SIHO</td>
+                                                    <td data-label="STATUS">1.0</td>
+                                                </tr>
+                                                <tr data-id="1">
+                                                    <td data-label="FOLIO_CONTRATO">40000233444040400</td>
+                                                    <td data-label="RFC">RATF77876576</td>
+                                                    <td data-label="NOMB">MORA HERNA..</td>
+                                                    <td data-label="DESCRIB">PROGR..</td>
+                                                    <td data-label="CVE_P">01233..</td>
+                                                    <td data-label="PROG">HOY IV..</td>
+                                                    <td data-label="TIPO">103</td>
+                                                    <td data-label="TIPO">400</td>
+                                                    <td data-label="DESC_">Director…</td>
+                                                    <td data-label="TOTAL">1</td>
+                                                    <td data-label="PROV">Músicos</td>
+                                                    <td data-label="FECHA">17/06/24</td>
+                                                    <td data-label="FECHA">17/09/24</td>
+                                                    <td data-label="SOUR">SIHO</td>
+                                                    <td data-label="STATUS">1.0</td>
+                                                </tr>
+                                                <tr data-id="1">
+                                                    <td data-label="FOLIO_CONTRATO">40000233444040400</td>
+                                                    <td data-label="RFC">RATF77876576</td>
+                                                    <td data-label="NOMB">MORA HERNA..</td>
+                                                    <td data-label="DESCRIB">PROGR..</td>
+                                                    <td data-label="CVE_P">01233..</td>
+                                                    <td data-label="PROG">HOY IV..</td>
+                                                    <td data-label="TIPO">103</td>
+                                                    <td data-label="TIPO">400</td>
+                                                    <td data-label="DESC_">Director…</td>
+                                                    <td data-label="TOTAL">1</td>
+                                                    <td data-label="PROV">Músicos</td>
+                                                    <td data-label="FECHA">17/06/24</td>
+                                                    <td data-label="FECHA">17/09/24</td>
+                                                    <td data-label="SOUR">SIHO</td>
+                                                    <td data-label="STATUS">1.0</td>
+                                                </tr>
+                                                <tr data-id="1">
+                                                    <td data-label="FOLIO_CONTRATO">40000233444040400</td>
+                                                    <td data-label="RFC">RATF77876576</td>
+                                                    <td data-label="NOMB">MORA HERNA..</td>
+                                                    <td data-label="DESCRIB">PROGR..</td>
+                                                    <td data-label="CVE_P">01233..</td>
+                                                    <td data-label="PROG">HOY IV..</td>
+                                                    <td data-label="TIPO">103</td>
+                                                    <td data-label="TIPO">400</td>
+                                                    <td data-label="DESC_">Director…</td>
+                                                    <td data-label="TOTAL">1</td>
+                                                    <td data-label="PROV">Músicos</td>
+                                                    <td data-label="FECHA">17/06/24</td>
+                                                    <td data-label="FECHA">17/09/24</td>
+                                                    <td data-label="SOUR">SIHO</td>
+                                                    <td data-label="STATUS">1.0</td>
+                                                </tr>
+                                                <tr data-id="1">
+                                                    <td data-label="FOLIO_CONTRATO">40000233444040400</td>
+                                                    <td data-label="RFC">RATF77876576</td>
+                                                    <td data-label="NOMB">MORA HERNA..</td>
+                                                    <td data-label="DESCRIB">PROGR..</td>
+                                                    <td data-label="CVE_P">01233..</td>
+                                                    <td data-label="PROG">HOY IV..</td>
+                                                    <td data-label="TIPO">103</td>
+                                                    <td data-label="TIPO">400</td>
+                                                    <td data-label="DESC_">Director…</td>
+                                                    <td data-label="TOTAL">1</td>
+                                                    <td data-label="PROV">Músicos</td>
+                                                    <td data-label="FECHA">17/06/24</td>
+                                                    <td data-label="FECHA">17/09/24</td>
+                                                    <td data-label="SOUR">SIHO</td>
+                                                    <td data-label="STATUS">1.0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", () => {
+                                // Obtener todas las celdas de la tabla
+                                const cells = document.querySelectorAll("table td");
+
+                                cells.forEach(cell => {
+                                    // Verificar si el contenido está truncado
+                                    const isTruncated = cell.scrollWidth > cell.clientWidth;
+
+                                    // Si el contenido está truncado, agregar un tooltip dinámico
+                                    if (isTruncated) {
+                                        const originalText = cell.textContent || cell.innerText;
+                                        cell.setAttribute("title", originalText);  // Mostrar texto completo en el tooltip
+                                    }
+                                });
+                            });
+
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Función para manejar el dropdown personalizado
+            function initDropdown(dropdownId, options, removeTagsEnabled) {
+                const dropdownOptions = document.querySelector(`#${dropdownId} .dropdown-options`);
+                const selectedOptionsContainer = document.querySelector(`#${dropdownId} .selected-options`);
+                const place = document.querySelector(`#${dropdownId} .place`);
+
+                const selectedOptions = new Set();
+
+                // Renderizar las opciones del dropdown multiselect
+                function renderDropdown() {
+                    dropdownOptions.innerHTML = "";
+                    options.forEach((option) => {
+                        const isSelected = selectedOptions.has(option.value);
+                        const li = document.createElement("li");
+                        li.className = isSelected ? "selected" : "";
+                        li.innerHTML = `
+          <span>${option.text}</span>
+          ${isSelected ? '<span class="checkmark"> <img src="assets/images/icons/check-selected.svg" alt="check"> </span>' : ""}
+        `;
+                        li.addEventListener("click", () => toggleOption(option));
+                        dropdownOptions.appendChild(li);
+                    });
+                    updateSelectedTags();
+                }
+
+                // Alternar opciones seleccionadas
+                function toggleOption(option) {
+                    if (selectedOptions.has(option.value)) {
+                        selectedOptions.delete(option.value);
+                    } else {
+                        selectedOptions.add(option.value);
+                    }
+                    renderDropdown();
+                }
+
+                // Actualizar etiquetas seleccionadas dentro del botón
+                function updateSelectedTags() {
+                    selectedOptionsContainer.innerHTML = "";  // Limpiar contenedor
+                    const selectedText = [];
+
+                    selectedOptions.forEach((value) => {
+                        const option = options.find((opt) => opt.value === value);
+                        if (removeTagsEnabled) {
+                            // Si se habilita el botón de eliminar, mostrar las opciones con el botón
+                            const tag = document.createElement("span");
+                            tag.className = "selected-tag";
+                            tag.innerHTML = `
+            ${option.text}
+            <button class="remove-tag">&times;</button>
+          `;
+                            tag.querySelector(".remove-tag").addEventListener("click", () => {
+                                selectedOptions.delete(value);
+                                renderDropdown();
+                            });
+                            selectedOptionsContainer.appendChild(tag);
+                        } else {
+                            // Si no se habilita el botón de eliminar, solo mostrar las opciones separadas por coma
+                            selectedText.push(option.text);
+                        }
+                    });
+
+                    // Si no se habilita el botón de eliminar, mostrar las opciones como texto separado por comas
+                    if (!removeTagsEnabled) {
+                        selectedOptionsContainer.innerHTML = selectedText.join(", ");
+                    }
+
+                    place.style.display = selectedOptions.size ? "none" : "inline"; // Mostrar placeholder si no hay opciones seleccionadas
+                }
+
+                renderDropdown();
+            }
+
+            // Datos para los dos dropdowns
+            const options1 = [
+                { value: "product1", text: "Productos Unitarios SIHO / Libretos Unitarios" },
+                { value: "product2", text: "Contratos SIHO" },
+                { value: "product3", text: "Productos Unitarios SIHO / Libretos Unitarios" },
+                { value: "product4", text: "Contratos SIHO" },
+                { value: "product5", text: "Productos Unitarios SIHO / Libretos Unitarios" },
+                { value: "product6", text: "Contratos SIHO" },
+                { value: "product7", text: "Productos Unitarios SIHO / Libretos Unitarios" },
+                { value: "product8", text: "Contratos SIHO" },
+                { value: "product9", text: "Productos Unitarios SIHO / Libretos Unitarios" },
+                { value: "product10", text: "Contratos SIHO" }
+            ];
+
+            const options2 = [
+                { value: "product1", text: "0.0" },
+                { value: "product2", text: "1.0" },
+                { value: "product3", text: "2.0" },
+                { value: "product4", text: "3.0" },
+                { value: "product5", text: "4.0" }
+            ];
+
+            // Inicializar ambos dropdowns
+            initDropdown('multiSelect1', options1, true);  // Habilitar el botón de eliminar para multiSelect1
+            initDropdown('multiSelect2', options2, false); // Deshabilitar el botón de eliminar para multiSelect2
+        });
+
+    </script>
+    <script src="js/add-filter.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/crud.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/accordion-icon.js"></script>
+    <script src="js/url.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+
+</html>
