@@ -100,7 +100,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border-right: 0.5px solid $border-gray;
   z-index: 1000;
   .logo {
     width: 60%;
@@ -132,6 +131,7 @@ body {
     transform: translateX($menu-width);
     width: $menu-width;
     overflow-x: auto;
+    border-right: 0.5px solid $border-gray;
   }
   .accordion {
     .accordion-item {
@@ -139,7 +139,7 @@ body {
       background: none !important;
       border: 0 !important;
     }
-    .accordion-button {
+    .accordFirst {
       background: $accordion-collapse !important;
       color: $menu-text-color;
       border-radius: 20px !important;
@@ -199,6 +199,11 @@ body {
       }
     }
   }
+}
+
+.accordSub {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 .active-link {
@@ -315,6 +320,18 @@ body {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 2px 13px 54px #695f9714;
   border-radius: 30px;
+
+  table {
+    thead {
+      --bs-table-bg: transparent;
+      th {
+        color: #7a86a1 !important;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
   .header-table-content {
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 3px 17px 54px #695f9721;
@@ -322,13 +339,13 @@ body {
     padding: 1em;
 
     .search {
-      max-width: 300px;
+      max-width: 600px;
     }
     input[type="search"] {
       width: 200px;
       box-sizing: border-box;
       border: 1px solid #ebebeb;
-      border-radius: 19px;
+      border-radius: 12px;
       font-size: 16px;
       background-color: white;
       background-image: url("../assets/images/icons/search-icon.svg");
@@ -347,17 +364,6 @@ body {
       }
     }
   }
-
-  table {
-    thead {
-      --bs-table-bg: transparent;
-      th {
-        color: #7a86a1 !important;
-        font-weight: 600;
-      }
-    }
-  }
-}
 
 /* Table responsive */
 @media screen and (max-width: 991px) {
@@ -1489,7 +1495,7 @@ input#password {
     background: none !important;
     border: 0 !important;
   }
-  .menu .accordion .accordion-button {
+  .menu .accordion .accordFirst {
     background: #f2f2f2 !important;
     color: #6f7073;
     border-radius: 20px !important;
@@ -1498,31 +1504,31 @@ input#password {
     box-shadow: none;
     position: relative;
   }
-  .menu .accordion .accordion-button:focus {
+  .menu .accordion .accordFirst:focus {
     box-shadow: none;
   }
-  .menu .accordion .accordion-button img {
+  .menu .accordion .accordFirst img {
     width: 30px;
     transition: transform 0.3s ease;
   }
-  .menu .accordion .accordion-button:not(.collapsed) {
+  .menu .accordion .accordFirst:not(.collapsed) {
     background-color: #ff5701 !important;
     color: #fff;
   }
-  .menu .accordion .accordion-button:not(.collapsed) .expanded-icon {
+  .menu .accordion .accordFirst:not(.collapsed) .expanded-icon {
     display: inline-block;
   }
-  .menu .accordion .accordion-button:not(.collapsed) .collapsed-icon {
+  .menu .accordion .accordFirst:not(.collapsed) .collapsed-icon {
     display: none;
   }
-  .menu .accordion .accordion-button.collapsed {
+  .menu .accordion .accordFirst.collapsed {
     background-color: #f2f2f2 !important;
     color: #6f7073;
   }
-  .menu .accordion .accordion-button.collapsed:focus {
+  .menu .accordion .accordFirst.collapsed:focus {
     box-shadow: none;
   }
-  .menu .accordion .accordion-button::after {
+  .menu .accordion .accordFirst::after {
     content: "";
     background-image: url("../assets/images/icons/arrow-down.svg"); /* Ícono inicial */
     background-repeat: no-repeat;
@@ -1530,14 +1536,14 @@ input#password {
     background-size: 2em;
     transition: background-image 0.3s ease;
   }
-  .menu .accordion .accordion-button.collapsed::after {
+  .menu .accordion .accordFirst.collapsed::after {
     background-image: url("../assets/images/icons/arrow-down.svg");
   }
-  .menu .accordion .accordion-button:not(.collapsed)::after {
+  .menu .accordion .accordFirst:not(.collapsed)::after {
     background-image: url("../assets/images/icons/arrow-up.svg");
     transform: none;
   }
-  .menu .accordion .accordion-button .expanded-icon {
+  .menu .accordion .accordFirst .expanded-icon {
     display: none;
   }
   .menu .accordion .accordion-body ul li {
@@ -1918,3 +1924,12 @@ input#password {
     box-shadow: 4px 23px 57px rgba(97, 73, 205, 0.2588235294);
   }
 }/*# sourceMappingURL=styles.css.map */
+
+.modal-dialog {
+  .form-group {
+  padding: 0.5em 0;
+  label {
+    padding: 0 0.5em;
+  }
+}
+}

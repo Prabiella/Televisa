@@ -25,7 +25,7 @@
 
         <div class="accordion my-5" id="accordionExample">
           <div class="accordion-item acc-1">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#coll-adminuser-1" aria-expanded="false" aria-controls="coll-adminuser-1">
               <img id="icon-user" src="assets/images/icons/user.svg" alt="usuario"> Iniciar sesión
             </button>
@@ -41,7 +41,7 @@
           </div>
           <div class="accordion-item acc-2">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-2" aria-expanded="false" aria-controls="coll-adminuser-2">
                 <img src="assets/images/icons/vistas.svg" alt="vistas"> Vistas
               </button>
@@ -64,7 +64,7 @@
           </div>
           <div class="accordion-item acc-3">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-3" aria-expanded="false" aria-controls="coll-adminuser-3">
                 <img src="assets/images/icons/contratos.svg" alt="contratos"> Contratos
               </button>
@@ -73,7 +73,7 @@
               <div class="accordion-body py-0">
                 <ul>
                   <li><a href=""> Libretos Telenovelas</a></li>
-                  <li><a href=""> Libretos Unitarios</a></li>
+                  <li><a href="contratos-libretos-unitarios.html"> Libretos Unitarios</a></li>
                   <li><a href=""> Contratos Adquisiciones</a></li>
                   <li><a href=""> SHIO</a></li>
                   <li><a href=""> Deportes y Noticieros</a></li>
@@ -84,7 +84,7 @@
           </div>
           <div class="accordion-item acc-4">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-4" aria-expanded="false" aria-controls="coll-adminuser-4">
                 <img src="assets/images/icons/Mantenimiento.svg" alt="mantenimiento"> Mantenimiento
               </button>
@@ -93,8 +93,13 @@
               <div class="accordion-body py-0">
                 <ul>
                   <li><a href="mantenimiento-tablas.html">Tablas</a></li>
-                  <li><a href="mantenimiento-catalogos.html">Catálogos</a>
-                    <ul>
+                  <li>
+                    
+                    <button class="accordion-button accordSub collapsed" type="button" aria-expanded="true" aria-controls="collapseSub1" onclick="handleAccordionClick(this, 'collapseSub1', 'mantenimiento-catalogos.html')">
+                      Catálogos
+                    </button>                             
+                    
+                    <ul id="collapseSub1" class="accordion-collapse collapse" data-bs-parent="#accordionSub1">
                       <li>ACQ_catForemats</li>
                       <li>ACQ_catMedios</li>
                       <li>ACQ_catLanguajes</li>
@@ -113,7 +118,7 @@
           </div>
           <div class="accordion-item acc-5">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-5" aria-expanded="false" aria-controls="coll-adminuser-5">
                 <img src="assets/images/icons/reportes.svg" alt="mantenimiento"> Reportes
               </button>
@@ -121,7 +126,7 @@
             <div id="coll-adminuser-5" class="accordion-collapse collapse" data-bs-parent="#admin-user-5">
               <div class="accordion-body py-0">
                 <ul>
-                  <li><a href="">Histórico de cambios</a></li>
+                  <li><a href="historico-de-cambios.html">Histórico de cambios</a></li>
                   <li><a href="bitacora-productos.html">Bitácora Productos</a></li>
                   <li><a href="">Bitácora RightHolders</a></li>
                   <li><a href="">Bitácora Contratos</a></li>
@@ -130,8 +135,11 @@
                   <li><a href="">Bitácora Errores</a></li>
                   <li><a href="reporte-estadistico.html">Reporte Estadístico</a></li>
                   <li><a href="">Reporte Inserciones</a></li>
-                  <li><a href="">Bitácora DALET</a>
-                    <ul>
+                  <li>
+                    <button class="accordion-button accordSub collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSub2" aria-expanded="true" aria-controls="collapseSub2">
+                    <a href="">Bitácora DALET</a>
+                  </button>
+                    <ul id="collapseSub2" class="accordion-collapse collapse" data-bs-parent="#accordionSub2">
                       <li><a href="">Productos</a></li>
                       <li><a href="">Contratos</a></li>
                       <li><a href="">Títulos musicales</a></li>
@@ -143,7 +151,7 @@
           </div>
           <div class="accordion-item acc-6">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-6" aria-expanded="false" aria-controls="coll-adminuser-6">
                 <img src="assets/images/icons/configurar.svg" alt="configurar"> Configurar
               </button>
@@ -157,7 +165,7 @@
           </div>
           <div class="accordion-item acc-7">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-7" aria-expanded="false" aria-controls="coll-adminuser-7">
                 <img src="assets/images/icons/horas.svg" alt="mantenimiento"> Horas
               </button>
@@ -178,6 +186,7 @@
         </div>
       </nav>
     </section>
+
     <section class="content content-header admin-user-content col-12">
       <div class="d-flex flex-column">
         <div class="col-12 py-4 px-3">
@@ -429,7 +438,7 @@
           </div>
         </div>
         <div class="col-12">
-          <div class="data-user-content">
+          <div class="data-user-content px-3 py-1">
             <div class="tab-content input-template mt-3">
               <!-- Datos del usuario -->
               <div class="tab-pane fade show active" id="user-data" role="tabpanel" aria-labelledby="user-data-tab">
@@ -530,7 +539,7 @@
 </div>
 
 
-<!-- Modal de editar -->
+<!-- Modal editar -->
 <div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content input-template">
@@ -549,6 +558,25 @@
   </div>
 </div>
 
+  <!-- Modal ver -->
+  <div class="modal fade" id="viewItemModal" tabindex="-1" aria-labelledby="viewItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="viewItemModalLabel">Detalles</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Aquí se llenará con los datos dinámicamente -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
   <script src="js/password.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/crud.js"></script>

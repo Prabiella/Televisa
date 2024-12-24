@@ -14,3 +14,20 @@ document.addEventListener('DOMContentLoaded', function () {
     hamburger.classList.toggle('active');
   });
 });
+
+
+function handleAccordionClick(button, targetId, url) {
+  const clickedOnce = button.getAttribute('data-clicked');
+
+  if (clickedOnce) {
+    window.location.href = url;
+  } else {
+    button.setAttribute('data-clicked', 'true');
+
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement.classList.contains('collapse')) {
+      targetElement.classList.toggle('show');
+    }
+  }
+}

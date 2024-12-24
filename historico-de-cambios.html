@@ -194,34 +194,29 @@
           <header>
             <div class="title-content d-flex align-items-center gap-3">
               <span>|</span>
-              <h1>Contratos Libretos Unitarios</h1>
+              <h1>Histórico de cambios</h1>
             </div>
             <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 py-2">
               <p class="px-4 m-0">Hola <span>Juan Perez</span>, bienvenido de nuevo</p>
-              <div class="d-flex align-items-center flex-wrap justify-content-center gap-2 pb-3">
-                <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="add-btn" id="saveEditButton">Guardar</button>
-              </div>
             </div>
           </header>
           <div>
 
-            <div class="table-content p-4">
+            <div class="p-4">
               <div class="d-flex align-items-center flex-wrap">
                 <div
-                  class="col-12 col-xxl-6 header-table-content d-flex gap-3 align-items-center justify-content-between flex-wrap">
+                  class="col-12 col-md-9 col-xl-6 header-table-content d-flex gap-3 align-items-center flex-wrap flex-md-nowrap">
                   <form class="search d-flex input-group" role="search">
                     <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
                   </form>
-                  <button class="btn-filter px-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <button class="btn-filter d-flex px-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Filtros
                     <img src="assets/images/icons/filtros.svg" alt="Filtros">
                   </button>
                 </div>
                 <div
-                  class="col-12 col-lg-6 d-flex justify-content-center justify-content-md-between flex-wrap gap-3 py-4 py-xxl-0">
+                  class="col-12 col-lg-3 d-flex justify-content-center justify-content-md-between flex-wrap gap-3 py-4 py-xxl-0">
                   <div class="d-flex flex-wrap gap-3 px-3">
-                    <img src="assets/images/icons/cargar.svg" alt="cargar" style="width: 40px;">
                     <img src="assets/images/icons/exportar.svg" alt="exportar" style="width: 53px;">
                   </div>
                 </div>
@@ -427,96 +422,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="d-flex align-items-end flex-wrap gap-2 p-4">
-              <div class="d-flex flex-column">
-                <small class="val-status">Valores de status</small>
-                <span class="badge badge-yellow"><b>0.0 |</b> Por revisar</span>
-              </div>
-              <span class="badge badge-purple"><b> 1.0 |</b> Revisado</span>
-              <span class="badge badge-green"><b> 2.0 |</b> Autorizado</span>
-              <span class="badge badge-royal-blue"><b> 3.0 |</b> Enviado</span>
-              <span class="badge badge-gray"><b> -1.0 |</b> Inhabilitado</span>
-            </div>
-
           </div>
-        </div>
-        <div class="col-12">
-          <div class="data-user-content px-3 py-1">
-            <!-- Tab content -->
-            <div class="tab-content input-template mt-3" id="userTabsContent">
-              <!-- Datos del usuario -->
-              <div class="tab-pane fade show active" id="user-data" role="tabpanel" aria-labelledby="user-data-tab">
-                <div class="accordion" id="user-data-accordion">
-                  <!-- Sección Datos del usuario -->
-                  <div class="accordion-item m-0">
-                    <h2 class="accordion-header" id="user-data-heading">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#user-data-collapse" aria-expanded="true" aria-controls="user-data-collapse">
-                        Datos del contrato seleccionado
-                      </button>
-                    </h2>
-                    <div id="user-data-collapse" class="accordion-collapse collapse show"
-                      aria-labelledby="user-data-heading" data-bs-parent="#user-data-accordion">
-                      <div class="accordion-body p-0 pb-5">
-                        <form id="user-data-form" class="d-flex align-items-end flex-wrap">
-                          <!-- Orden -->
-                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
-                            <label for="orden" class="form-label">Orden</label>
-                            <input type="text" class="form-control" id="orden" placeholder="01291281270012">
-                          </div>
-                          <!-- Título en español -->
-                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
-                            <label for="titulo-español" class="form-label">Título en español</label>
-                            <input type="text" class="form-control" id="titulo-español" placeholder="Como dice el dicho">
-                          </div>
-                          <!-- Tipo de género -->
-                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
-                            <label for="user-role" class="form-label">Tipo de género</label>
-                            <select class="form-select" id="user-role">
-                              <option value="admin">PROGRAMA</option>
-                              <option value="editor">option</option>
-                              <option value="viewer">option</option>
-                            </select>
-                          </div>
-
-                          <div class="col-12 d-flex flex-column flex-md-row flex-wrap gap-3 px-4 py-3">
-                            <div>
-                              <label for="inicio" class="form-label">Inicio fecha al aire</label>
-                              <input type="date" class="form-control date-input" id="inicio">
-                            </div>
-                            <div>
-                              <label for="fin" class="form-label">Fecha fin al aire</label>
-                              <input type="date" class="form-control date-input" id="fin">
-                            </div>
-                          </div>
-
-                          <!-- Centro de costos -->
-                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
-                            <label for="centro-costos" class="form-label">Centro de costos</label>
-                            <input type="text" class="form-control" id="centro-costos" placeholder="1201281281212">
-                          </div>
-
-                          <div class="col-12 col-lg-11 px-4 mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label px-3">Descripción</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                              placeholder="Como dice el dicho, programa……"></textarea>
-                            <div class="d-flex justify-content-end p-4">
-                              <button class="add-btn mb-5">Agregar</button>
-                            </div>
-                          </div>
-
-                        </form>
-
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>

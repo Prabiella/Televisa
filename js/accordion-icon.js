@@ -9,7 +9,7 @@ const imagePaths = {
     "acc-7": { expanded: "assets/images/icons/horas.svg", collapsed: "assets/images/icons/horas-hover.svg" }
   };
   
-  document.querySelectorAll('.accordion-button').forEach(button => {
+  document.querySelectorAll('.accordFirst').forEach(button => {
     button.addEventListener('click', () => {
       const accordionItem = button.closest('.accordion-item');
       const body = accordionItem.querySelector('.accordion-body');

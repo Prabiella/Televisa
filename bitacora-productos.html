@@ -25,7 +25,7 @@
 
         <div class="accordion my-5" id="accordionExample">
           <div class="accordion-item acc-1">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#coll-adminuser-1" aria-expanded="false" aria-controls="coll-adminuser-1">
               <img id="icon-user" src="assets/images/icons/user.svg" alt="usuario"> Iniciar sesión
             </button>
@@ -41,7 +41,7 @@
           </div>
           <div class="accordion-item acc-2">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-2" aria-expanded="false" aria-controls="coll-adminuser-2">
                 <img src="assets/images/icons/vistas.svg" alt="vistas"> Vistas
               </button>
@@ -53,7 +53,7 @@
                     <a href="">Productos Unitarios SIHO</a>
                   </li>
                   <li>
-                    <a href="">Productos Libretos Unitarios</a>
+                    <a href="productos-libretos-unitarios.html">Productos Libretos Unitarios</a>
                   </li>
                   <li>
                     <a href="Righ-holders.html">Righ Holders</a>
@@ -64,7 +64,7 @@
           </div>
           <div class="accordion-item acc-3">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-3" aria-expanded="false" aria-controls="coll-adminuser-3">
                 <img src="assets/images/icons/contratos.svg" alt="contratos"> Contratos
               </button>
@@ -73,7 +73,7 @@
               <div class="accordion-body py-0">
                 <ul>
                   <li><a href=""> Libretos Telenovelas</a></li>
-                  <li><a href=""> Libretos Unitarios</a></li>
+                  <li><a href="contratos-libretos-unitarios.html"> Libretos Unitarios</a></li>
                   <li><a href=""> Contratos Adquisiciones</a></li>
                   <li><a href=""> SHIO</a></li>
                   <li><a href=""> Deportes y Noticieros</a></li>
@@ -84,7 +84,7 @@
           </div>
           <div class="accordion-item acc-4">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-4" aria-expanded="false" aria-controls="coll-adminuser-4">
                 <img src="assets/images/icons/Mantenimiento.svg" alt="mantenimiento"> Mantenimiento
               </button>
@@ -92,9 +92,14 @@
             <div id="coll-adminuser-4" class="accordion-collapse collapse" data-bs-parent="#admin-user-4">
               <div class="accordion-body py-0">
                 <ul>
-                  <li><a href="tablas.html">Tablas</a></li>
-                  <li><a href="">Catálogos</a>
-                    <ul>
+                  <li><a href="mantenimiento-tablas.html">Tablas</a></li>
+                  <li>
+                    
+                    <button class="accordion-button accordSub collapsed" type="button" aria-expanded="true" aria-controls="collapseSub1" onclick="handleAccordionClick(this, 'collapseSub1', 'mantenimiento-catalogos.html')">
+                      Catálogos
+                    </button>                             
+                    
+                    <ul id="collapseSub1" class="accordion-collapse collapse" data-bs-parent="#accordionSub1">
                       <li>ACQ_catForemats</li>
                       <li>ACQ_catMedios</li>
                       <li>ACQ_catLanguajes</li>
@@ -113,7 +118,7 @@
           </div>
           <div class="accordion-item acc-5">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-5" aria-expanded="false" aria-controls="coll-adminuser-5">
                 <img src="assets/images/icons/reportes.svg" alt="mantenimiento"> Reportes
               </button>
@@ -121,17 +126,20 @@
             <div id="coll-adminuser-5" class="accordion-collapse collapse" data-bs-parent="#admin-user-5">
               <div class="accordion-body py-0">
                 <ul>
-                  <li><a href="">Histórico de cambios</a></li>
+                  <li><a href="historico-de-cambios.html">Histórico de cambios</a></li>
                   <li><a href="bitacora-productos.html">Bitácora Productos</a></li>
                   <li><a href="">Bitácora RightHolders</a></li>
                   <li><a href="">Bitácora Contratos</a></li>
                   <li><a href="">Bitácora Pagos</a></li>
                   <li><a href="">Bitácora Request de pagos</a></li>
                   <li><a href="">Bitácora Errores</a></li>
-                  <li><a href="">Reporte Estadístico</a></li>
+                  <li><a href="reporte-estadistico.html">Reporte Estadístico</a></li>
                   <li><a href="">Reporte Inserciones</a></li>
-                  <li><a href="">Bitácora DALET</a>
-                    <ul>
+                  <li>
+                    <button class="accordion-button accordSub collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSub2" aria-expanded="true" aria-controls="collapseSub2">
+                    <a href="">Bitácora DALET</a>
+                  </button>
+                    <ul id="collapseSub2" class="accordion-collapse collapse" data-bs-parent="#accordionSub2">
                       <li><a href="">Productos</a></li>
                       <li><a href="">Contratos</a></li>
                       <li><a href="">Títulos musicales</a></li>
@@ -143,7 +151,7 @@
           </div>
           <div class="accordion-item acc-6">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-6" aria-expanded="false" aria-controls="coll-adminuser-6">
                 <img src="assets/images/icons/configurar.svg" alt="configurar"> Configurar
               </button>
@@ -157,7 +165,7 @@
           </div>
           <div class="accordion-item acc-7">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#coll-adminuser-7" aria-expanded="false" aria-controls="coll-adminuser-7">
                 <img src="assets/images/icons/horas.svg" alt="mantenimiento"> Horas
               </button>
@@ -170,7 +178,7 @@
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center mb-5">
           <button class="log-out-btn mb-5">
             Cerrar sesión
             <img src="assets/images/icons/logout.svg" alt="cerrar sesión">
@@ -178,9 +186,11 @@
         </div>
       </nav>
     </section>
+
+
     <section class="content content-header input-template maintenance col-12">
-      <div class="d-flex flex-column ">
-        <div class="col-lg-11 py-4 px-3">
+      <div class="d-flex flex-column">
+        <div class="col-lg-12 pt-4">
           <header>
             <div class="title-content d-flex align-items-center gap-3">
               <span>|</span>
@@ -215,7 +225,7 @@
                       </select>
                     </div>
                     <div class="col-md-3">
-                      <input type="text" class="form-control" placeholder="valor">
+                      <input type="text" class="form-control" placeholder="direccion">
                     </div>
                     <div class="col-md-1 text-end">
                       <button class="trash">
@@ -246,7 +256,7 @@
                       </select>
                     </div>
                     <div class="col-md-3">
-                      <input type="text" class="form-control" placeholder="valor">
+                      <input type="text" class="form-control" placeholder="direccion">
                     </div>
                     <div class="col-md-1 text-end">
                       <button class="trash">
@@ -277,7 +287,7 @@
                       </select>
                     </div>
                     <div class="col-md-3">
-                      <input type="text" class="form-control" placeholder="valor">
+                      <input type="text" class="form-control" placeholder="direccion">
                     </div>
                     <div class="col-md-1 text-end">
                       <button class="trash">
@@ -448,28 +458,58 @@
             
               </div>
               
-                <!-- Actualización de Campos -->
-                <div class="px-sm-3 px-md-5 mb-5 update-fields">
-                  <h5 class="mb-3 text-danger">Aplicar Filtros</h5>
-                  <div class="col-12 d-flex justify-content-between align-items-end flex-wrap gap-3 gap-lg-0">
-                    <div class="col-12 col-lg-8 d-flex align-items-center flex-wrap gap-3">
-                        <div class="col-12 col-md-4">
-                        <label class="p-2" for="campo">Aplicar Filtros</label>
-                          <select id="campo" class="form-select">
-                            <option selected>idOrquestación</option>
-                            <option value="1">option</option>
-                          </select>
-                        </div>
-                        <div class="col-12 col-md-4">
-                        <label class="p-2" for="valor">Dirección</label>
-                          <input id="valor" type="text" class="form-control" placeholder="Ascendente">
+                <!-- Aplicar filtros -->
+                <div class="col-12">
+                  <div class="data-user-content px-5 py-1">
+                    <div class="tab-content input-template mt-3">
+                      <!-- Datos del usuario -->
+                      <div class="tab-pane fade show active" id="user-data" role="tabpanel" aria-labelledby="user-data-tab">
+                        <div class="accordion" id="user-data-accordion">
+                          <!-- Sección Datos del usuario -->
+                          <div class="accordion-item m-0">
+                            <h2 class="accordion-header" id="user-data-heading">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#user-data-collapse" aria-expanded="true"
+                                aria-controls="user-data-collapse">
+                                Aplicar filtros
+                              </button>
+                            </h2>
+                            <div id="user-data-collapse" class="accordion-collapse collapse show"
+                              aria-labelledby="user-data-heading" data-bs-parent="#user-data-accordion">
+                              <div class="accordion-body p-0 pb-5">
+                                <form id="user-data-form" class="d-flex align-items-end flex-wrap gap-5 gap-md-3">
+                                  <div class="col-12 col-md-6 d-flex align-items-center flex-wrap gap-2">
+                                    <!-- Filtro -->
+                                    <div class="col-12 col-md-5">
+                                      <label class="p-2" for="filtro">Aplicar Filtros</label>
+                                      <select id="filtro" class="form-select">
+                                        <option selected>idOrquestación</option>
+                                        <option value="1">option</option>
+                                      </select>
+                                    </div>
+                                    <!-- Dirección -->
+                                    <div class="col-12 col-md-5">
+                                      <label class="p-2" for="direccion">Dirección</label>
+                                      <input id="direccion" type="text" class="form-control" placeholder="Ascendente">
+                                    </div>
+                                  </div>
+    
+                                  <div class="col-12 col-md-5 text-end">
+                                    <button class="add-btn">Filtrar</button>
+                                  </div>
+                                </form>
+    
+                              </div>
+                            </div>
+    
+                          </div>
                         </div>
                       </div>
-                      <div class="col-12 col-lg-4">
-                        <button class="add-btn">Filtrar</button>
-                      </div>
+                    </div>
                   </div>
+    
                 </div>
+
 
           </div>
         </div>
@@ -516,7 +556,7 @@
   </div>
   
   
-<!-- Modal de editar -->
+<!-- Modal editar -->
 <div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content input-template">
@@ -525,7 +565,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <!-- Campos dinámicos -->
+          <!-- filtros dinámicos -->
         </div>
         <div class="modal-footer">
           <button type="button" class="btn-gray" data-bs-dismiss="modal">Cerrar</button>
@@ -535,6 +575,23 @@
     </div>
   </div>
 
+  <!-- Modal ver -->
+<div class="modal fade" id="viewItemModal" tabindex="-1" aria-labelledby="viewItemModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="viewItemModalLabel">Detalles</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Aquí se llenará con los datos dinámicamente -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script src="js/add-filter.js"></script>
   <script src="js/menu.js"></script>
