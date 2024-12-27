@@ -477,7 +477,7 @@
                     <h2 class="accordion-header" id="user-data-heading">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#user-data-collapse" aria-expanded="true" aria-controls="user-data-collapse">
-                         Datos del producto seleccionado
+                        Datos del Right Holder seleccionado
                       </button>
                     </h2>
                     <div id="user-data-collapse" class="accordion-collapse collapse show"
@@ -487,12 +487,17 @@
                           <!-- No. artículo -->
                           <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
                             <label for="no-articulo" class="form-label">No. Artículo</label>
-                            <input type="text" class="form-control" id="no-articulo" placeholder="01291281270012">
+                            <input type="number" class="form-control" id="no-articulo">
                           </div>
                           <!-- Centro de costos -->
                           <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
                             <label for="costos" class="form-label">Centro de costos</label>
-                            <input type="text" class="form-control" id="costos" placeholder="1201281281212">
+                            <input type="number" class="form-control" id="costos">
+                          </div>
+                          <!-- Título en español -->
+                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                            <label for="titlespa" class="form-label">Título en español</label>
+                            <input type="text" class="form-control" id="titlespa">
                           </div>
                           <!-- Tipo de género -->
                           <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
@@ -503,15 +508,22 @@
                               <option value="viewer">option</option>
                             </select>
                           </div>
-                          <!-- Tipo -->
-                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
-                            <label for="user-role" class="form-label">Tipo</label>
-                            <select class="form-select" id="user-role">
-                              <option value="admin">Capítulo</option>
-                              <option value="editor">option</option>
-                              <option value="viewer">option</option>
-                            </select>
+
+                          <!-- Llave -->
+                           <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                            <label for="key" class="form-label">Llave</label>
+                            <input type="number" class="form-control" id="key">
                           </div>
+
+                              <!-- Tipo de género -->
+                              <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                <label for="ack" class="form-label">ACK</label>
+                                <select class="form-select" id="ack">
+                                  <option value="admin">SUCCESS</option>
+                                  <option value="editor">SUCCESS2</option>
+                                  <option value="viewer">SUCCESS3</option>
+                                </select>
+                              </div>
 
                           <div class="col-12 d-flex flex-column flex-md-row flex-wrap gap-3 px-4 py-3">
                             <div>
