@@ -1,0 +1,9 @@
+<svg id="Grupo_45948" data-name="Grupo 45948" xmlns="http://www.w3.org/2000/svg" width="37" height="44" viewBox="0 0 37 44">
+  <rect id="Rectángulo_26136" data-name="Rectángulo 26136" width="37" height="44" fill="none"/>
+  <g id="app" transform="translate(5.385 9)">
+    <path id="Trazado_94977" data-name="Trazado 94977" d="M12,3H6A3,3,0,0,0,3,6v6a3,3,0,0,0,3,3h6a3,3,0,0,0,3-3V6A3,3,0,0,0,12,3Zm1,9a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V6A1,1,0,0,1,6,5h6a1,1,0,0,1,1,1Z" transform="translate(-3 -3)" fill="#6f7073"/>
+    <path id="Trazado_94978" data-name="Trazado 94978" d="M26,3H20a3,3,0,0,0-3,3v6a3,3,0,0,0,3,3h6a3,3,0,0,0,3-3V6A3,3,0,0,0,26,3Zm1,9a1,1,0,0,1-1,1H20a1,1,0,0,1-1-1V6a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1Z" transform="translate(-3 -3)" fill="#6f7073"/>
+    <path id="Trazado_94979" data-name="Trazado 94979" d="M12,17H6a3,3,0,0,0-3,3v6a3,3,0,0,0,3,3h6a3,3,0,0,0,3-3V20A3,3,0,0,0,12,17Zm1,9a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V20a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1Z" transform="translate(-3 -3)" fill="#6f7073"/>
+    <path id="Trazado_94980" data-name="Trazado 94980" d="M28,22H24V18a1,1,0,0,0-2,0v4H18a1,1,0,0,0,0,2h4v4a1,1,0,0,0,2,0V24h4a1,1,0,0,0,0-2Z" transform="translate(-3 -3)" fill="#6f7073"/>
+  </g>
+</svg>
