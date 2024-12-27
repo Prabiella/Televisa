@@ -1541,6 +1541,11 @@ input#password {
   display: inline-block;
 }
 
+p.Submenubtn {
+  font-size: 1rem;
+  padding-top: 15px;
+}
+
 /* Media Query para dispositivos pequeños */
 @media (max-width: 768px) {
   .login-container {
