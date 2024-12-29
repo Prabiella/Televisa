@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisa Univisión</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navigation
+<nav id="slide-menu">
+	<ul>
+		<li class="timeline">Timeline</li>
+		<li class="events">Events</li>
+		<li class="calendar">Calendar</li>
+		<li class="sep settings">Settings</li>
+		<li class="logout">Logout</li>
+	</ul>
+</nav>
+Content panel
+<div id="content">
+    <div class="hamburger menu-trigger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+      
+	<h1>iOS style sliding menu</h1>
+	<p>Here's an easy way to create an iOS style, side sliding menu.</p>
+</div> -->
+
+
+<div class="menu-container">
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="menu" id="menu">
+        <img class="logo" src="assets/images/logos/televisa-univision-color.svg" alt="">
+
+        <div class="accordion my-5" id="accordionExample">
+            <div class="accordion-item acc-1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll-adminuser-1" aria-expanded="false" aria-controls="coll-adminuser-1">
+                    <img id="icon-user" src="assets/images/icons/user.svg" alt="usuario"> Iniciar sesión
+                </button>
+              <div id="coll-adminuser-1" class="accordion-collapse collapse" data-bs-parent="#admin-user-1">
+                <div class="accordion-body py-0">
+                    <ul>
+                        <li>
+                          <a href="administrar-usuarios.html">Administrar usuarios</a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item acc-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll-adminuser-2" aria-expanded="false" aria-controls="coll-adminuser-2">
+                  <img src="assets/images/icons/vistas.svg" alt="vistas"> Vistas
+                </button>
+              </h2>
+              <div id="coll-adminuser-2" class="accordion-collapse collapse" data-bs-parent="#admin-user-2">
+                <div class="accordion-body py-0">
+                  <ul>
+                    <li>
+                      <a href="">Productos Unitarios SIHO</a>
+                    </li>
+                    <li>
+                      <a href="">Productos Libretos Unitarios</a>
+                    </li>
+                    <li>
+                      <a href="righ-holders.html">Righ Holders</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item acc-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll-adminuser-3" aria-expanded="false" aria-controls="coll-adminuser-3">
+                  <img src="assets/images/icons/contratos.svg" alt="contratos"> Contratos
+                </button>
+              </h2>
+              <div id="coll-adminuser-3" class="accordion-collapse collapse" data-bs-parent="#admin-user-3">
+                <div class="accordion-body py-0">
+                  <ul>
+                    <li><a href=""> Libretos Telenovelas</a></li>
+                    <li><a href=""> Libretos Unitarios</a></li>
+                    <li><a href=""> Contratos Adquisiciones</a></li>
+                    <li><a href=""> SHIO</a></li>
+                    <li><a href=""> Deportes y Noticieros</a></li>
+                    <li><a href=""> Carta Vestuario</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item acc-4">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll-adminuser-4" aria-expanded="false" aria-controls="coll-adminuser-4">
+                <img src="assets/images/icons/Mantenimiento.svg" alt="mantenimiento"> Mantenimiento
+              </button>
+            </h2>
+            <div id="coll-adminuser-4" class="accordion-collapse collapse" data-bs-parent="#admin-user-4">
+              <div class="accordion-body py-0">
+                <ul>
+                  <li><a href="">Tablas</a></li>
+                  <li><a href="">Catálogos</a>
+                    <ul>
+                      <li>ACQ_catForemats</li>
+                      <li>ACQ_catMedios</li>
+                      <li>ACQ_catLanguajes</li>
+                      <li>catORG_ID</li>
+                      <li>CAT_TIPO_PROGRAMA</li>
+                      <li>catCalendarioPagoSiho</li>
+                      <li>catContSecurity</li>
+                      <li>catCurrency</li>
+                      <li>catDaletTituloMusicalSoc..</li>
+                    </ul>
+                  </li>
+
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item acc-5">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll-adminuser-5" aria-expanded="false" aria-controls="coll-adminuser-5">
+              <img src="assets/images/icons/reportes.svg" alt="mantenimiento"> Reportes
+            </button>
+          </h2>
+          <div id="coll-adminuser-5" class="accordion-collapse collapse" data-bs-parent="#admin-user-5">
+            <div class="accordion-body py-0">
+              <ul>
+                <li><a href="">Histórico de cambios</a></li>
+                <li><a href="">Bitácora Productos</a></li>
+                <li><a href="">Bitácora RightHolders</a></li>
+                <li><a href="">Bitácora Contratos</a></li>
+                <li><a href="">Bitácora Pagos</a></li>
+                <li><a href="">Bitácora Request de pagos</a></li>
+                <li><a href="">Bitácora Errores</a></li>
+                <li><a href="">Reporte Estadístico</a></li>
+                <li><a href="">Reporte Inserciones</a></li>
+                <li><a href="">Bitácora DALET</a>
+                  <ul>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Contratos</a></li>
+                    <li><a href="">Títulos musicales</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item acc-6">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll-adminuser-6" aria-expanded="false" aria-controls="coll-adminuser-6">
+            <img src="assets/images/icons/configurar.svg" alt="configurar"> Configurar
+          </button>
+        </h2>
+        <div id="coll-adminuser-6" class="accordion-collapse collapse" data-bs-parent="#admin-user-6">
+          <div class="accordion-body py-0">
+            <ul>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item acc-7">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll-adminuser-7" aria-expanded="false" aria-controls="coll-adminuser-7">
+          <img src="assets/images/icons/horas.svg" alt="mantenimiento"> Horas
+        </button>
+      </h2>
+      <div id="coll-adminuser-7" class="accordion-collapse collapse" data-bs-parent="#admin-user-7">
+        <div class="accordion-body py-0">
+          <ul>
+          </ul>
+      </div>
+    </div>
+  </div>
+    </nav>
+  </div>
+  
+
+<!-- <script>
+    /*
+  Slidemenu
+*/
+(function() {
+	var $body = document.body
+	, $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+	if ( typeof $menu_trigger !== 'undefined' ) {
+		$menu_trigger.addEventListener('click', function() {
+			$body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+		});
+	}
+
+}).call(this);
+
+const hamburger = document.getElementById('hamburger');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+});
+
+</script> -->
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+const container = document.querySelector('.menu-container');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  container.classList.toggle('active');
+  hamburger.classList.toggle('active');
+});
+
+</script>
+
+<script>
+// Obtener la URL actual
+const currentPage = window.location.pathname.split("/").pop();
+
+// Seleccionar todos los enlaces del menú
+const links = document.querySelectorAll('a');
+
+// Recorrer los enlaces y aplicar estilos si el href coincide
+links.forEach(link => {
+  if (link.getAttribute("href") === currentPage) {
+    link.classList.add("active-link");
+  }
+});
+
+
+</script>
+
+
+<script src="js/icon-change.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
