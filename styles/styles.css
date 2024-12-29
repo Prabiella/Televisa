@@ -1546,6 +1546,22 @@ p.Submenubtn {
   padding-top: 15px;
 }
 
+.ChangeStatus {
+  width: 80px;
+}
+
+.TableColor td {
+  color: #000 !important;
+  font-size: 0.8rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+td.ColoStatusRow {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
 /* Media Query para dispositivos pequeños */
 @media (max-width: 768px) {
   .login-container {

@@ -328,6 +328,7 @@ body {
         color: #7a86a1 !important;
         font-weight: 600;
       }
+     
     }
   }
 }
@@ -1502,6 +1503,21 @@ p.Submenubtn{
 }
 
 
+.ChangeStatus{
+ width: 80px;
+
+}
+.TableColor td{
+  color: #000!important;
+  font-size: 0.8rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+td.ColoStatusRow {
+  padding: 0px!important;
+  margin: 0px!important;
+}
 
 /* Media Query para dispositivos pequeños */
 @media (max-width: 768px) {
