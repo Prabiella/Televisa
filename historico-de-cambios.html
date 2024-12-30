@@ -204,8 +204,8 @@
 
             <div class="p-4">
               <div class="d-flex align-items-center flex-wrap">
-                <div
-                  class="col-12 col-md-9 col-xl-6 header-table-content d-flex gap-3 align-items-center flex-wrap flex-md-nowrap">
+             
+                <div class="col-12 col-md-8 col-xl-3 header-table-content d-flex gap-3 align-items-center flex-wrap flex-md-nowrap mx-4 mx-xl-4 my-3">
                   <form class="search d-flex input-group" role="search">
                     <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
                   </form>
@@ -214,12 +214,38 @@
                     <img src="assets/images/icons/filtros.svg" alt="Filtros">
                   </button>
                 </div>
+             
+
+                <div class="col-12 col-md-8 col-xl-4 header-table-content d-flex gap-3 align-items-center flex-wrap flex-md-nowrap mx-4 FilterHistory">
+                  Ordenar tabla
+                  <a href="#" class="sort-desc">
+                    <img src="assets/images/icons/des.svg" alt="Descendente">
+                    <span class="mx-1"> Descendente</span>
+                  </a>
+                
+                  <a href="#" class="sort-asc">
+                    <img src="assets/images/icons/ase.svg" alt="Ascendente">
+                    <span class="mx-1"> Ascendente</span>
+                  </a>
+                </div>
+                
+                
+
+
+
+                
+
+
+
+
+                
                 <div
                   class="col-12 col-lg-3 d-flex justify-content-center justify-content-md-between flex-wrap gap-3 py-4 py-xxl-0">
                   <div class="d-flex flex-wrap gap-3 px-3">
                     <img src="assets/images/icons/exportar.svg" alt="exportar" style="width: 53px;">
                   </div>
                 </div>
+
               </div>
               <div class="table-trans table-responsive">
                 <table class="table table-striped my-3">
@@ -238,6 +264,8 @@
                     </tr>
                   </thead>
                   <tbody id="table-body">
+                    
+                    <!-- Registro 1 -->
                     <tr>
                       <td data-label="UserID">27</td>
                       <td data-label="MovID">12121221</td>
@@ -259,28 +287,32 @@
                           <div class="custom-dropdown-menu">
                             <div class="d-flex gap-3">
                               <button class="custom-menu-item edit-btn">
-                                <img src="assets/images/icons/editar-1.svg" alt="editar">
+                                <img src="assets/images/icons/editar-1.svg" alt="Editar">
                               </button>
                               <button class="custom-menu-item delete-btn">
-                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                                <img src="assets/images/icons/deshabilitar.svg" alt="Deshabilitar">
                               </button>
                               <button class="custom-menu-item see-btn">
-                                <img src="assets/images/icons/ver.svg" alt="ver">
+                                <img src="assets/images/icons/ver.svg" alt="Ver">
                               </button>
                             </div>
                           </div>
                         </div>
                       </td>
                     </tr>
+
+                    <!-- Registro 2 -->
                     <tr>
-                      <td data-label="Nombre">T. Exitosa</td>
-                      <td data-label="No. Articulo">0001212212</td>
-                      <td data-label="Descripción">Vecinos (5a. Temporada) Cap.13- Castro Garcia…</td>
-                      <td data-label="Centro de titulo-español">012222</td>
-                      <td data-label="Fecha de Adquisición">1900/01/01</td>
-                      <td data-label="Tipo">Capítulo</td>
-                      <td data-label="Tipo Género">Programa</td>
-                      <td data-label="Fecha Inicio">2022/11/17</td>
+                      <td data-label="UserID">28</td>
+                      <td data-label="MovID">12121221</td>
+                      <td data-label="Tabla">Contratos SiHO</td>
+                      <td data-label="Estatus">1.0</td>
+                      <td data-label="Fecha">2009/07/13 - 11:03:05 am</td>
+                      <td data-label="Num_Contrato">1212122112132332</td>
+                      <td data-label="Centro_Costos">8812712912</td>
+                      <td data-label="RFC">RATF888989Q</td>
+                      <td data-label="Tipo_Genero">Tipo_genero</td>
+                      <td data-label="Fecha_Pago">2009/07/13 - 11:03:05 am</td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -291,115 +323,55 @@
                           <div class="custom-dropdown-menu">
                             <div class="d-flex gap-3">
                               <button class="custom-menu-item edit-btn">
-                                <img src="assets/images/icons/editar-1.svg" alt="editar">
+                                <img src="assets/images/icons/editar-1.svg" alt="Editar">
                               </button>
                               <button class="custom-menu-item delete-btn">
-                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                                <img src="assets/images/icons/deshabilitar.svg" alt="Deshabilitar">
                               </button>
                               <button class="custom-menu-item see-btn">
-                                <img src="assets/images/icons/ver.svg" alt="ver">
+                                <img src="assets/images/icons/ver.svg" alt="Ver">
                               </button>
                             </div>
                           </div>
                         </div>
                       </td>
                     </tr>
-                    <tr>
-                      <td data-label="Nombre">T. Exitosa</td>
-                      <td data-label="No. Articulo">0001212212</td>
-                      <td data-label="Descripción">Vecinos (5a. Temporada) Cap.13- Castro Garcia…</td>
-                      <td data-label="Centro de titulo-español">012222</td>
-                      <td data-label="Fecha de Adquisición">1900/01/01</td>
-                      <td data-label="Tipo">Capítulo</td>
-                      <td data-label="Tipo Género">Programa</td>
-                      <td data-label="Fecha Inicio">2022/11/17</td>
-                      <td>
-                        <div class="custom-dropdown">
-                          <button class="custom-dropdown-toggle">
-                            <span class="custom-dot"></span>
-                            <span class="custom-dot"></span>
-                            <span class="custom-dot"></span>
-                          </button>
-                          <div class="custom-dropdown-menu">
-                            <div class="d-flex gap-3">
-                              <button class="custom-menu-item edit-btn">
-                                <img src="assets/images/icons/editar-1.svg" alt="editar">
-                              </button>
-                              <button class="custom-menu-item delete-btn">
-                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
-                              </button>
-                              <button class="custom-menu-item see-btn">
-                                <img src="assets/images/icons/ver.svg" alt="ver">
-                              </button>
+
+                      <!-- Registro 3 -->
+                      <tr>
+                        <td data-label="UserID">29</td>
+                        <td data-label="MovID">333333</td>
+                        <td data-label="Tabla">Contratos SiHO3</td>
+                        <td data-label="Estatus">3.0</td>
+                        <td data-label="Fecha">2009/07/13 - 11:03:05 am</td>
+                        <td data-label="Num_Contrato">33333333333333</td>
+                        <td data-label="Centro_Costos">3333333333</td>
+                        <td data-label="RFC">RATF888989Q</td>
+                        <td data-label="Tipo_Genero">Tipo_genero</td>
+                        <td data-label="Fecha_Pago">2009/07/13 - 11:03:05 am</td>
+                        <td>
+                          <div class="custom-dropdown">
+                            <button class="custom-dropdown-toggle">
+                              <span class="custom-dot"></span>
+                              <span class="custom-dot"></span>
+                              <span class="custom-dot"></span>
+                            </button>
+                            <div class="custom-dropdown-menu">
+                              <div class="d-flex gap-3">
+                                <button class="custom-menu-item edit-btn">
+                                  <img src="assets/images/icons/editar-1.svg" alt="Editar">
+                                </button>
+                                <button class="custom-menu-item delete-btn">
+                                  <img src="assets/images/icons/deshabilitar.svg" alt="Deshabilitar">
+                                </button>
+                                <button class="custom-menu-item see-btn">
+                                  <img src="assets/images/icons/ver.svg" alt="Ver">
+                                </button>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-label="Nombre">T. Exitosa</td>
-                      <td data-label="No. Articulo">0001212212</td>
-                      <td data-label="Descripción">Vecinos (5a. Temporada) Cap.13- Castro Garcia…</td>
-                      <td data-label="Centro de titulo-español">013333</td>
-                      <td data-label="Fecha de Adquisición">1900/01/01</td>
-                      <td data-label="Tipo">Capítulo</td>
-                      <td data-label="Tipo Género">Programa</td>
-                      <td data-label="Fecha Inicio">2022/11/17</td>
-                      <td>
-                        <div class="custom-dropdown">
-                          <button class="custom-dropdown-toggle">
-                            <span class="custom-dot"></span>
-                            <span class="custom-dot"></span>
-                            <span class="custom-dot"></span>
-                          </button>
-                          <div class="custom-dropdown-menu">
-                            <div class="d-flex gap-3">
-                              <button class="custom-menu-item edit-btn">
-                                <img src="assets/images/icons/editar-1.svg" alt="editar">
-                              </button>
-                              <button class="custom-menu-item delete-btn">
-                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
-                              </button>
-                              <button class="custom-menu-item see-btn">
-                                <img src="assets/images/icons/ver.svg" alt="ver">
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-label="Nombre">T. Exitosa</td>
-                      <td data-label="No. Articulo">0001212212</td>
-                      <td data-label="Descripción">Vecinos (5a. Temporada) Cap.13- Castro Garcia…</td>
-                      <td data-label="Centro de titulo-español">012222</td>
-                      <td data-label="Fecha de Adquisición">1900/01/01</td>
-                      <td data-label="Tipo">Capítulo</td>
-                      <td data-label="Tipo Género">Programa</td>
-                      <td data-label="Fecha Inicio">2022/11/17</td>
-                      <td>
-                        <div class="custom-dropdown">
-                          <button class="custom-dropdown-toggle">
-                            <span class="custom-dot"></span>
-                            <span class="custom-dot"></span>
-                            <span class="custom-dot"></span>
-                          </button>
-                          <div class="custom-dropdown-menu">
-                            <div class="d-flex gap-3">
-                              <button class="custom-menu-item edit-btn">
-                                <img src="assets/images/icons/editar-1.svg" alt="editar">
-                              </button>
-                              <button class="custom-menu-item delete-btn">
-                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
-                              </button>
-                              <button class="custom-menu-item see-btn">
-                                <img src="assets/images/icons/ver.svg" alt="ver">
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
+                        </td>
+                      </tr>
 
                   </tbody>
                 </table>
@@ -489,15 +461,13 @@
   </div>
 </div>
 
-  <script src="js/password.js"></script>
+
   <script src="js/menu.js"></script>
   <script src="js/crud.js"></script>
   <script src="js/search.js"></script>
-  <script src="js/accordion-icon.js"></script>
-  <script src="js/url.js"></script>
+  <script src="js/ordenar-tabla.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
 </body>
-
 </html>

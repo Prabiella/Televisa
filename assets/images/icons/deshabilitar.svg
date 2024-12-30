@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="53" viewBox="0 0 45 53">
+  <g id="Grupo_45949" data-name="Grupo 45949" transform="translate(-9756 711)">
+    <rect id="Rectángulo_26134" data-name="Rectángulo 26134" width="42" height="53" transform="translate(9759 -711)" fill="none"/>
+    <g id="Grupo_45948" data-name="Grupo 45948" transform="translate(1 -0.993)">
+      <g id="eyebrow" transform="translate(9758.763 -713.37)">
+        <path id="Trazado_94985" data-name="Trazado 94985" d="M24.833,15.283a.894.894,0,0,1,1.222.325l3.413,5.887a.894.894,0,1,1-1.547.9l-3.413-5.887a.894.894,0,0,1,.325-1.222Z" transform="translate(4.066 0.538)" fill="#25385a" fill-rule="evenodd"/>
+        <path id="Trazado_94986" data-name="Trazado 94986" d="M19.264,17.926a.894.894,0,0,1,1.036.725l1.058,6.006a.894.894,0,1,1-1.761.31l-1.058-6.006A.894.894,0,0,1,19.264,17.926Z" transform="translate(2.939 1.067)" fill="#25385a" fill-rule="evenodd"/>
+        <path id="Trazado_94987" data-name="Trazado 94987" d="M13.182,17.914a.894.894,0,0,1,.726,1.035L12.85,24.97a.894.894,0,1,1-1.761-.31l1.058-6.021a.894.894,0,0,1,1.035-.726Z" transform="translate(1.507 1.065)" fill="#25385a" fill-rule="evenodd"/>
+        <path id="Trazado_94988" data-name="Trazado 94988" d="M7.991,15.282A.894.894,0,0,1,8.319,16.5L4.906,22.42a.894.894,0,0,1-1.549-.894L6.77,15.61A.894.894,0,0,1,7.991,15.282Z" transform="translate(0 0.538)" fill="#25385a" fill-rule="evenodd"/>
+        <path id="Trazado_94989" data-name="Trazado 94989" d="M3.582,12.561a.894.894,0,0,1,1.257.134,17.2,17.2,0,0,0,27.223,0,.894.894,0,0,1,1.391,1.124,18.984,18.984,0,0,1-30.005,0,.894.894,0,0,1,.134-1.257Z" transform="translate(0.002 0)" fill="#25385a" fill-rule="evenodd"/>
+      </g>
+      <text id="Editar" transform="translate(9755 -666.007)" fill="#25385a" font-size="12" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Ocultar</tspan></text>
+    </g>
+  </g>
+</svg>
