@@ -327,6 +327,7 @@ body {
       th {
         color: #7a86a1 !important;
         font-weight: 600;
+        
       }
      
     }
@@ -399,6 +400,7 @@ body {
     float: left;
     font-weight: 500;
     color: #7a86a1;
+    width: auto;
   }
 
   table td:last-child {
@@ -627,6 +629,7 @@ table {
       th,
       td {
         max-width: 100% !important;
+        width: auto;
       }
     }
 }
@@ -1074,6 +1077,7 @@ textarea {
 .login-container .table-content table thead th {
   color: #7a86a1 !important;
   font-weight: 400;
+  width: auto;
 }
 @media screen and (max-width: 991px) {
   .login-container table thead {
@@ -1097,6 +1101,7 @@ textarea {
     float: left;
     font-weight: 500;
     color: #7a86a1;
+    width: auto;
   }
   .login-container table td:last-child {
     border-bottom: 0;
@@ -1284,6 +1289,7 @@ textarea {
 .login-container .table-trans td {
   color: #7a86a1 !important;
   tex-align: center !important;
+  width: auto;
 }
 .login-container .btn-gray {
   background: #707070 0% 0% no-repeat padding-box;
@@ -1540,6 +1546,8 @@ td.ColoStatusRow {
   padding: 0px!important;
   margin: 0px!important;
 }
+
+
 
 /* Media Query para dispositivos pequeños */
 @media (max-width: 768px) {
@@ -1866,6 +1874,8 @@ td.ColoStatusRow {
   .table-content table thead th {
     color: #7a86a1 !important;
     font-weight: 400;
+    width: auto;
+    width: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -1913,6 +1923,8 @@ td.ColoStatusRow {
     float: left;
     font-weight: 500;
     color: #7a86a1;
+    width: auto;
+    width: auto;
   }
   table td:last-child {
     border-bottom: 0;
@@ -2130,6 +2142,8 @@ td.ColoStatusRow {
   .table-trans td {
     color: #7a86a1 !important;
     tex-align: center !important;
+    width: auto;
+    
   }
   .btn-gray {
     background: #707070 0% 0% no-repeat padding-box;
