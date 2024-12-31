@@ -385,7 +385,7 @@ body {
 .custom-dropdown {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .custom-dropdown-toggle {
@@ -417,7 +417,7 @@ body {
 .custom-dropdown-menu {
   display: none;
   position: absolute;
-  top: 48px;
+  top: 5px;
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -425,6 +425,7 @@ body {
   margin: -1em 0;
   z-index: 100;
   white-space: nowrap;
+  left: -160px;
 }
 
 .custom-menu-item {
@@ -572,10 +573,26 @@ table {
   white-space: nowrap;
 }
 @media (max-width: 991px) {
+  .table-trans {
+    /* Estilo menú */
+  }
   .table-trans th,
   .table-trans td {
     max-width: 100% !important;
     width: auto;
+  }
+  .table-trans .custom-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    margin: -1em 0;
+    z-index: 100;
+    white-space: nowrap;
+    left: 0px;
   }
 }
 
