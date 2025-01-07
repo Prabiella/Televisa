@@ -96,11 +96,13 @@
                 <ul>
                   <li><a href="mantenimiento-tablas.html">Tablas</a></li>
                   <li>
-                    
-                    <button class="accordion-button accordSub collapsed" type="button" aria-expanded="true" aria-controls="collapseSub1" onclick="handleAccordionClick(this, 'collapseSub1', 'mantenimiento-catalogos.html')">
+
+                    <button class="accordion-button accordSub collapsed" type="button" aria-expanded="true"
+                      aria-controls="collapseSub1"
+                      onclick="handleAccordionClick(this, 'collapseSub1', 'mantenimiento-catalogos.html')">
                       Catálogos
-                    </button>                             
-                    
+                    </button>
+
                     <ul id="collapseSub1" class="accordion-collapse collapse" data-bs-parent="#accordionSub1">
                       <li>ACQ_catForemats</li>
                       <li>ACQ_catMedios</li>
@@ -138,9 +140,10 @@
                   <li><a href="reporte-estadistico.html">Reporte Estadístico</a></li>
                   <li><a href="">Reporte Inserciones</a></li>
                   <li>
-                    <button class="accordion-button accordSub collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSub2" aria-expanded="true" aria-controls="collapseSub2">
-                    <a href="">Bitácora DALET</a>
-                  </button>
+                    <button class="accordion-button accordSub collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSub2" aria-expanded="true" aria-controls="collapseSub2">
+                      <a href="">Bitácora DALET</a>
+                    </button>
                     <ul id="collapseSub2" class="accordion-collapse collapse" data-bs-parent="#accordionSub2">
                       <li><a href="">Productos</a></li>
                       <li><a href="">Contratos</a></li>
@@ -202,7 +205,7 @@
               <p class="px-4 m-0">Hola <span>Juan Perez</span>, bienvenido de nuevo</p>
               <div class="d-flex align-items-center flex-wrap justify-content-center gap-2 pb-3">
                 <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="add-btn" id="saveEditButton">Guardar</button>
+                <button type="button" class="add-btn">Guardar</button>
               </div>
             </div>
           </header>
@@ -240,6 +243,7 @@
                       <th>Tipo</th>
                       <th>Tipo Género</th>
                       <th>Fecha Inicio</th>
+                      <th>Active</th>
                       <th> </th>
                     </tr>
                   </thead>
@@ -253,6 +257,12 @@
                       <td data-label="Tipo">Capítulo</td>
                       <td data-label="Tipo Género">Programa</td>
                       <td data-label="Fecha Inicio">2022/11/17</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -285,6 +295,12 @@
                       <td data-label="Tipo">Capítulo</td>
                       <td data-label="Tipo Género">Programa</td>
                       <td data-label="Fecha Inicio">2022/11/17</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -317,6 +333,12 @@
                       <td data-label="Tipo">Capítulo</td>
                       <td data-label="Tipo Género">Programa</td>
                       <td data-label="Fecha Inicio">2022/11/17</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -349,6 +371,12 @@
                       <td data-label="Tipo">Capítulo</td>
                       <td data-label="Tipo Género">Programa</td>
                       <td data-label="Fecha Inicio">2022/11/17</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -381,6 +409,12 @@
                       <td data-label="Tipo">Capítulo</td>
                       <td data-label="Tipo Género">Programa</td>
                       <td data-label="Fecha Inicio">2022/11/17</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                           <button class="custom-dropdown-toggle">
@@ -462,15 +496,20 @@
                       aria-labelledby="user-data-heading" data-bs-parent="#user-data-accordion">
                       <div class="accordion-body p-0 pb-5">
                         <form id="user-data-form" class="d-flex align-items-end flex-wrap">
-                          <!-- Orden -->
+                          <!-- No. artículo -->
                           <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
-                            <label for="orden" class="form-label">Orden</label>
-                            <input type="text" class="form-control" id="orden" placeholder="01291281270012">
+                            <label for="no-articulo" class="form-label">No. Artículo</label>
+                            <input type="text" class="form-control" id="no-articulo" placeholder="01291281270012">
                           </div>
-                          <!-- Título en español -->
+                          <!-- Centro de titulo-español -->
                           <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
-                            <label for="titulo-español" class="form-label">Título en español</label>
-                            <input type="text" class="form-control" id="titulo-español" placeholder="Como dice el dicho">
+                            <label for="titulo-español" class="form-label">Centro de titulo-español</label>
+                            <input type="text" class="form-control" id="titulo-español" placeholder="1201281281212">
+                          </div>
+                          <!-- Fecha Adquisición -->
+                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                            <label for="inicio" class="form-label">Fecha de Adquisición</label>
+                            <input type="date" class="form-control date-input" id="inicio">
                           </div>
                           <!-- Tipo de género -->
                           <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
@@ -481,25 +520,23 @@
                               <option value="viewer">option</option>
                             </select>
                           </div>
-
-                          <div class="col-12 d-flex flex-column flex-md-row flex-wrap gap-3 px-4 py-3">
-                            <div>
-                              <label for="inicio" class="form-label">Inicio fecha al aire</label>
-                              <input type="date" class="form-control date-input" id="inicio">
-                            </div>
-                            <div>
-                              <label for="fin" class="form-label">Fecha fin al aire</label>
-                              <input type="date" class="form-control date-input" id="fin">
-                            </div>
-                          </div>
-
-                          <!-- Centro de costos -->
+                          <!-- Tipo -->
                           <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
-                            <label for="centro-costos" class="form-label">Centro de costos</label>
-                            <input type="text" class="form-control" id="centro-costos" placeholder="1201281281212">
+                            <label for="user-role" class="form-label">Tipo</label>
+                            <select class="form-select" id="user-role">
+                              <option value="admin">Capítulo</option>
+                              <option value="editor">option</option>
+                              <option value="viewer">option</option>
+                            </select>
                           </div>
 
-                          <div class="col-12 col-lg-11 px-4 mb-3">
+                          <!-- Fecha Inicio -->
+                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                            <label for="inicio" class="form-label">Fecha inicio</label>
+                            <input type="date" class="form-control date-input" id="inicio">
+                          </div>
+                          
+                          <div class="col-12 col-md-7 px-4 mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label px-3">Descripción</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
                               placeholder="Como dice el dicho, programa……"></textarea>
@@ -545,42 +582,42 @@
   </div>
 
 
-  <!-- Modal editar -->
-  <div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content input-template">
-        <div class="modal-header">
-          <h5 class="modal-title" id="editItemModalLabel">Editar Elemento</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Campos dinámicos -->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn-gray" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="add-btn" id="saveEditButton">Guardar Cambios</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal ver -->
-<div class="modal fade" id="viewItemModal" tabindex="-1" aria-labelledby="viewItemModalLabel" aria-hidden="true">
+<!-- Modal de editar -->
+<div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content input-template">
       <div class="modal-header">
-        <h5 class="modal-title" id="viewItemModalLabel">Detalles</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        <h5 class="modal-title" id="editItemModalLabel">Editar Elemento</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <!-- Aquí se llenará con los datos dinámicamente -->
+        <!-- Campos dinámicos -->
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn-gray" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="add-btn" id="saveEditButton">Guardar Cambios</button>
       </div>
     </div>
   </div>
 </div>
+
+  <!-- Modal ver -->
+  <div class="modal fade" id="viewItemModal" tabindex="-1" aria-labelledby="viewItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="viewItemModalLabel">Detalles</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Aquí se llenará con los datos dinámicamente -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/password.js"></script>
   <script src="js/menu.js"></script>
@@ -590,7 +627,7 @@
   <script src="js/url.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+  </script>
 </body>
 
 </html>

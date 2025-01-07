@@ -60,7 +60,7 @@ body {
   position: absolute;
   top: 2.8em;
   left: 20px;
-  z-index: 10000;
+  z-index: 100005;
 
   span {
     display: block;
@@ -472,6 +472,7 @@ body {
   border-radius: 8px;
   padding: 10px;
   margin: -1em 0;
+  right: 0em;
   z-index: 100;
   white-space: nowrap;
 }
@@ -816,7 +817,6 @@ textarea {
   position: absolute;
   top: 2.8em;
   left: 20px;
-  z-index: 1000;
 }
 .login-container .hamburger span {
   display: block;
@@ -1002,6 +1002,9 @@ textarea {
   .login-container .content-header header {
     padding: 0 0 0 50px;
   }
+  .content-header .title-content span {
+    font-size: 20px;
+  }
 }
 .login-container .content-header .title-content h1 {
   font-size: 50px;
@@ -1108,6 +1111,9 @@ textarea {
   }
   .login-container table td:last-child {
     border-bottom: 0;
+  }
+  .custom-dropdown {
+    justify-content: flex-end;
   }
 }
 .login-container .pagination {
@@ -1459,7 +1465,6 @@ input#user {
 
 /* Estilo general para la tabla */
 .table td {
-  text-align: center;
   vertical-align: middle;
   padding: 8px;
 }
@@ -1596,7 +1601,6 @@ td.ColoStatusRow {
     position: absolute;
     top: 2.8em;
     left: 20px;
-    z-index: 1000;
   }
   .hamburger span {
     display: block;
@@ -1828,7 +1832,6 @@ td.ColoStatusRow {
 }
 @media (max-width: 768px) {
   .content-header .title-content span {
-    font-size: 30px;
     color: transparent;
     background: transparent linear-gradient(180deg, #ff5131 0%, #901701 100%) 0% 0% no-repeat padding-box;
   }
@@ -2029,7 +2032,7 @@ td.ColoStatusRow {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     padding: 10px;
-    margin: -1em;
+    margin: -1em 0;
     z-index: 1000;
     white-space: nowrap;
   }

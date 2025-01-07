@@ -231,7 +231,7 @@
                   </div>
                   <div class="d-flex align-items-center flex-wrap justify-content-center gap-2">
                     <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="add-btn" id="saveEditButton">Guardar</button>
+                    <button type="button" class="add-btn">Guardar</button>
                   </div>
                 </div>
               </div>
@@ -249,6 +249,7 @@
                       <th>ACK</th>
                       <th>Fecha de inicio</th>
                       <th>Fecha fin</th>
+                      <th>Active</th>
                       <th></th>
                     </tr>
                   </thead>
@@ -333,6 +334,12 @@
                       <td data-label="ACK" class="ColoStatusRow">0001212212</td>
                       <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                             <button class="custom-dropdown-toggle">
@@ -437,6 +444,12 @@
                       <td data-label="ACK" class="ColoStatusRow">0001212212</td>
                       <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                             <button class="custom-dropdown-toggle">
@@ -541,6 +554,12 @@
                       <td data-label="ACK" class="ColoStatusRow">0001212212</td>
                       <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                             <button class="custom-dropdown-toggle">
@@ -645,6 +664,12 @@
                         <td data-label="ACK" class="ColoStatusRow">0001212212</td>
                         <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                         <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
+                        <td data-label="Active">
+                          <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                            <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                            <label class="form-check-label" for="active"></label>
+                          </div>
+                        </td>
                         <td>
                           <div class="custom-dropdown">
                               <button class="custom-dropdown-toggle">
@@ -750,6 +775,12 @@
                         <td data-label="ACK" class="ColoStatusRow">0001212212</td>
                         <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                         <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
+                        <td data-label="Active">
+                          <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                            <input class="form-check-input" type="checkbox" id="active" disabled/>
+                            <label class="form-check-label" for="active"></label>
+                          </div>
+                        </td>
                         <td>
                           <div class="custom-dropdown">
                               <button class="custom-dropdown-toggle">
@@ -909,46 +940,48 @@
     </section>
   </main>
 
+
+  
    <!-- Modal de confirmación tabla -->
-<div class="modal fade" id="confirmDeleteTableModal" tabindex="-1" aria-labelledby="confirmDeleteTableLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="confirmDeleteTableLabel">Confirmar eliminación de elemento</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        <p>¿Estás seguro de que deseas eliminar <u id="deleteItemDescripcion"></u>?</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="add-btn" id="confirmDeleteTableButton">Eliminar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal editar -->
-<div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content input-template">
-      <div class="modal-header">
-        <h5 class="modal-title" id="editItemModalLabel">Editar Elemento</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Campos dinámicos -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-gray" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="add-btn" id="saveEditButton">Guardar Cambios</button>
+  <div class="modal fade" id="confirmDeleteTableModal" tabindex="-1" aria-labelledby="confirmDeleteTableLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmDeleteTableLabel">Confirmar eliminación de elemento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p>¿Estás seguro de que deseas eliminar <u id="deleteItemDescripcion"></u>?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="add-btn" id="confirmDeleteTableButton">Eliminar</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-  <!-- Modal ver -->
+    
+    
+  <!-- Modal editar -->
+  <div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content input-template">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editItemModalLabel">Editar Elemento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- filtros dinámicos -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-gray" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="add-btn" id="saveEditButton">Guardar Cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal ver -->
   <div class="modal fade" id="viewItemModal" tabindex="-1" aria-labelledby="viewItemModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">

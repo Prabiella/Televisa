@@ -231,7 +231,7 @@
                   </div>
                   <div class="d-flex align-items-center flex-wrap justify-content-center gap-2">
                     <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="add-btn" id="saveEditButton">Guardar</button>
+                    <button type="button" class="add-btn">Guardar</button>
                   </div>
                 </div>
               </div>
@@ -249,6 +249,7 @@
                       <th>Fecha de inicio</th>
                       <th>Fecha fin</th>
                       <th>Descripción</th>
+                      <th>Active</th>
                       <th></th>
                      
                      
@@ -257,7 +258,7 @@
                   <tbody>
                     <!-- Registro 1 -->
                     <tr data-id="1" class="TableColor">
-                      <td data-label="Estatus" class="ChangeStatus m-0 p-0" >
+                      <td data-label="Estatus" class="ChangeStatus m-0 p-0 no-modify" >
                         <div class="estatus-dropdown">
                           <span class="estatus-value">0.0</span>
                           <button class="arrow-down" onclick="toggleSubmenu(this)">
@@ -334,6 +335,12 @@
                       <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="descripcion"  class="ColoStatusRow">Como dice el dicho..</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                             <button class="custom-dropdown-toggle">
@@ -438,6 +445,12 @@
                       <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="descripcion"  class="ColoStatusRow">Como dice el dicho..</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                             <button class="custom-dropdown-toggle">
@@ -542,6 +555,12 @@
                       <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="descripcion"  class="ColoStatusRow">Como dice el dicho..</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                             <button class="custom-dropdown-toggle">
@@ -646,6 +665,12 @@
                       <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="descripcion"  class="ColoStatusRow">Como dice el dicho..</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
                       <td>
                         <div class="custom-dropdown">
                             <button class="custom-dropdown-toggle">
@@ -751,6 +776,12 @@
                         <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                         <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
                         <td data-label="descripcion"  class="ColoStatusRow">Como dice el dicho..</td>
+                        <td data-label="Active">
+                          <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                            <input class="form-check-input" type="checkbox" id="active" disabled/>
+                            <label class="form-check-label" for="active"></label>
+                          </div>
+                        </td>
                         <td>
                           <div class="custom-dropdown">
                               <button class="custom-dropdown-toggle">
