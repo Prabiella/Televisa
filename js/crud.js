@@ -40,116 +40,97 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Función para abrir el modal de edición
-  function openEditItemModal(row) {
-    const cells = row.querySelectorAll('td');
-    const modalForm = document.querySelector('#editItemModal .modal-body');
-    modalForm.innerHTML = ''; // Limpia el contenido del modal
-  
-    cells.forEach((cell, index) => {
-      const dataLabel = cell.getAttribute('data-label');
-  
-      // Manejo de elementos con clase .ChangeStatus
-      if (cell.querySelector('.ChangeStatus')) {
-        const formGroup = document.createElement('div');
-        formGroup.classList.add('form-group');
-  
-        const label = document.createElement('label');
-        label.textContent = dataLabel;
-  
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.classList.add('form-control');
-        input.value = cell.textContent.trim();
-        input.dataset.index = index;
-        input.disabled = true; // Deshabilitar el campo para evitar edición
-  
-        formGroup.appendChild(label);
-        formGroup.appendChild(input);
-        modalForm.appendChild(formGroup);
-        return; // Salir del ciclo para este elemento
-      }
-  
-      // Manejo de switches (checkbox)
-      const checkbox = cell.querySelector('input[type="checkbox"]');
-      if (checkbox) {
-        const formGroup = document.createElement('div');
-        formGroup.classList.add('form-group', 'd-flex', 'align-items-center', 'gap-2');
-  
-        const label = document.createElement('label');
-        label.textContent = dataLabel;
-        label.style.flexGrow = '1';
-  
-        const switchWrapper = document.createElement('div');
-        switchWrapper.classList.add('form-check', 'form-switch', 'd-flex', 'justify-content-center');
-  
-        const input = document.createElement('input');
-        input.type = 'checkbox';
-        input.classList.add('form-check-input');
-        input.id = `switch-${index}`;
-        input.checked = checkbox.checked; // Refleja el estado actual del switch
-        input.dataset.index = index; // Vincula con la celda correspondiente
-  
-        const switchLabel = document.createElement('label');
-        switchLabel.classList.add('form-check-label');
-        switchLabel.setAttribute('for', `switch-${index}`);
-  
-        switchWrapper.appendChild(input);
-        switchWrapper.appendChild(switchLabel);
-        formGroup.appendChild(label);
-        formGroup.appendChild(switchWrapper);
-        modalForm.appendChild(formGroup);
-        return;
-      }
-  
-      // Manejo de inputs de texto
-      if (!cell.querySelector('.custom-dropdown')) {
-        const value = cell.textContent.trim();
-        const formGroup = document.createElement('div');
-        formGroup.classList.add('form-group');
-        const label = document.createElement('label');
-        label.textContent = dataLabel;
-  
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.classList.add('form-control');
-        input.value = value;
-        input.dataset.index = index;
-  
-        formGroup.appendChild(label);
-        formGroup.appendChild(input);
-        modalForm.appendChild(formGroup);
+// Función para abrir el modal de edición
+function openEditItemModal(row) {
+  const cells = row.querySelectorAll('td');
+  const modalForm = document.querySelector('#editItemModal .modal-body');
+  modalForm.innerHTML = '';
+
+  cells.forEach((cell, index) => {
+    const dataLabel = cell.getAttribute('data-label');
+
+    // Verificar si el elemento tiene la clase 'no-modify'
+    if (cell.classList.contains('no-modify')) {
+      return;
+    }
+
+    // Manejo de switches (checkbox)
+    const checkbox = cell.querySelector('input[type="checkbox"]');
+    if (checkbox) {
+      const formGroup = document.createElement('div');
+      formGroup.classList.add('form-group', 'd-flex', 'align-items-center', 'gap-2');
+
+      const label = document.createElement('label');
+      label.textContent = dataLabel;
+      label.style.flexGrow = '1';
+
+      const switchWrapper = document.createElement('div');
+      switchWrapper.classList.add('form-check', 'form-switch', 'd-flex', 'justify-content-center');
+
+      const input = document.createElement('input');
+      input.type = 'checkbox';
+      input.classList.add('form-check-input');
+      input.id = `switch-${index}`;
+      input.checked = checkbox.checked; 
+      input.dataset.index = index;
+
+      const switchLabel = document.createElement('label');
+      switchLabel.classList.add('form-check-label');
+      switchLabel.setAttribute('for', `switch-${index}`);
+
+      switchWrapper.appendChild(input);
+      switchWrapper.appendChild(switchLabel);
+      formGroup.appendChild(label);
+      formGroup.appendChild(switchWrapper);
+      modalForm.appendChild(formGroup);
+      return;
+    }
+
+    // Manejo de inputs de texto (solo si no es un dropdown personalizado)
+    if (!cell.querySelector('.custom-dropdown')) {
+      const value = cell.textContent.trim();
+      const formGroup = document.createElement('div');
+      formGroup.classList.add('form-group');
+      const label = document.createElement('label');
+      label.textContent = dataLabel;
+
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.classList.add('form-control');
+      input.value = value;
+      input.dataset.index = index;
+
+      formGroup.appendChild(label);
+      formGroup.appendChild(input);
+      modalForm.appendChild(formGroup);
+    }
+  });
+
+  const editModal = new bootstrap.Modal(document.getElementById('editItemModal'));
+  editModal.show();
+
+  const saveEditButton = document.getElementById('saveEditButton');
+  saveEditButton.onclick = () => {
+    const formInputs = modalForm.querySelectorAll('input');
+    formInputs.forEach((input) => {
+      const index = input.dataset.index;
+      const cell = row.children[index];
+
+      if (input.type === 'checkbox') {
+        const checkbox = cell.querySelector('input[type="checkbox"]');
+        if (checkbox) {
+          checkbox.checked = input.checked;
+        }
+      } else if (!input.disabled) {
+        cell.textContent = input.value;
       }
     });
-  
-    const editModal = new bootstrap.Modal(document.getElementById('editItemModal'));
-    editModal.show();
-  
-    // Guardar cambios
-    const saveEditButton = document.getElementById('saveEditButton');
-    saveEditButton.onclick = () => {
-      const formInputs = modalForm.querySelectorAll('input');
-      formInputs.forEach((input) => {
-        const index = input.dataset.index;
-        const cell = row.children[index];
-  
-        if (input.type === 'checkbox') {
-          // Actualizar estado del switch en la tabla
-          const checkbox = cell.querySelector('input[type="checkbox"]');
-          if (checkbox) {
-            checkbox.checked = input.checked;
-          }
-        } else if (!input.disabled) {
-          // Actualizar texto de la celda si no está deshabilitado
-          cell.textContent = input.value;
-        }
-      });
-  
-      const modal = bootstrap.Modal.getInstance(document.getElementById('editItemModal'));
-      modal.hide();
-    };
-  }
-  
+
+    const modal = bootstrap.Modal.getInstance(document.getElementById('editItemModal'));
+    modal.hide();
+  };
+}
+
 
 
   // Función para abrir el modal de confirmación de eliminación
