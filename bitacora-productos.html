@@ -96,11 +96,13 @@
                 <ul>
                   <li><a href="mantenimiento-tablas.html">Tablas</a></li>
                   <li>
-                    
-                    <button class="accordion-button accordSub collapsed" type="button" aria-expanded="true" aria-controls="collapseSub1" onclick="handleAccordionClick(this, 'collapseSub1', 'mantenimiento-catalogos.html')">
+
+                    <button class="accordion-button accordSub collapsed" type="button" aria-expanded="true"
+                      aria-controls="collapseSub1"
+                      onclick="handleAccordionClick(this, 'collapseSub1', 'mantenimiento-catalogos.html')">
                       Catálogos
-                    </button>                             
-                    
+                    </button>
+
                     <ul id="collapseSub1" class="accordion-collapse collapse" data-bs-parent="#accordionSub1">
                       <li>ACQ_catForemats</li>
                       <li>ACQ_catMedios</li>
@@ -138,9 +140,10 @@
                   <li><a href="reporte-estadistico.html">Reporte Estadístico</a></li>
                   <li><a href="">Reporte Inserciones</a></li>
                   <li>
-                    <button class="accordion-button accordSub collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSub2" aria-expanded="true" aria-controls="collapseSub2">
-                    <a href="">Bitácora DALET</a>
-                  </button>
+                    <button class="accordion-button accordSub collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSub2" aria-expanded="true" aria-controls="collapseSub2">
+                      <a href="">Bitácora DALET</a>
+                    </button>
                     <ul id="collapseSub2" class="accordion-collapse collapse" data-bs-parent="#accordionSub2">
                       <li><a href="">Productos</a></li>
                       <li><a href="">Contratos</a></li>
@@ -204,338 +207,376 @@
           </header>
           <div>
 
-            <div class="d-flex flex-column align-items-start m-md-5">              
-                <!-- Filtros -->
-                <div class="col-12 col-lg-9 filters table-content d-flex flex-column gap-2 p-4 mb-4">
-                  <div class="filter-content row g-3 align-items-center justify-content-center">
-                    <div class="col-md-2">
-                        <h6 class="m-0 text-center">Dónde</h6>
-                      </div>
-                    <div class="col-md-3">
-                      <select class="form-select">
-                        <option selected>IdTelevisaSIHO</option>
-                        <option value="1">Estatus</option>
-                        <option value="2">ID</option>
-                        <option value="3">Tipo</option>
-                      </select>
-                    </div>
-                    <div class="col-md-3">
-                      <select class="form-select">
-                        <option selected>es igual =</option>
-                        <option value="1">es diferente !=</option>
-                        <option value="2">es mayor a ></option>
-                      </select>
-                    </div>
-                    <div class="col-md-3">
-                      <input type="text" class="form-control" placeholder="direccion">
-                    </div>
-                    <div class="col-md-1 text-end">
-                      <button class="trash">
-                        <img src="assets/images/icons/borrar.svg" alt="">
-                      </button>
-                    </div>
+            <div class="d-flex flex-column align-items-start m-md-5">
+              <!-- Filtros -->
+              <div class="col-12 col-lg-9 filters table-content d-flex flex-column gap-2 p-4 mb-4">
+                <div class="filter-content row g-3 align-items-center justify-content-center">
+                  <div class="col-md-2">
+                    <h6 class="m-0 text-center">Dónde</h6>
                   </div>
-                  <div class="filter-content row g-3 align-items-center justify-content-center">
-                    <div class="col-md-2">
-                        <select class="form-select">
-                            <option selected>AND</option>
-                            <option value="1">OR</option>
-                          </select>
-                      </div>
-                    <div class="col-md-3">
-                      <select class="form-select">
-                        <option selected>ID</option>
-                        <option value="1">option</option>
-                        <option value="2">option</option>
-                        <option value="3">option</option>
-                      </select>
-                    </div>
-                    <div class="col-md-3">
-                      <select class="form-select">
-                        <option selected>es diferente !=</option>
-                        <option value="1">es igual =</option>
-                        <option value="2">es mayor a ></option>
-                      </select>
-                    </div>
-                    <div class="col-md-3">
-                      <input type="text" class="form-control" placeholder="direccion">
-                    </div>
-                    <div class="col-md-1 text-end">
-                      <button class="trash">
-                        <img src="assets/images/icons/borrar.svg" alt="">
-                      </button>
-                    </div>
+                  <div class="col-md-3">
+                    <select class="form-select">
+                      <option selected>IdTelevisaSIHO</option>
+                      <option value="1">Estatus</option>
+                      <option value="2">ID</option>
+                      <option value="3">Tipo</option>
+                    </select>
                   </div>
-                  <div class="filter-content row g-3 align-items-center justify-content-center">
-                    <div class="col-md-2">
-                        <select class="form-select">
-                            <option selected>OR</option>
-                            <option value="1">AND</option>          
-                          </select>
-                      </div>
-                    <div class="col-md-3">
-                      <select class="form-select">
-                        <option selected>TIPO</option>
-                        <option value="1">option</option>
-                        <option value="2">option</option>
-                        <option value="3">option</option>
-                      </select>
-                    </div>
-                    <div class="col-md-3">
-                      <select class="form-select">
-                        <option selected>es mayor a ></option>
-                        <option value="1">es igual =</option>
-                        <option value="2">es diferente !=</option>
-                      </select>
-                    </div>
-                    <div class="col-md-3">
-                      <input type="text" class="form-control" placeholder="direccion">
-                    </div>
-                    <div class="col-md-1 text-end">
-                      <button class="trash">
-                        <img src="assets/images/icons/borrar.svg" alt="">
-                      </button>
-                    </div>
+                  <div class="col-md-3">
+                    <select class="form-select">
+                      <option selected>es igual =</option>
+                      <option value="1">es diferente !=</option>
+                      <option value="2">es mayor a ></option>
+                    </select>
                   </div>
-                  <hr>                    
-                    <div class="d-flex justify-content-between">
-                        <button class="add-filter">+ Agregar filtro</button>
-                        <button class="add-btn">Buscar</button>
-                      </div>
+                  <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="direccion">
+                  </div>
+                  <div class="col-md-1 text-end">
+                    <button class="trash">
+                      <img src="assets/images/icons/borrar.svg" alt="">
+                    </button>
+                  </div>
                 </div>
-              
-                <!-- Tabla -->
-                <div class="table-trans table-responsive col-12 col-lg-11">
-                  <table class="table table-striped table-bordered">
-                    <thead>
-                      <tr>
-                        <th>idOrquestacion</th>
-                        <th>Tipo</th>
-                        <th>id_Correlación</th>
-                        <th>Descripción</th>
-                        <th>Item</th>
-                        <th>Num</th>
-                        <th>Cost</th>
-                        <th>Status</th>
-                        <th>Inter</th>
-                        <th>Active</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr data-id="1">
-                        <td data-label="idOrquestacion">1212122108980878787778</td>
-                        <td data-label="Tipo">UNITARIO</td>
-                        <td data-label="id_Correlación">PROD_UNITARIO_01212612661255651255125</td>
-                        <td data-label="Descripción">A MINUTE TO WIN</td>
-                        <td data-label="Item">0121261</td>
-                        <td data-label="Num">0121261</td>
-                        <td data-label="Cost">0121261</td>
-                        <td data-label="Status">101</td>
-                        <td data-label="Inter">0</td>
-                        <td data-label="Active">
-                          <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
-                            <input class="form-check-input" type="checkbox" id="active" checked disabled/>
-                            <label class="form-check-label" for="active"></label>
-                          </div>
-                        </td>
-                        <td>
-                            <div class="custom-dropdown">
-                                <button class="custom-dropdown-toggle">
-                                  <span class="custom-dot"></span>
-                                  <span class="custom-dot"></span>
-                                  <span class="custom-dot"></span>
-                                </button>
-                                <div class="custom-dropdown-menu">
-                                  <div class="d-flex gap-3">
-                                    <button class="custom-menu-item edit-btn">
-                                      <img src="assets/images/icons/editar-1.svg" alt="editar">
-                                    </button>
-                                    <button class="custom-menu-item delete-btn">
-                                      <img src="assets/images/icons/borrar-1.svg" alt="borrar">
-                                    </button>
-                                    <button class="custom-menu-item see-btn">
-                                      <img src="assets/images/icons/ver.svg" alt="ver">
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                        </td>
-                      </tr>
-                      <tr data-id="2">
-                        <td data-label="idOrquestacion">1212122108980878787778</td>
-                        <td data-label="Tipo">UNITARIO</td>
-                        <td data-label="id_Correlación">PROD_UNITARIO_01212612661255651255125</td>
-                        <td data-label="Descripción">A MINUTE TO WIN</td>
-                        <td data-label="Item">0121261</td>
-                        <td data-label="Num">0121261</td>
-                        <td data-label="Cost">0121261</td>
-                        <td data-label="Status">101</td>
-                        <td data-label="Inter">0</td>
-                        <td data-label="Active">
-                          <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
-                            <input class="form-check-input" type="checkbox" id="active" checked disabled/>
-                            <label class="form-check-label" for="active"></label>
-                          </div>
-                        </td>
-                        <td>
-                            <div class="custom-dropdown">
-                                <button class="custom-dropdown-toggle">
-                                  <span class="custom-dot"></span>
-                                  <span class="custom-dot"></span>
-                                  <span class="custom-dot"></span>
-                                </button>
-                                <div class="custom-dropdown-menu">
-                                  <div class="d-flex gap-3">
-                                    <button class="custom-menu-item edit-btn">
-                                      <img src="assets/images/icons/editar-1.svg" alt="editar">
-                                    </button>
-                                    <button class="custom-menu-item delete-btn">
-                                      <img src="assets/images/icons/borrar-1.svg" alt="borrar">
-                                    </button>
-                                    <button class="custom-menu-item see-btn">
-                                      <img src="assets/images/icons/ver.svg" alt="ver">
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                        </td>
-                      </tr>
-                      <tr data-id="3">
-                        <td data-label="idOrquestacion">1212122108980878787778</td>
-                        <td data-label="Tipo">UNITARIO</td>
-                        <td data-label="id_Correlación">PROD_UNITARIO_01212612661255651255125</td>
-                        <td data-label="Descripción">A MINUTE TO WIN</td>
-                        <td data-label="Item">0121261</td>
-                        <td data-label="Num">0121261</td>
-                        <td data-label="Cost">0121261</td>
-                        <td data-label="Status">101</td>
-                        <td data-label="Inter">0</td>
-                        <td data-label="Active">
-                          <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
-                            <input class="form-check-input" type="checkbox" id="active" checked disabled/>
-                            <label class="form-check-label" for="active"></label>
-                          </div>
-                        </td>
-                        <td>
-                            <div class="custom-dropdown">
-                                <button class="custom-dropdown-toggle">
-                                  <span class="custom-dot"></span>
-                                  <span class="custom-dot"></span>
-                                  <span class="custom-dot"></span>
-                                </button>
-                                <div class="custom-dropdown-menu">
-                                  <div class="d-flex gap-3">
-                                    <button class="custom-menu-item edit-btn">
-                                      <img src="assets/images/icons/editar-1.svg" alt="editar">
-                                    </button>
-                                    <button class="custom-menu-item delete-btn">
-                                      <img src="assets/images/icons/borrar-1.svg" alt="borrar">
-                                    </button>
-                                    <button class="custom-menu-item see-btn">
-                                      <img src="assets/images/icons/ver.svg" alt="ver">
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                        </td>
-                      </tr>
-                      <tr data-id="4">
-                        <td data-label="idOrquestacion">1212122108980878787778</td>
-                        <td data-label="Tipo">UNITARIO</td>
-                        <td data-label="id_Correlación">PROD_UNITARIO_01212612661255651255125</td>
-                        <td data-label="Descripción">A MINUTE TO WIN</td>
-                        <td data-label="Item">0121261</td>
-                        <td data-label="Num">0121261</td>
-                        <td data-label="Cost">0121261</td>
-                        <td data-label="Status">101</td>
-                        <td data-label="Inter">0</td>
-                        <td data-label="Active">
-                          <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
-                            <input class="form-check-input" type="checkbox" id="active" disabled/>
-                            <label class="form-check-label" for="active"></label>
-                          </div>
-                        </td>
-                        <td>
-                            <div class="custom-dropdown">
-                                <button class="custom-dropdown-toggle">
-                                  <span class="custom-dot"></span>
-                                  <span class="custom-dot"></span>
-                                  <span class="custom-dot"></span>
-                                </button>
-                                <div class="custom-dropdown-menu">
-                                  <div class="d-flex gap-3">
-                                    <button class="custom-menu-item edit-btn">
-                                      <img src="assets/images/icons/editar-1.svg" alt="editar">
-                                    </button>
-                                    <button class="custom-menu-item delete-btn">
-                                      <img src="assets/images/icons/borrar-1.svg" alt="borrar">
-                                    </button>
-                                    <button class="custom-menu-item see-btn">
-                                      <img src="assets/images/icons/ver.svg" alt="ver">
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="filter-content row g-3 align-items-center justify-content-center">
+                  <div class="col-md-2">
+                    <select class="form-select">
+                      <option selected>AND</option>
+                      <option value="1">OR</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-select">
+                      <option selected>ID</option>
+                      <option value="1">option</option>
+                      <option value="2">option</option>
+                      <option value="3">option</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-select">
+                      <option selected>es diferente !=</option>
+                      <option value="1">es igual =</option>
+                      <option value="2">es mayor a ></option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="direccion">
+                  </div>
+                  <div class="col-md-1 text-end">
+                    <button class="trash">
+                      <img src="assets/images/icons/borrar.svg" alt="">
+                    </button>
+                  </div>
                 </div>
-            
+                <div class="filter-content row g-3 align-items-center justify-content-center">
+                  <div class="col-md-2">
+                    <select class="form-select">
+                      <option selected>OR</option>
+                      <option value="1">AND</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-select">
+                      <option selected>TIPO</option>
+                      <option value="1">option</option>
+                      <option value="2">option</option>
+                      <option value="3">option</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-select">
+                      <option selected>es mayor a ></option>
+                      <option value="1">es igual =</option>
+                      <option value="2">es diferente !=</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="direccion">
+                  </div>
+                  <div class="col-md-1 text-end">
+                    <button class="trash">
+                      <img src="assets/images/icons/borrar.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                  <button class="add-filter">+ Agregar filtro</button>
+                  <button class="add-btn">Buscar</button>
+                </div>
               </div>
-              
-                <!-- Aplicar filtros -->
-                <div class="col-12">
-                  <div class="data-user-content px-5 py-1">
-                    <div class="tab-content input-template mt-3">
-                      <!-- Datos del usuario -->
-                      <div class="tab-pane fade show active" id="user-data" role="tabpanel" aria-labelledby="user-data-tab">
-                        <div class="accordion" id="user-data-accordion">
-                          <!-- Sección Datos del usuario -->
-                          <div class="accordion-item m-0">
-                            <h2 class="accordion-header" id="user-data-heading">
-                              <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#user-data-collapse" aria-expanded="true"
-                                aria-controls="user-data-collapse">
-                                Aplicar filtros
+
+              <!-- Tabla -->
+              <div class="table-trans table-responsive col-12 col-lg-11">
+                <table class="table table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>idOrquestacion</th>
+                      <th>Tipo</th>
+                      <th>id_Correlación</th>
+                      <th>Descripción</th>
+                      <th>Item</th>
+                      <th>Num</th>
+                      <th>Cost</th>
+                      <th>Status</th>
+                      <th>Inter</th>
+                      <th>Active</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-id="1">
+                      <td data-label="idOrquestacion">1212122108980878787778</td>
+                      <td data-label="Tipo">UNITARIO</td>
+                      <td data-label="id_Correlación">PROD_UNITARIO_01212612661255651255125</td>
+                      <td data-label="Descripción">A MINUTE TO WIN</td>
+                      <td data-label="Item">0121261</td>
+                      <td data-label="Num">0121261</td>
+                      <td data-label="Cost">0121261</td>
+                      <td data-label="Status">101</td>
+                      <td data-label="Inter">0</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled />
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="custom-dropdown">
+                          <button class="custom-dropdown-toggle">
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                          </button>
+                          <div class="custom-dropdown-menu">
+                            <div class="d-flex gap-3">
+                              <button class="custom-menu-item edit-btn">
+                                <img src="assets/images/icons/editar-1.svg" alt="editar">
                               </button>
-                            </h2>
-                            <div id="user-data-collapse" class="accordion-collapse collapse show"
-                              aria-labelledby="user-data-heading" data-bs-parent="#user-data-accordion">
-                              <div class="accordion-body p-0 pb-5">
-                                <form id="user-data-form" class="d-flex align-items-end flex-wrap gap-5 gap-md-3">
-                                  <div class="col-12 col-md-6 d-flex align-items-center flex-wrap gap-2">
-                                    <!-- Filtro -->
-                                    <div class="col-12 col-md-5">
-                                      <label class="p-2" for="filtro">Aplicar Filtros</label>
-                                      <select id="filtro" class="form-select">
-                                        <option selected>idOrquestación</option>
-                                        <option value="1">option</option>
-                                      </select>
-                                    </div>
-                                    <!-- Dirección -->
-                                    <div class="col-12 col-md-5">
-                                      <label class="p-2" for="direccion">Dirección</label>
-                                      <input id="direccion" type="text" class="form-control" placeholder="Ascendente">
-                                    </div>
-                                  </div>
-    
-                                  <div class="col-12 col-md-5 text-end">
-                                    <button class="add-btn">Filtrar</button>
-                                  </div>
-                                </form>
-    
-                              </div>
+                              <button class="custom-menu-item delete-btn">
+                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                              </button>
+                              <button class="custom-menu-item see-btn">
+                                <img src="assets/images/icons/ver.svg" alt="ver">
+                              </button>
                             </div>
-    
                           </div>
                         </div>
+                      </td>
+                    </tr>
+                    <tr data-id="2">
+                      <td data-label="idOrquestacion">1212122108980878787778</td>
+                      <td data-label="Tipo">UNITARIO</td>
+                      <td data-label="id_Correlación">PROD_UNITARIO_01212612661255651255125</td>
+                      <td data-label="Descripción">A MINUTE TO WIN</td>
+                      <td data-label="Item">0121261</td>
+                      <td data-label="Num">0121261</td>
+                      <td data-label="Cost">0121261</td>
+                      <td data-label="Status">101</td>
+                      <td data-label="Inter">0</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled />
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="custom-dropdown">
+                          <button class="custom-dropdown-toggle">
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                          </button>
+                          <div class="custom-dropdown-menu">
+                            <div class="d-flex gap-3">
+                              <button class="custom-menu-item edit-btn">
+                                <img src="assets/images/icons/editar-1.svg" alt="editar">
+                              </button>
+                              <button class="custom-menu-item delete-btn">
+                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                              </button>
+                              <button class="custom-menu-item see-btn">
+                                <img src="assets/images/icons/ver.svg" alt="ver">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr data-id="3">
+                      <td data-label="idOrquestacion">1212122108980878787778</td>
+                      <td data-label="Tipo">UNITARIO</td>
+                      <td data-label="id_Correlación">PROD_UNITARIO_01212612661255651255125</td>
+                      <td data-label="Descripción">A MINUTE TO WIN</td>
+                      <td data-label="Item">0121261</td>
+                      <td data-label="Num">0121261</td>
+                      <td data-label="Cost">0121261</td>
+                      <td data-label="Status">101</td>
+                      <td data-label="Inter">0</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled />
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="custom-dropdown">
+                          <button class="custom-dropdown-toggle">
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                          </button>
+                          <div class="custom-dropdown-menu">
+                            <div class="d-flex gap-3">
+                              <button class="custom-menu-item edit-btn">
+                                <img src="assets/images/icons/editar-1.svg" alt="editar">
+                              </button>
+                              <button class="custom-menu-item delete-btn">
+                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                              </button>
+                              <button class="custom-menu-item see-btn">
+                                <img src="assets/images/icons/ver.svg" alt="ver">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr data-id="4">
+                      <td data-label="idOrquestacion">1212122108980878787778</td>
+                      <td data-label="Tipo">UNITARIO</td>
+                      <td data-label="id_Correlación">PROD_UNITARIO_01212612661255651255125</td>
+                      <td data-label="Descripción">A MINUTE TO WIN</td>
+                      <td data-label="Item">0121261</td>
+                      <td data-label="Num">0121261</td>
+                      <td data-label="Cost">0121261</td>
+                      <td data-label="Status">101</td>
+                      <td data-label="Inter">0</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" disabled />
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="custom-dropdown">
+                          <button class="custom-dropdown-toggle">
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                            <span class="custom-dot"></span>
+                          </button>
+                          <div class="custom-dropdown-menu">
+                            <div class="d-flex gap-3">
+                              <button class="custom-menu-item edit-btn">
+                                <img src="assets/images/icons/editar-1.svg" alt="editar">
+                              </button>
+                              <button class="custom-menu-item delete-btn">
+                                <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                              </button>
+                              <button class="custom-menu-item see-btn">
+                                <img src="assets/images/icons/ver.svg" alt="ver">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+
+            <!-- Aplicar filtros -->
+            <div class="col-12">
+              <div class="data-user-content px-5 py-1">
+                <div class="tab-content input-template mt-3">
+                  <!-- Datos del usuario -->
+                  <div class="tab-pane fade show active" id="user-data" role="tabpanel" aria-labelledby="user-data-tab">
+                    <div class="accordion" id="user-data-accordion">
+                      <!-- Sección Datos del usuario -->
+                      <div class="accordion-item m-0">
+                        <h2 class="accordion-header" id="user-data-heading">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#user-data-collapse" aria-expanded="true"
+                            aria-controls="user-data-collapse">
+                            Datos del producto
+                          </button>
+                        </h2>
+                        <div id="user-data-collapse" class="accordion-collapse collapse show"
+                          aria-labelledby="user-data-heading" data-bs-parent="#user-data-accordion">
+                          <div class="accordion-body p-0 pb-5">
+                            <form id="user-data-form" class="d-flex align-items-end flex-wrap gap-5 gap-md-3">
+                              <div class="col-12 d-flex align-items-center flex-wrap gap-2">
+                                <!-- idOrquestacion -->
+                                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                  <label class="p-2" for="idOrquestacion">idOrquestacion</label>
+                                  <input id="direccion" type="text" class="form-control" placeholder="1212122108980878787778">
+                                </div>
+                                <!-- Tipo -->
+                                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                  <label for="user-role" class="form-label">Tipo</label>
+                                  <select class="form-select" id="user-role">
+                                    <option value="admin">Capítulo</option>
+                                    <option value="editor">option</option>
+                                    <option value="viewer">option</option>
+                                  </select>
+                                </div>
+                                <!-- Dirección -->
+                                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                  <label class="p-2" for="id_Correlacion">id_Correlación</label>
+                                  <input id="id_Correlacion" type="text" class="form-control" placeholder="PROD_UNITARIO_01212612661255651255125">
+                                </div>
+                                <!-- Item -->
+                                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                  <label class="p-2" for="Item">Item</label>
+                                  <input id="Item" type="text" class="form-control" placeholder="0121261">
+                                </div>
+                                <!-- Num -->
+                                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                  <label class="p-2" for="Num">Num</label>
+                                  <input id="Num" type="text" class="form-control" placeholder="0121261">
+                                </div>
+                                <!-- Cost -->
+                                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                  <label class="p-2" for="Cost">Cost</label>
+                                  <input id="Cost" type="text" class="form-control" placeholder="0121261">
+                                </div>
+                                <!-- Status -->
+                                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                  <label class="p-2" for="Status">Status</label>
+                                  <input id="Status" type="text" class="form-control" placeholder="101">
+                                </div>
+                                <!-- Inter -->
+                                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                  <label class="p-2" for="inter">Inter</label>
+                                  <input id="inter" type="text" class="form-control" placeholder="0">
+                                </div>
+
+                                <div class="col-12">
+                                  <div class="col-12 col-lg-6 px-4 mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label px-3">Descripción</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="A MINUTE TO WIN"></textarea>
+                                    <div class="d-flex justify-content-end p-4">
+                                      <button class="add-btn mb-5">Agregar</button>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </form>
+
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
-    
                 </div>
+              </div>
+
+            </div>
 
 
           </div>
@@ -563,8 +604,9 @@
     </div>
   </div>
 
- <!-- Modal de confirmación tabla -->
-<div class="modal fade" id="confirmDeleteTableModal" tabindex="-1" aria-labelledby="confirmDeleteTableLabel" aria-hidden="true">
+  <!-- Modal de confirmación tabla -->
+  <div class="modal fade" id="confirmDeleteTableModal" tabindex="-1" aria-labelledby="confirmDeleteTableLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -581,10 +623,10 @@
       </div>
     </div>
   </div>
-  
-  
-<!-- Modal editar -->
-<div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
+
+
+  <!-- Modal editar -->
+  <div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content input-template">
         <div class="modal-header">
@@ -603,22 +645,22 @@
   </div>
 
   <!-- Modal ver -->
-<div class="modal fade" id="viewItemModal" tabindex="-1" aria-labelledby="viewItemModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="viewItemModalLabel">Detalles</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Aquí se llenará con los datos dinámicamente -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+  <div class="modal fade" id="viewItemModal" tabindex="-1" aria-labelledby="viewItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="viewItemModalLabel">Detalles</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Aquí se llenará con los datos dinámicamente -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <script src="js/add-filter.js"></script>
   <script src="js/menu.js"></script>
@@ -628,7 +670,7 @@
   <script src="js/url.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+  </script>
 </body>
 
 </html>

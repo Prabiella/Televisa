@@ -259,7 +259,7 @@
                       <td data-label="Fecha Inicio">2022/11/17</td>
                       <td data-label="Active">
                         <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
-                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled />
                           <label class="form-check-label" for="active"></label>
                         </div>
                       </td>
@@ -297,7 +297,7 @@
                       <td data-label="Fecha Inicio">2022/11/17</td>
                       <td data-label="Active">
                         <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
-                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled />
                           <label class="form-check-label" for="active"></label>
                         </div>
                       </td>
@@ -335,7 +335,7 @@
                       <td data-label="Fecha Inicio">2022/11/17</td>
                       <td data-label="Active">
                         <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
-                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled />
                           <label class="form-check-label" for="active"></label>
                         </div>
                       </td>
@@ -373,7 +373,7 @@
                       <td data-label="Fecha Inicio">2022/11/17</td>
                       <td data-label="Active">
                         <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
-                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled />
                           <label class="form-check-label" for="active"></label>
                         </div>
                       </td>
@@ -411,7 +411,7 @@
                       <td data-label="Fecha Inicio">2022/11/17</td>
                       <td data-label="Active">
                         <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
-                          <input class="form-check-input" type="checkbox" id="active" disabled/>
+                          <input class="form-check-input" type="checkbox" id="active" disabled />
                           <label class="form-check-label" for="active"></label>
                         </div>
                       </td>
@@ -511,15 +511,6 @@
                             <label for="inicio" class="form-label">Fecha de Adquisición</label>
                             <input type="date" class="form-control date-input" id="inicio">
                           </div>
-                          <!-- Tipo de género -->
-                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
-                            <label for="user-role" class="form-label">Tipo de género</label>
-                            <select class="form-select" id="user-role">
-                              <option value="admin">PROGRAMA</option>
-                              <option value="editor">option</option>
-                              <option value="viewer">option</option>
-                            </select>
-                          </div>
                           <!-- Tipo -->
                           <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
                             <label for="user-role" class="form-label">Tipo</label>
@@ -529,19 +520,29 @@
                               <option value="viewer">option</option>
                             </select>
                           </div>
-
+                          <!-- Tipo de género -->
+                          <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                            <label for="user-role" class="form-label">Tipo de género</label>
+                            <select class="form-select" id="user-role">
+                              <option value="admin">PROGRAMA</option>
+                              <option value="editor">option</option>
+                              <option value="viewer">option</option>
+                            </select>
+                          </div>
                           <!-- Fecha Inicio -->
                           <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
                             <label for="inicio" class="form-label">Fecha inicio</label>
                             <input type="date" class="form-control date-input" id="inicio">
                           </div>
-                          
-                          <div class="col-12 col-md-7 px-4 mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label px-3">Descripción</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                              placeholder="Como dice el dicho, programa……"></textarea>
-                            <div class="d-flex justify-content-end p-4">
-                              <button class="add-btn mb-5">Agregar</button>
+
+                          <div class="col-12">
+                            <div class="col-12 col-md-7 px-4 mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label px-3">Descripción</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                placeholder="Como dice el dicho, programa……"></textarea>
+                              <div class="d-flex justify-content-end p-4">
+                                <button class="add-btn mb-5">Agregar</button>
+                              </div>
                             </div>
                           </div>
 
@@ -582,24 +583,24 @@
   </div>
 
 
-<!-- Modal de editar -->
-<div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content input-template">
-      <div class="modal-header">
-        <h5 class="modal-title" id="editItemModalLabel">Editar Elemento</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Campos dinámicos -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-gray" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="add-btn" id="saveEditButton">Guardar Cambios</button>
+  <!-- Modal de editar -->
+  <div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content input-template">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editItemModalLabel">Editar Elemento</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Campos dinámicos -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-gray" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="add-btn" id="saveEditButton">Guardar Cambios</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <!-- Modal ver -->
   <div class="modal fade" id="viewItemModal" tabindex="-1" aria-labelledby="viewItemModalLabel" aria-hidden="true">

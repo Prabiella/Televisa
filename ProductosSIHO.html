@@ -231,11 +231,11 @@
                   </div>
                   <div class="d-flex align-items-center flex-wrap justify-content-center gap-2">
                     <button type="button" class="btn-gray" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="add-btn" id="saveEditButton">Guardar</button>
+                    <button type="button" class="add-btn">Guardar</button>
                   </div>
                 </div>
               </div>
-              <div class="table-trans table-responsive col-12 col-lg-12">
+              <div class="table-trans table-responsive col-12 col-lg-12 py-5">
            
                 <table class="table  table-bordered">
                   <thead>
@@ -250,12 +250,14 @@
                       <th>Descripción</th>
                       <th>Fecha de inicio</th>
                       <th>Fecha fin</th>
+                      <th>Active</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <!-- Registro 1 -->
                     <tr data-id="1" class="TableColor">
-                      <td data-label="Estatus" class="ChangeStatus m-0 p-0" >
+                      <td data-label="Estatus" class="ChangeStatus m-0 p-0 no-modify">
                         <div class="estatus-dropdown">
                           <span class="estatus-value">0.0</span>
                           <button class="arrow-down" onclick="toggleSubmenu(this)">
@@ -334,12 +336,40 @@
                       <td data-label="descripcion"  class="ColoStatusRow">Como dice el dicho..</td>
                       <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="custom-dropdown">
+                            <button class="custom-dropdown-toggle">
+                              <span class="custom-dot"></span>
+                              <span class="custom-dot"></span>
+                              <span class="custom-dot"></span>
+                            </button>
+                            <div class="custom-dropdown-menu">
+                              <div class="d-flex gap-3">
+                                <button class="custom-menu-item edit-btn">
+                                  <img src="assets/images/icons/editar-1.svg" alt="editar">
+                                </button>
+                                <button class="custom-menu-item delete-btn">
+                                  <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                                </button>
+                                <button class="custom-menu-item see-btn">
+                                  <img src="assets/images/icons/ver.svg" alt="ver">
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                      </td>
                       </tr>
                     </tr>
 
                    <!-- Registro 2 -->
                     <tr data-id="2" class="TableColor">
-                      <td data-label="Estatus" class="ChangeStatus m-0 p-0" >
+                      <td data-label="Estatus" class="ChangeStatus m-0 p-0 no-modify">
                         <div class="estatus-dropdown">
                           <span class="estatus-value">1.0</span>
                           <button class="arrow-down" onclick="toggleSubmenu(this)">
@@ -418,12 +448,40 @@
                       <td data-label="descripcion"  class="ColoStatusRow">Como dice el dicho..</td>
                       <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="custom-dropdown">
+                            <button class="custom-dropdown-toggle">
+                              <span class="custom-dot"></span>
+                              <span class="custom-dot"></span>
+                              <span class="custom-dot"></span>
+                            </button>
+                            <div class="custom-dropdown-menu">
+                              <div class="d-flex gap-3">
+                                <button class="custom-menu-item edit-btn">
+                                  <img src="assets/images/icons/editar-1.svg" alt="editar">
+                                </button>
+                                <button class="custom-menu-item delete-btn">
+                                  <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                                </button>
+                                <button class="custom-menu-item see-btn">
+                                  <img src="assets/images/icons/ver.svg" alt="ver">
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                      </td>
                       </tr>
                     </tr>
 
                     <!-- Registro 3 -->
                     <tr data-id="3" class="TableColor">
-                      <td data-label="Estatus" class="ChangeStatus m-0 p-0" >
+                      <td data-label="Estatus" class="ChangeStatus m-0 p-0 no-modify">
                         <div class="estatus-dropdown">
                           <span class="estatus-value">2.0</span>
                           <button class="arrow-down" onclick="toggleSubmenu(this)">
@@ -502,12 +560,40 @@
                       <td data-label="descripcion"  class="ColoStatusRow">Como dice el dicho..</td>
                       <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="custom-dropdown">
+                            <button class="custom-dropdown-toggle">
+                              <span class="custom-dot"></span>
+                              <span class="custom-dot"></span>
+                              <span class="custom-dot"></span>
+                            </button>
+                            <div class="custom-dropdown-menu">
+                              <div class="d-flex gap-3">
+                                <button class="custom-menu-item edit-btn">
+                                  <img src="assets/images/icons/editar-1.svg" alt="editar">
+                                </button>
+                                <button class="custom-menu-item delete-btn">
+                                  <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                                </button>
+                                <button class="custom-menu-item see-btn">
+                                  <img src="assets/images/icons/ver.svg" alt="ver">
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                      </td>
                       </tr>
                     </tr>
 
                       <!-- Registro 4 -->
                       <tr data-id="4" class="TableColor">
-                        <td data-label="Estatus" class="ChangeStatus m-0 p-0" >
+                        <td data-label="Estatus" class="ChangeStatus m-0 p-0 no-modify">
                           <div class="estatus-dropdown">
                             <span class="estatus-value">3.0</span>
                             <button class="arrow-down" onclick="toggleSubmenu(this)">
@@ -586,13 +672,41 @@
                         <td data-label="descripcion"  class="ColoStatusRow">Como dice el dicho..</td>
                         <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                         <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
+                        <td data-label="Active">
+                          <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                            <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                            <label class="form-check-label" for="active"></label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="custom-dropdown">
+                              <button class="custom-dropdown-toggle">
+                                <span class="custom-dot"></span>
+                                <span class="custom-dot"></span>
+                                <span class="custom-dot"></span>
+                              </button>
+                              <div class="custom-dropdown-menu">
+                                <div class="d-flex gap-3">
+                                  <button class="custom-menu-item edit-btn">
+                                    <img src="assets/images/icons/editar-1.svg" alt="editar">
+                                  </button>
+                                  <button class="custom-menu-item delete-btn">
+                                    <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                                  </button>
+                                  <button class="custom-menu-item see-btn">
+                                    <img src="assets/images/icons/ver.svg" alt="ver">
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                        </td>
                         </tr>
                       </tr>
 
 
                       <!-- Registro 5 -->
                       <tr data-id="5" class="TableColor">
-                        <td data-label="Estatus" class="ChangeStatus m-0 p-0" >
+                        <td data-label="Estatus" class="ChangeStatus m-0 p-0 no-modify">
                           <div class="estatus-dropdown">
                             <span class="estatus-value">-1.0</span>
                             <button class="arrow-down" onclick="toggleSubmenu(this)">
@@ -671,6 +785,34 @@
                       <td data-label="descripcion"  class="ColoStatusRow">Como dice el dicho..</td>
                       <td data-label="Fecha de inicio"  class="ColoStatusRow">1900/01/01</td>
                       <td data-label="Fecha fin"  class="ColoStatusRow">1900/01/01</td>
+                      <td data-label="Active">
+                        <div class="form-check form-switch d-flex justify-content-end justify-content-lg-center">
+                          <input class="form-check-input" type="checkbox" id="active" checked disabled/>
+                          <label class="form-check-label" for="active"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="custom-dropdown">
+                            <button class="custom-dropdown-toggle">
+                              <span class="custom-dot"></span>
+                              <span class="custom-dot"></span>
+                              <span class="custom-dot"></span>
+                            </button>
+                            <div class="custom-dropdown-menu">
+                              <div class="d-flex gap-3">
+                                <button class="custom-menu-item edit-btn">
+                                  <img src="assets/images/icons/editar-1.svg" alt="editar">
+                                </button>
+                                <button class="custom-menu-item delete-btn">
+                                  <img src="assets/images/icons/borrar-1.svg" alt="borrar">
+                                </button>
+                                <button class="custom-menu-item see-btn">
+                                  <img src="assets/images/icons/ver.svg" alt="ver">
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                      </td>
                       </tr>
 
                   </tbody>
