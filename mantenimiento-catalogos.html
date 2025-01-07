@@ -481,7 +481,7 @@
 
             <!-- Actualización de Campos -->
             <div class="col-12">
-              <div class="data-user-content px-5 py-1">
+              <div class="data-user-content px-3 py-1">
                 <div class="tab-content input-template mt-3">
                   <!-- Datos del usuario -->
                   <div class="tab-pane fade show active" id="user-data" role="tabpanel" aria-labelledby="user-data-tab">
@@ -490,47 +490,72 @@
                       <div class="accordion-item m-0">
                         <h2 class="accordion-header" id="user-data-heading">
                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#user-data-collapse" aria-expanded="true"
-                            aria-controls="user-data-collapse">
+                            data-bs-target="#user-data-collapse" aria-expanded="true" aria-controls="user-data-collapse">
                             Actualización de campos
                           </button>
                         </h2>
                         <div id="user-data-collapse" class="accordion-collapse collapse show"
                           aria-labelledby="user-data-heading" data-bs-parent="#user-data-accordion">
                           <div class="accordion-body p-0 pb-5">
-                            <form id="user-data-form" class="d-flex align-items-end flex-wrap gap-5 gap-md-3">
-                              <div class="col-12 col-md-6 d-flex align-items-center flex-wrap gap-2">
-                                <!-- Campo -->
-                                <div class="col-12 col-md-5">
-                                  <label class="p-2" for="campo">Campo</label>
-                                  <select id="campo" class="form-select">
-                                    <option selected>idTelevisa</option>
-                                    <option value="1">Descripción</option>
-                                  </select>
-                                </div>
-                                <!-- valor -->
-                                <div class="col-12 col-md-5">
-                                  <label class="p-2" for="valor">Valor</label>
-                                  <input id="valor" type="text" class="form-control" placeholder="Ingresa un valor">
-                                </div>
+                            <form id="user-data-form" class="d-flex align-items-end flex-wrap">
+                              <!-- No. artículo -->
+                              <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                <label for="no-articulo" class="form-label">IdTelevisaSIHO</label>
+                                <input type="number" class="form-control" id="no-articulo">
                               </div>
+                             
+                           
+                              <!-- Tipo de género -->
+                              <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                <label for="user-role" class="form-label">Tipo de género</label>
+                                <select class="form-select" id="user-role">
+                                  <option value="admin">PROGRAMA</option>
+                                  <option value="editor">option</option>
+                                  <option value="viewer">option</option>
+                                </select>
+                              </div>
+    
+                           
+    
+                                  <!-- Fecha inicio -->
+                                  <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                    
+                                      <label for="inicio" class="form-label">Inicio fecha al aire</label>
+                                      <input type="date" class="form-control date-input" id="inicio">
+                               
+                                  </div>
 
-                              <div class="col-12 col-md-5 text-end">
-                                <button class="btn-gray">Actualizar</button>
-                                <button class="add-btn">Guardar</button>
+                                   <!-- Fecha fin -->
+                                  <div class="col-12 col-md-6 col-lg-3 col-xxl-2 px-4 mb-3">
+                                    
+                                    <label for="fin" class="form-label">Fecha fin al aire</label>
+                                    <input type="date" class="form-control date-input" id="fin">
+                             
+                                </div>
+    
+                            
+    
+                            <div class="col-12 col-lg-6 px-4 mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label px-3">Descripción</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Como dice el dicho, programa……"></textarea>
+                              <div class="d-flex justify-content-end p-4">
+                                <button class="add-btn mb-5">Agregar</button>
                               </div>
+                            </div>
+    
                             </form>
-
+    
                           </div>
                         </div>
-
+    
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
+    
             </div>
+            
           </div>
         </div>
       </div>
