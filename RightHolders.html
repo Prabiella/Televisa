@@ -214,7 +214,7 @@
 
             <div class="table-content p-4 my-3">
               <div class="d-flex align-items-center flex-wrap">
-                <div class="col-12 col-lg-6 header-table-content d-flex gap-3 align-items-center justify-content-between flex-wrap">
+                <div class="col-12 col-md-6 col-lg-4 header-table-content d-flex gap-3 align-items-center justify-content-between flex-wrap">
                   <form class="search d-flex input-group" role="search">
                     <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
                   </form>
@@ -223,7 +223,7 @@
                     <img src="assets/images/icons/filtros.svg" alt="Filtros">
                   </button>
                 </div>
-                <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-md-between flex-wrap gap-3 py-4 py-lg-0">
+                <div class="col-12 col-md-6 col-lg-8 d-flex justify-content-center justify-content-md-between flex-wrap gap-3 py-4 py-lg-0">
                   <div class="d-flex flex-wrap gap-3 px-3">
                     <img src="assets/images/icons/cargar.svg" alt="cargar" style="width: 40px;">
                     <img src="assets/images/icons/exportar.svg" alt="exportar" style="width: 53px;">
@@ -1125,6 +1125,112 @@
 
   
 
+    <!-- Modal Filtros -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Realiza tu búsqueda utilizando los siguientes filtros</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">   
+        <!-- Formulario con los filtros -->
+        <form action="/procesarBusqueda" method="POST">
+          <div class="row">
+            <!-- Centro de costos -->
+            <div class="col-md-6 mt-3">
+              <label for="centroCostos" class="form-label">Centro de costos</label>
+              <div class="d-flex align-items-center">
+                <input type="checkbox" id="centroCostosCheck" class="form-check-input me-2 toggle-field">
+                <input type="text" class="form-control" id="centroCostos" name="centroCostos" placeholder="Centro de costos" disabled>
+              </div>
+            </div>
+
+            <!-- T. contrato -->
+            <div class="col-md-6 mt-3">
+              <label for="tipoContrato" class="form-label">Tipo de contrato</label>
+              <div class="d-flex align-items-center">
+                <input type="checkbox" id="tipoContratoCheck" class="form-check-input me-2 toggle-field">
+                <select class="form-select" id="tipoContrato" name="tipoContrato" disabled>
+                  <option selected>Selecciona un contrato</option>
+                  <option value="1">Contrato 1</option>
+                  <option value="2">Contrato 2</option>
+                  <option value="3">Contrato 3</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- T. rol -->
+            <div class="col-md-6 mt-3">
+              <label for="tipoRol" class="form-label">Tipo de Rol</label>
+              <div class="d-flex align-items-center">
+                <input type="checkbox" id="tipoRolCheck" class="form-check-input me-2 toggle-field">
+                <select class="form-select" id="tipoRol" name="tipoRol" disabled>
+                  <option selected>Selecciona un rol</option>
+                  <option value="admin">Admin</option>
+                  <option value="user">Usuario</option>
+                  <option value="guest">Invitado</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- No. Contrato -->
+            <div class="col-md-6 mt-3">
+              <label for="noContrato" class="form-label">Numero de contrato</label>
+              <div class="d-flex align-items-center">
+                <input type="checkbox" id="noContratoCheck" class="form-check-input me-2 toggle-field">
+                <input type="text" class="form-control" id="noContrato" name="noContrato" placeholder="Número de contrato" disabled>
+              </div>
+            </div>
+
+            <!-- Estatus -->
+            <div class="col-md-6 mt-3">
+              <label for="estatus" class="form-label">Estatus</label>
+              <div class="d-flex align-items-center">
+                <input type="checkbox" id="estatusCheck" class="form-check-input me-2 toggle-field">
+                <select class="form-select" id="estatus" name="estatus" disabled>
+                  <option selected>Selecciona un estatus</option>
+                  <option value="activo">0.0 Por revisar</option>
+                  <option value="pendiente">1.0 Revisado</option>
+                  <option value="cancelado">2.0 Autorizado</option>
+                  <option value="cancelado">3.0 Enviado</option>
+                  <option value="cancelado">-1.0 Inhabilitado</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Folio -->
+            <div class="col-md-6 mt-3">
+              <label for="folio" class="form-label">Folio</label>
+              <div class="d-flex align-items-center">
+                <input type="checkbox" id="folioCheck" class="form-check-input me-2 toggle-field">
+                <input type="text" class="form-control" id="folio" name="folio" placeholder="Número de folio" disabled>
+              </div>
+            </div>
+
+            <!-- Nombre -->
+            <div class="col-md-6 mt-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <div class="d-flex align-items-center">
+                <input type="checkbox" id="nombreCheck" class="form-check-input me-2 toggle-field">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe el nombre" disabled>
+              </div>
+            </div>
+        
+        
+           <!-- Nombre -->
+           <div class="col-md-6 mt-3">
+            <div class="d-flex justify-content-end p-4">
+              <button class="add-btn mb-5">Mostrar resultados</button>
+            </div>
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -1139,6 +1245,7 @@
   <script src="js/accordion-icon.js"></script>
   <script src="js/url.js"></script>
   <script src="js/ordenar.js"></script>
+  <script src="js/modal-filters.js"></script>
  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

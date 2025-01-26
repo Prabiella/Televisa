@@ -303,7 +303,7 @@ body {
   padding: 1em;
 }
 .header-table-content .search {
-  max-width: 600px;
+  max-width: 70%;
 }
 .header-table-content input[type=search] {
   width: 200px;
