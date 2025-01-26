@@ -1606,6 +1606,30 @@ td.ColoStatusRow {
   color: #856404;
 }
 
+/* Estilo para la tabla */
+/* Botón de ordenación */
+thead th button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  margin-left: 8px;
+}
+
+/* Indicador de estado de ordenación */
+thead th[data-sort-dir=asc] button::after {
+  content: "▲";
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+thead th[data-sort-dir=desc] button::after {
+  content: "▼";
+  font-size: 10px;
+  margin-left: 5px;
+}
+
 /* Media Query para dispositivos pequeños */
 @media (max-width: 768px) {
   .login-container {
