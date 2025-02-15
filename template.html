@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisa Univisión</title>
+    <link rel="icon" href="assets/images/icons/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <section class="menu-container">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="menu" id="menu">
+                <img class="logo" src="assets/images/logos/televisa-univision-color.svg" alt="">
+
+                <div class="accordion my-5" id="accordionExample">
+                    <div class="accordion-item acc-1">
+                        <button class="accordion-button accordFirst collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#coll-adminuser-1" aria-expanded="false" aria-controls="coll-adminuser-1">
+                            <img id="icon-user" src="assets/images/icons/user.svg" alt="usuario"> Iniciar sesión
+                        </button>
+                        <div id="coll-adminuser-1" class="accordion-collapse collapse" data-bs-parent="#admin-user-1">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                    <li>
+                                        <a href="administrar-usuarios.html">Administrar usuarios</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-2">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordFirst collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#coll-adminuser-2" aria-expanded="false"
+                                aria-controls="coll-adminuser-2">
+                                <img src="assets/images/icons/vistas.svg" alt="vistas"> Vistas
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-2" class="accordion-collapse collapse" data-bs-parent="#admin-user-2">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                    <li>
+                                        <a href="">Productos Unitarios SIHO</a>
+                                    </li>
+                                    <li>
+                                        <a href="productos-libretos-unitarios.html">Productos Libretos Unitarios</a>
+                                    </li>
+                                    <li>
+                                        <a href="Righ-holders.html">Righ Holders</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordFirst collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#coll-adminuser-3" aria-expanded="false"
+                                aria-controls="coll-adminuser-3">
+                                <img src="assets/images/icons/contratos.svg" alt="contratos"> Contratos
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-3" class="accordion-collapse collapse" data-bs-parent="#admin-user-3">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                    <li><a href=""> Libretos Telenovelas</a></li>
+                                    <li><a href="contratos-libretos-unitarios.html"> Libretos Unitarios</a></li>
+                                    <li><a href=""> Contratos Adquisiciones</a></li>
+                                    <li><a href=""> SHIO</a></li>
+                                    <li><a href=""> Deportes y Noticieros</a></li>
+                                    <li><a href=""> Carta Vestuario</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordFirst collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#coll-adminuser-4" aria-expanded="false"
+                                aria-controls="coll-adminuser-4">
+                                <img src="assets/images/icons/Mantenimiento.svg" alt="mantenimiento"> Mantenimiento
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-4" class="accordion-collapse collapse" data-bs-parent="#admin-user-4">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                    <li><a href="mantenimiento-tablas.html">Tablas</a></li>
+                                    <li>
+
+                                        <button class="accordion-button accordSub collapsed" type="button"
+                                            aria-expanded="true" aria-controls="collapseSub1"
+                                            onclick="handleAccordionClick(this, 'collapseSub1', 'mantenimiento-catalogos.html')">
+                                            Catálogos
+                                        </button>
+
+                                        <ul id="collapseSub1" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionSub1">
+                                            <li>ACQ_catForemats</li>
+                                            <li>ACQ_catMedios</li>
+                                            <li>ACQ_catLanguajes</li>
+                                            <li>catORG_ID</li>
+                                            <li>CAT_TIPO_PROGRAMA</li>
+                                            <li>catCalendarioPagoSiho</li>
+                                            <li>catContSecurity</li>
+                                            <li>catCurrency</li>
+                                            <li>catDaletTituloMusicalSoc..</li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-5">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordFirst collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#coll-adminuser-5" aria-expanded="false"
+                                aria-controls="coll-adminuser-5">
+                                <img src="assets/images/icons/reportes.svg" alt="mantenimiento"> Reportes
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-5" class="accordion-collapse collapse" data-bs-parent="#admin-user-5">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                    <li><a href="historico-de-cambios.html">Histórico de cambios</a></li>
+                                    <li><a href="bitacora-productos.html">Bitácora Productos</a></li>
+                                    <li><a href="">Bitácora RightHolders</a></li>
+                                    <li><a href="">Bitácora Contratos</a></li>
+                                    <li><a href="">Bitácora Pagos</a></li>
+                                    <li><a href="">Bitácora Request de pagos</a></li>
+                                    <li><a href="">Bitácora Errores</a></li>
+                                    <li><a href="reporte-estadistico.html">Reporte Estadístico</a></li>
+                                    <li><a href="">Reporte Inserciones</a></li>
+                                    <li>
+                                        <button class="accordion-button accordSub collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSub2"
+                                            aria-expanded="true" aria-controls="collapseSub2">
+                                            <a href="">Bitácora DALET</a>
+                                        </button>
+                                        <ul id="collapseSub2" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionSub2">
+                                            <li><a href="">Productos</a></li>
+                                            <li><a href="">Contratos</a></li>
+                                            <li><a href="">Títulos musicales</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-6">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordFirst collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#coll-adminuser-6" aria-expanded="false"
+                                aria-controls="coll-adminuser-6">
+                                <img src="assets/images/icons/configurar.svg" alt="configurar"> Configurar
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-6" class="accordion-collapse collapse" data-bs-parent="#admin-user-6">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                    <li><a href="template.html">Template</a></li>
+                                    <li><a href="">Conexión</a></li>
+                                    <li><a href="">Campos Custom</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acc-7">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordFirst collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#coll-adminuser-7" aria-expanded="false"
+                                aria-controls="coll-adminuser-7">
+                                <img src="assets/images/icons/horas.svg" alt="mantenimiento"> Horas
+                            </button>
+                        </h2>
+                        <div id="coll-adminuser-7" class="accordion-collapse collapse" data-bs-parent="#admin-user-7">
+                            <div class="accordion-body py-0">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mb-5">
+                    <button class="log-out-btn mb-5">
+                        Cerrar sesión
+                        <img src="assets/images/icons/logout.svg" alt="cerrar sesión">
+                    </button>
+                </div>
+            </nav>
+        </section>
+
+
+        <section class="content content-header input-template maintenance col-12">
+            <div class="d-flex flex-column">
+                <div class="col-lg-12 pt-4">
+                    <header>
+                        <div class="title-content d-flex align-items-center gap-2 px-3">
+                            <span>|</span>
+                            <h1>Configurar <b class="point-orange">•</b> <span class="template-span">Template</span>
+                            </h1>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 py-2">
+                            <p class="px-4 m-0">Hola <span>Juan Perez</span>, bienvenido de nuevo</p>
+                        </div>
+                    </header>
+                    <div class="p-md-5">
+
+                        <!-- Filtros -->
+                        <div
+                            class="col-12 col-lg-9 filters table-content d-flex flex-column gap-2 p-4 mb-4 w-100 tab-template">
+                            <div class="container mt-4">
+                                <!-- Tabs -->
+                                <ul class="nav nav-tabs custom-tabs" id="myTabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab"
+                                            href="#tab1">Seleccionar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2">Configurar
+                                            vista</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab3-tab" data-bs-toggle="tab" href="#tab3">Modificar
+                                            vista</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab4-tab" data-bs-toggle="tab" href="#tab4">Opciones</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab5-tab" data-bs-toggle="tab" href="#tab5">Cambio de
+                                            estatus</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab6-tab" data-bs-toggle="tab" href="#tab6">Salir</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Contenido de los tabs -->
+                                <div class="tab-content py-3 p-lg-5">
+                                    <div class="tab-pane fade show active" id="tab1">
+                                        <div class="table-trans table-responsive col-12 col-lg-11">
+                                            <table class="table table-striped table-bordered table-template">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Nombre</th>
+                                                        <th>Valor</th>
+                                                        <th>Tabla</th>
+                                                        <th>Nombre de la vista a mostrar</th>
+                                                        <th>Active</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="table-body-5">
+                                                    <tr>
+                                                        <td data-label="Nombre">VistaContratosSIHO_Unitarios</td>
+                                                        <td data-label="Valor">XML? VERSION1.0 ENCODIGUTF</td>
+                                                        <td data-label="Tabla">TBL_CONTRATOS_DALE</td>
+                                                        <td data-label="Nombre de la vista">Vista inserciones Títulos Musicales</td>
+                                                        <td data-label="Active">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Nombre">VistaContratosSIHO_Unitarios</td>
+                                                        <td data-label="Valor">XML? VERSION1.0 ENCODIGUTF</td>
+                                                        <td data-label="Tabla">TBL_CONTRATOS_DALE</td>
+                                                        <td data-label="Nombre de la vista">Vista inserciones Títulos Musicales</td>
+                                                        <td data-label="Active">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Nombre">VistaContratosSIHO_Unitarios</td>
+                                                        <td data-label="Valor">XML? VERSION1.0 ENCODIGUTF</td>
+                                                        <td data-label="Tabla">TBL_CONTRATOS_DALE</td>
+                                                        <td data-label="Nombre de la vista">Vista inserciones Títulos Musicales</td>
+                                                        <td data-label="Active">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab2">
+                                        <div class="table-trans table-responsive col-12 col-lg-11">
+                                            <table class="table table-striped table-bordered table-template">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Nombre Interno</th>
+                                                        <th>Nombre a mostrar</th>
+                                                        <th>Longitud</th>
+                                                        <th>Consultado</th>
+                                                        <th>AdministrativaEditable</th>
+                                                        <th>LegalEditable</th>
+                                                        <th>Controles</th>
+                                                        <th>Posición</th>
+                                                        <th>DATA_TYPE</th>
+                                                        <th>Nombre Interno</th>
+                                                        <th>Nombre a mostrar</th>
+                                                        <th>Longitud</th>
+                                                        <th>Consultado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-label="Nombre Interno">Título</td>
+                                                        <td data-label="Nombre a mostrar">TITULO+EDITORIAL+COMP</td>
+                                                        <td data-label="Longitud">0</td>
+                                                        <td data-label="Consultado">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td data-label="AdministrativaEditable">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td data-label="LegalEditable">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td data-label="Controles">Texto textos texto</td>
+                                                        <td data-label="Posición">8</td>
+                                                        <td data-label="DATA_TYPE">Varchar</td>
+                                                        <td data-label="Nombre Interno">Título</td>
+                                                        <td data-label="Nombre a mostrar">TITULO+EDITORIAL+COMP</td>
+                                                        <td data-label="Longitud">0</td>
+                                                        <td data-label="Consultado">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Nombre Interno">Título</td>
+                                                        <td data-label="Nombre a mostrar">TITULO+EDITORIAL+COMP</td>
+                                                        <td data-label="Longitud">0</td>
+                                                        <td data-label="Consultado">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td data-label="AdministrativaEditable">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td data-label="LegalEditable">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td data-label="Controles">Texto textos texto</td>
+                                                        <td data-label="Posición">8</td>
+                                                        <td data-label="DATA_TYPE">Varchar</td>
+                                                        <td data-label="Nombre Interno">Título</td>
+                                                        <td data-label="Nombre a mostrar">TITULO+EDITORIAL+COMP</td>
+                                                        <td data-label="Longitud">0</td>
+                                                        <td data-label="Consultado">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Nombre Interno">Título</td>
+                                                        <td data-label="Nombre a mostrar">TITULO+EDITORIAL+COMP</td>
+                                                        <td data-label="Longitud">0</td>
+                                                        <td data-label="Consultado">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td data-label="AdministrativaEditable">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td data-label="LegalEditable">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td data-label="Controles">Texto textos texto</td>
+                                                        <td data-label="Posición">8</td>
+                                                        <td data-label="DATA_TYPE">Varchar</td>
+                                                        <td data-label="Nombre Interno">Título</td>
+                                                        <td data-label="Nombre a mostrar">TITULO+EDITORIAL+COMP</td>
+                                                        <td data-label="Longitud">0</td>
+                                                        <td data-label="Consultado">
+                                                            <input type="checkbox">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>                                         
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab3">
+                                        <div id="user-data-collapse" class="accordion-collapse collapse show"
+                                            aria-labelledby="user-data-heading" data-bs-parent="#user-data-accordion">
+                                            <div class="accordion-body p-0 pb-5">
+                                                <form id="user-data-form"
+                                                    class="d-flex align-items-end flex-wrap gap-5 gap-md-3">
+                                                    <div class="col-12 d-flex align-items-center flex-wrap gap-2">
+                                                        <!-- Nombre setting -->
+                                                        <div class="col-12 col-md-5 col-lg-3 px-4 mb-3">
+                                                            <label class="p-2" for="nombreSetting">Nombre
+                                                                setting</label>
+                                                            <input id="nombreSetting" type="text" class="form-control"
+                                                                placeholder="VistaContratoDalet">
+                                                        </div>
+                                                        <!-- Nombre vista -->
+                                                        <div class="col-12 col-md-5 col-lg-3 px-4 mb-3">
+                                                            <label class="p-2" for="nombreVista">Nombre vista</label>
+                                                            <input id="nombreVista" type="text" class="form-control"
+                                                                placeholder="Vista Inserciones Títulos Musicales">
+                                                        </div>
+                                                        <!-- Nombre tabla -->
+                                                        <div class="col-12 col-md-5 col-lg-3 px-4 mb-3">
+                                                            <label class="p-2" for="nombreTabla">Nombre tabla</label>
+                                                            <input id="nombreTabla" type="text" class="form-control"
+                                                                placeholder="0121261">
+                                                        </div>
+                                                        <!-- Nombre Tabla Detalle -->
+                                                        <div class="col-12 col-md-5 col-lg-3 px-4 mb-3">
+                                                            <label class="p-2" for="nombreDetalle">Nombre Tabla
+                                                                Detalle</label>
+                                                            <input id="nombreDetalle" type="text" class="form-control">
+                                                        </div>
+                                                        <!-- Campo llave -->
+                                                        <div class="col-12 col-md-5 col-lg-3 px-4 mb-3">
+                                                            <label class="p-2" for="campoLlave">Campo llave</label>
+                                                            <input id="campoLlave" type="text" class="form-control"
+                                                                placeholder="0121261">
+                                                        </div>
+
+                                                        <div class="col-12 d-flex flex-column gap-3 p-4">
+                                                            <div class="d-flex flex-wrap gap-3">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="editable-check">
+                                                                    <label class="form-check-label" for="editable-check">
+                                                                        Editable
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="nuevo-check">
+                                                                    <label class="form-check-label" for="nuevo-check">
+                                                                      Nuevo
+                                                                    </label>
+                                                                  </div>
+                                                            </div>
+                                                            <div class="d-flex flex-wrap gap-3">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="guardar-check">
+                                                                    <label class="form-check-label" for="guardar-check">
+                                                                      Guardar
+                                                                    </label>
+                                                                  </div>
+                                                                  <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="activada-check">
+                                                                    <label class="form-check-label" for="activada-check">
+                                                                      Activada
+                                                                    </label>
+                                                                  </div>
+                                                                  <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="exportar-check">
+                                                                    <label class="form-check-label" for="exportar-check">
+                                                                      Exportar
+                                                                    </label>
+                                                                  </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div
+                                                            class="col-12 d-flex justify-content-end align-items-center p-4 gap-3">
+                                                            <button class="add-btn">Guardar</button>
+                                                            <button type="button" class="btn-gray"
+                                                                data-bs-dismiss="modal">Cancelar</button>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab4">
+                                        <p>Contenido de "Opciones".</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab5">
+                                        <div class="table-trans table-responsive col-12 col-lg-11">
+                                                <table class="table table-striped table-bordered table-template">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Estatus</th>
+                                                            <th>Administrativa/Auxiliar</th>
+                                                            <th>Administrativa/Directiva</th>
+                                                            <th>Administrativa/Administrador</th>
+                                                            <th>Legal/Auxiliar</th>
+                                                            <th>Legal/Directiva</th>
+                                                            <th>Legal/Administrativa</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="table-body-1">
+                                                        <tr>
+                                                            <td data-label="Estatus">-1.0</td>
+                                                            <td data-label="Administrativa/Auxiliar">0.0</td>
+                                                            <td data-label="Administrativa/Directiva">0.0</td>
+                                                            <td data-label="Administrativa/Administrador">1.0, -1.0 2.0</td>
+                                                            <td data-label="Legal/Auxiliar">NO</td>
+                                                            <td data-label="Legal/Directiva">NO</td>
+                                                            <td data-label="Legal/Administrativa">NO</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Estatus">-1.0</td>
+                                                            <td data-label="Administrativa/Auxiliar">0.0</td>
+                                                            <td data-label="Administrativa/Directiva">0.0</td>
+                                                            <td data-label="Administrativa/Administrador">1.0, -1.0 2.0</td>
+                                                            <td data-label="Legal/Auxiliar">NO</td>
+                                                            <td data-label="Legal/Directiva">NO</td>
+                                                            <td data-label="Legal/Administrativa">NO</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Estatus">-1.0</td>
+                                                            <td data-label="Administrativa/Auxiliar">0.0</td>
+                                                            <td data-label="Administrativa/Directiva">0.0</td>
+                                                            <td data-label="Administrativa/Administrador">1.0, -1.0 2.0</td>
+                                                            <td data-label="Legal/Auxiliar">NO</td>
+                                                            <td data-label="Legal/Directiva">NO</td>
+                                                            <td data-label="Legal/Administrativa">NO</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Estatus">-1.0</td>
+                                                            <td data-label="Administrativa/Auxiliar">0.0</td>
+                                                            <td data-label="Administrativa/Directiva">0.0</td>
+                                                            <td data-label="Administrativa/Administrador">1.0, -1.0 2.0</td>
+                                                            <td data-label="Legal/Auxiliar">NO</td>
+                                                            <td data-label="Legal/Directiva">NO</td>
+                                                            <td data-label="Legal/Administrativa">NO</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="Estatus">-1.0</td>
+                                                            <td data-label="Administrativa/Auxiliar">0.0</td>
+                                                            <td data-label="Administrativa/Directiva">0.0</td>
+                                                            <td data-label="Administrativa/Administrador">1.0, -1.0 2.0</td>
+                                                            <td data-label="Legal/Auxiliar">NO</td>
+                                                            <td data-label="Legal/Directiva">NO</td>
+                                                            <td data-label="Legal/Administrativa">NO</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab6">
+                                        <p>Contenido de "Salir".</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/menu.js"></script>
+    <script src="js/accordion-icon.js"></script>
+    <script src="js/url.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
