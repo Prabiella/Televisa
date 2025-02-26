@@ -300,6 +300,10 @@ body {
   padding: 0px !important;
 }
 
+.table-bordered > :not(caption) > * {
+  border-width: 0px !important;
+}
+
 .header-table-content {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 3px 17px 54px rgba(105, 95, 151, 0.1294117647);
@@ -397,7 +401,7 @@ body {
   /* border: none; */
   /* border-radius: 50%; */
   /* width: 30px; */
-  height: 30px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1542,10 +1546,8 @@ input#user {
 
 .arrow-down {
   background-color: black; /* Fondo negro */
-  border: none;
-  border: none;
   cursor: pointer;
-  margin-top: 5px;
+  margin: 0px;
 }
 
 .arrow-icon {
@@ -1556,8 +1558,8 @@ input#user {
 
 .estatus-dropdown {
   padding: 0px !important;
-  height: 28px;
-  margin: 0px;
+  height: 25px;
+  margin: 0px !important;
 }
 
 /* Submenú flotante */
@@ -1609,11 +1611,11 @@ p.Submenubtn {
   width: 80px;
 }
 
-.TableColor td {
-  color: #000 !important;
-  font-size: 0.7rem;
-  padding: 0px;
-  margin: 0px;
+.TableColor {
+  border-collapse: collapse !important; /* Une los bordes de las celdas */
+  border-spacing: 0 !important; /* Elimina espacios entre celdas */
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 td.ColoStatusRow {

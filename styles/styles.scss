@@ -338,10 +338,9 @@ body {
 }
 
 
-
-
-
-
+.table-bordered>:not(caption)>* {
+  border-width: 0px!important;
+}
 
 
 
@@ -453,7 +452,7 @@ body {
   /* border: none; */
   /* border-radius: 50%; */
   /* width: 30px; */
-  height: 30px;
+  height: auto;
   display: flex
 ;
   flex-direction: column;
@@ -1522,10 +1521,9 @@ input#user {
 
 .arrow-down {
   background-color: black; /* Fondo negro */
-  border: none;
-  border: none;
+  
   cursor: pointer;
-  margin-top: 5px;
+  margin: 0px;
 }
 
 .arrow-icon {
@@ -1541,8 +1539,8 @@ input#user {
 
 .estatus-dropdown {
   padding: 0px !important;
-  height: 28px;
-  margin: 0px;
+  height: 25px;
+  margin: 0px!important;
 }
 
 
@@ -1595,12 +1593,15 @@ p.Submenubtn {
 .ChangeStatus {
   width: 80px;
 }
-.TableColor td {
-  color: #000 !important;
-  font-size: 0.7rem;
-  padding: 0px;
-  margin: 0px;
+
+.TableColor {
+  border-collapse: collapse !important; /* Une los bordes de las celdas */
+  border-spacing: 0 !important; /* Elimina espacios entre celdas */
+  padding: 0 !important;
+  margin: 0 !important;
 }
+
+
 
 td.ColoStatusRow {
   padding: 0px !important;
